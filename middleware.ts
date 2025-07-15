@@ -1,1 +1,0 @@
-// Middleware supprimé - plus de gestion multilingue

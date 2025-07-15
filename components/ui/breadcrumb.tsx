@@ -1,8 +1,7 @@
 "use client";
 
-import Link from 'next/link';
-import { ChevronRight, Home } from 'lucide-react';
-import { useLocale } from 'next-intl';
+import Link from "next/link";
+import { ChevronRight, Home } from "lucide-react";
 
 interface BreadcrumbItem {
   label: string;
@@ -14,12 +13,10 @@ interface BreadcrumbProps {
 }
 
 export function Breadcrumb({ items }: BreadcrumbProps) {
-  const locale = useLocale();
-
   return (
     <nav className="flex items-center space-x-1 text-sm text-gray-500 mb-6">
       <Link
-        href={`/${locale}`}
+        href="/"
         className="flex items-center hover:text-green-600 transition-colors"
       >
         <Home className="h-4 w-4" />

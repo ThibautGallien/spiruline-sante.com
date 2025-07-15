@@ -1,36 +1,46 @@
 "use client";
 
-import Link from 'next/link';
-import { Leaf, Mail, Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
+import Link from "next/link";
+import {
+  Leaf,
+  Mail,
+  Facebook,
+  Twitter,
+  Instagram,
+  Youtube,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 
 export function Footer() {
   const quickLinks = [
-    { name: 'Accueil', href: '/' },
-    { name: 'Spiruline', href: '/spirulina' },
-    { name: 'Phycocyanine', href: '/phycocyanin' },
-    { name: 'Oméga-3', href: '/omega-3' },
-    { name: 'Blog', href: '/blog' },
+    { name: "Accueil", href: "/" },
+    { name: "Spiruline", href: "/spiruline" },
+    { name: "Phycocyanine", href: "/phycocyanine" },
+    { name: "Blog", href: "/blog" },
+    {
+      name: "Boutique",
+      href: "https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop",
+    },
   ];
 
   const legalLinks = [
-    { name: 'Mentions légales', href: '/legal' },
-    { name: 'Confidentialité', href: '/privacy' },
-    { name: 'CGV', href: '/terms' },
-    { name: 'Contact', href: '/contact' },
+    { name: "Mentions légales", href: "/legal" },
+    { name: "Confidentialité", href: "/privacy" },
+    { name: "CGV", href: "/terms" },
+    { name: "Contact", href: "/contact" },
   ];
 
   const socialLinks = [
-    { name: 'Facebook', icon: Facebook, href: '#' },
-    { name: 'Twitter', icon: Twitter, href: '#' },
-    { name: 'Instagram', icon: Instagram, href: '#' },
-    { name: 'YouTube', icon: Youtube, href: '#' },
+    { name: "Facebook", icon: Facebook, href: "#" },
+    { name: "Twitter", icon: Twitter, href: "#" },
+    { name: "Instagram", icon: Instagram, href: "#" },
+    { name: "YouTube", icon: Youtube, href: "#" },
   ];
 
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="container py-12">
+      <div className="container px-4 md:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="lg:col-span-1">
@@ -41,7 +51,8 @@ export function Footer() {
               <span className="text-xl font-bold">Spirulina Health</span>
             </Link>
             <p className="text-gray-400 text-sm mb-4">
-              Votre source d'information fiable sur la spiruline, phycocyanine et oméga-3
+              Votre source d'information fiable sur la spiruline, phycocyanine
+              et oméga-3
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
@@ -66,6 +77,7 @@ export function Footer() {
                   <Link
                     href={link.href}
                     className="text-gray-400 hover:text-green-400 transition-colors text-sm"
+                    target={link.href.startsWith("http") ? "_blank" : undefined}
                   >
                     {link.name}
                   </Link>
@@ -95,7 +107,8 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
             <p className="text-gray-400 text-sm mb-4">
-              Recevez nos derniers conseils santé et actualités directement dans votre boîte mail.
+              Recevez nos derniers conseils santé et actualités directement dans
+              votre boîte mail.
             </p>
             <div className="flex space-x-2">
               <Input
