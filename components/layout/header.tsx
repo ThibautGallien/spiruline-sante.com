@@ -2,28 +2,24 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { useLocale, useTranslations } from 'next-intl';
 import { Menu, X, Leaf } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { LanguageSelector } from '@/components/ui/language-selector';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const locale = useLocale();
-  const t = useTranslations('navigation');
 
   const navigation = [
-    { name: t('home'), href: `/${locale}` },
-    { name: t('spirulina'), href: `/${locale}/spirulina` },
-    { name: t('phycocyanin'), href: `/${locale}/phycocyanin` },
-    { name: t('omega3'), href: `/${locale}/omega-3` },
-    { name: t('blog'), href: `/${locale}/blog` },
+    { name: 'Accueil', href: '/' },
+    { name: 'Spiruline', href: '/spirulina' },
+    { name: 'Phycocyanine', href: '/phycocyanin' },
+    { name: 'Oméga-3', href: '/omega-3' },
+    { name: 'Blog', href: '/blog' },
   ];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container flex h-16 items-center justify-between">
-        <Link href={`/${locale}`} className="flex items-center space-x-2">
+        <Link href="/" className="flex items-center space-x-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-full bg-green-600">
             <Leaf className="h-5 w-5 text-white" />
           </div>
@@ -44,8 +40,6 @@ export function Header() {
         </nav>
 
         <div className="flex items-center space-x-4">
-          <LanguageSelector />
-          
           {/* Mobile menu button */}
           <Button
             variant="ghost"

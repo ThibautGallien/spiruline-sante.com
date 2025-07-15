@@ -1,7 +1,5 @@
-import { useTranslations } from 'next-intl';
 import { generateSEOMetadata } from '@/lib/seo';
 import { getBlogPosts } from '@/lib/content';
-import { locales } from '@/lib/i18n';
 import { Breadcrumb } from '@/components/ui/breadcrumb';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -9,29 +7,21 @@ import { Button } from '@/components/ui/button';
 import { Clock, Calendar, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
-export async function generateStaticParams() {
-  return locales.map((locale) => ({
-    locale,
-  }));
-}
-
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+export async function generateMetadata() {
   return generateSEOMetadata({
     title: 'Blog Santé - Actualités Spiruline, Phycocyanine et Oméga-3',
     description: 'Découvrez nos derniers articles sur les bienfaits de la spiruline, phycocyanine et oméga-3. Conseils, études scientifiques et actualités santé.',
     keywords: ['blog santé', 'spiruline articles', 'phycocyanine études', 'oméga-3 conseils', 'nutrition santé'],
-    locale: locale as any,
-    canonicalUrl: `/${locale}/blog`,
+    locale: 'fr',
+    canonicalUrl: '/blog',
   });
 }
 
-export default function BlogPage({ params: { locale } }: { params: { locale: string } }) {
-  const t = useTranslations('blog');
-  const commonT = useTranslations('common');
-  const blogPosts = getBlogPosts(locale);
+export default function BlogPage() {
+  const blogPosts = getBlogPosts('fr');
 
   const breadcrumbItems = [
-    { label: t('title') }
+    { label: 'Blog Santé' }
   ];
 
   const categories = Array.from(new Set(blogPosts.map(post => post.category)));
@@ -44,17 +34,17 @@ export default function BlogPage({ params: { locale } }: { params: { locale: str
       
       <div className="mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-          {t('title')}
+          Blog Santé
         </h1>
         <p className="text-xl text-gray-600">
-          {t('description')}
+          Actualités, conseils et découvertes sur la spiruline, phycocyanine et oméga-3
         </p>
       </div>
 
       {/* Categories */}
       {categories.length > 0 && (
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">{commonT('categories')}</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Catégories</h2>
           <div className="flex flex-wrap gap-2">
             {categories.map((category) => (
               <Badge key={category} variant="secondary">
@@ -67,7 +57,7 @@ export default function BlogPage({ params: { locale } }: { params: { locale: str
 
       {blogPosts.length === 0 ? (
         <div className="text-center py-12">
-          <p className="text-gray-500">{t('noArticles')}</p>
+          <p className="text-gray-500">Aucun article disponible</p>
         </div>
       ) : (
         <>
@@ -82,11 +72,11 @@ export default function BlogPage({ params: { locale } }: { params: { locale: str
                       <Badge>{featuredPost.category}</Badge>
                       <div className="flex items-center space-x-2 text-sm text-gray-500">
                         <Calendar className="h-4 w-4" />
-                        <span>{new Date(featuredPost.date).toLocaleDateString(locale)}</span>
+                        <span>{new Date(featuredPost.date).toLocaleDateString('fr-FR')}</span>
                       </div>
                       <div className="flex items-center space-x-2 text-sm text-gray-500">
                         <Clock className="h-4 w-4" />
-                        <span>{featuredPost.readingTime} {commonT('readingTime')}</span>
+                        <span>{featuredPost.readingTime} min de lecture</span>
                       </div>
                     </div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -96,8 +86,8 @@ export default function BlogPage({ params: { locale } }: { params: { locale: str
                       {featuredPost.excerpt}
                     </p>
                     <Button asChild>
-                      <Link href={`/${locale}/blog/${featuredPost.slug}`}>
-                        {commonT('readMore')}
+                      <Link href={`/blog/${featuredPost.slug}`}>
+                        Lire plus
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
@@ -127,13 +117,13 @@ export default function BlogPage({ params: { locale } }: { params: { locale: str
                         <Badge variant="outline">{post.category}</Badge>
                         <div className="flex items-center space-x-2 text-sm text-gray-500">
                           <Clock className="h-4 w-4" />
-                          <span>{post.readingTime} {commonT('readingTime')}</span>
+                          <span>{post.readingTime} min de lecture</span>
                         </div>
                       </div>
                       <CardTitle className="line-clamp-2">{post.title}</CardTitle>
                       <div className="flex items-center space-x-2 text-sm text-gray-500">
                         <Calendar className="h-4 w-4" />
-                        <span>{new Date(post.date).toLocaleDateString(locale)}</span>
+                        <span>{new Date(post.date).toLocaleDateString('fr-FR')}</span>
                       </div>
                     </CardHeader>
                     <CardContent>
@@ -141,8 +131,8 @@ export default function BlogPage({ params: { locale } }: { params: { locale: str
                         {post.excerpt}
                       </CardDescription>
                       <Button asChild variant="outline" size="sm">
-                        <Link href={`/${locale}/blog/${post.slug}`}>
-                          {commonT('readMore')}
+                        <Link href={`/blog/${post.slug}`}>
+                          Lire plus
                         </Link>
                       </Button>
                     </CardContent>

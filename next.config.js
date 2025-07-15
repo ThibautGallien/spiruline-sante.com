@@ -1,6 +1,3 @@
-const withNextIntl = require('next-intl/plugin')('./lib/i18n.ts');
-
-/** @type {import('next').NextConfig} */
 const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/,
   options: {
@@ -9,6 +6,7 @@ const withMDX = require('@next/mdx')({
   },
 })
 
+/** @type {import('next').NextConfig} */
 const nextConfig = withMDX({
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
   output: 'export',
@@ -22,4 +20,4 @@ const nextConfig = withMDX({
   trailingSlash: true,
 })
 
-module.exports = withNextIntl(nextConfig)
+module.exports = nextConfig

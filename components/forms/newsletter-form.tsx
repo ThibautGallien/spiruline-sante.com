@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Mail, CheckCircle, AlertCircle } from 'lucide-react';
@@ -10,7 +9,6 @@ export function NewsletterForm() {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [message, setMessage] = useState('');
-  const t = useTranslations('common');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -36,7 +34,7 @@ export function NewsletterForm() {
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder={t('email')}
+          placeholder="Email"
           required
           className="flex-1"
           disabled={status === 'loading'}

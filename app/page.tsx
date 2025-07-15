@@ -1,8 +1,6 @@
-import { useTranslations } from 'next-intl';
 import { generateSEOMetadata } from '@/lib/seo';
 import { StructuredData } from '@/components/seo/structured-data';
 import { getBlogPosts } from '@/lib/content';
-import { locales } from '@/lib/i18n';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { NewsletterForm } from '@/components/forms/newsletter-form';
@@ -10,26 +8,18 @@ import { Leaf, Shield, Zap, Award, ArrowRight, Clock } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export async function generateStaticParams() {
-  return locales.map((locale) => ({
-    locale,
-  }));
-}
-
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+export async function generateMetadata() {
   return generateSEOMetadata({
     title: 'Spirulina Health - Découvrez les Bienfaits de la Spiruline, Phycocyanine et Oméga-3',
     description: 'Votre guide complet pour une santé optimale avec les super-aliments naturels. Explorez les propriétés exceptionnelles de la spiruline, phycocyanine et oméga-3.',
     keywords: ['spiruline', 'phycocyanine', 'oméga-3', 'super-aliments', 'santé naturelle', 'antioxydants'],
-    locale: locale as any,
-    canonicalUrl: `/${locale}`,
+    locale: 'fr',
+    canonicalUrl: '/',
   });
 }
 
-export default function HomePage({ params: { locale } }: { params: { locale: string } }) {
-  const t = useTranslations('home');
-  const commonT = useTranslations('common');
-  const blogPosts = getBlogPosts(locale).slice(0, 3);
+export default function HomePage() {
+  const blogPosts = getBlogPosts('fr').slice(0, 3);
 
   const organizationSchema = {
     '@context': 'https://schema.org',
@@ -37,7 +27,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
     name: 'Spirulina Health',
     url: 'https://spirulina-health.com',
     logo: 'https://spirulina-health.com/images/logo.png',
-    description: t('description'),
+    description: 'Votre guide complet pour une santé optimale avec les super-aliments naturels',
     sameAs: [
       'https://facebook.com/spirulinahealth',
       'https://twitter.com/spirulinahealth',
@@ -50,21 +40,21 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
       title: 'Spiruline',
       description: 'Micro-algue riche en protéines, vitamines et minéraux essentiels',
       image: 'https://images.pexels.com/photos/6995247/pexels-photo-6995247.jpeg?auto=compress&cs=tinysrgb&w=600',
-      href: `/${locale}/spirulina`,
+      href: '/spirulina',
       icon: Leaf
     },
     {
       title: 'Phycocyanine',
       description: 'Pigment bleu aux propriétés antioxydantes et anti-inflammatoires',
       image: 'https://images.pexels.com/photos/7689732/pexels-photo-7689732.jpeg?auto=compress&cs=tinysrgb&w=600',
-      href: `/${locale}/phycocyanin`,
+      href: '/phycocyanin',
       icon: Shield
     },
     {
       title: 'Oméga-3',
       description: 'Acides gras essentiels pour la santé cardiovasculaire et cérébrale',
       image: 'https://images.pexels.com/photos/4033148/pexels-photo-4033148.jpeg?auto=compress&cs=tinysrgb&w=600',
-      href: `/${locale}/omega-3`,
+      href: '/omega-3',
       icon: Zap
     }
   ];
@@ -72,18 +62,18 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
   const benefits = [
     {
       icon: Leaf,
-      title: t('benefits.natural'),
-      description: t('benefits.naturalDesc')
+      title: '100% Naturel',
+      description: 'Produits purs sans additifs artificiels'
     },
     {
       icon: Award,
-      title: t('benefits.scientific'),
-      description: t('benefits.scientificDesc')
+      title: 'Scientifiquement prouvé',
+      description: 'Études cliniques validant les bienfaits'
     },
     {
       icon: Shield,
-      title: t('benefits.quality'),
-      description: t('benefits.qualityDesc')
+      title: 'Qualité premium',
+      description: 'Sélection rigoureuse des meilleurs produits'
     }
   ];
 
@@ -96,14 +86,14 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              {t('title')}
+              Découvrez les Bienfaits de la Spiruline, Phycocyanine et Oméga-3
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              {t('subtitle')}
+              Votre guide complet pour une santé optimale avec les super-aliments naturels
             </p>
             <Button size="lg" asChild className="bg-green-600 hover:bg-green-700">
-              <Link href={`/${locale}/spirulina`}>
-                {t('heroButton')}
+              <Link href="/spirulina">
+                Découvrir nos guides
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
@@ -116,7 +106,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {t('benefits.title')}
+              Pourquoi choisir nos super-aliments ?
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -142,7 +132,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {t('featuredProducts')}
+              Produits vedettes
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -168,7 +158,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
                   </CardDescription>
                   <Button asChild variant="outline" className="w-full">
                     <Link href={product.href}>
-                      {commonT('learnMore')}
+                      En savoir plus
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
@@ -185,7 +175,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
           <div className="container">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                {t('latestArticles')}
+                Derniers articles
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -194,7 +184,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
                   <CardHeader>
                     <div className="flex items-center space-x-2 text-sm text-gray-500 mb-2">
                       <Clock className="h-4 w-4" />
-                      <span>{post.readingTime} {commonT('readingTime')}</span>
+                      <span>{post.readingTime} min de lecture</span>
                     </div>
                     <CardTitle className="line-clamp-2">{post.title}</CardTitle>
                   </CardHeader>
@@ -203,8 +193,8 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
                       {post.excerpt}
                     </CardDescription>
                     <Button asChild variant="outline" size="sm">
-                      <Link href={`/${locale}/blog/${post.slug}`}>
-                        {commonT('readMore')}
+                      <Link href={`/blog/${post.slug}`}>
+                        Lire plus
                       </Link>
                     </Button>
                   </CardContent>
@@ -213,7 +203,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
             </div>
             <div className="text-center mt-12">
               <Button asChild variant="outline" size="lg">
-                <Link href={`/${locale}/blog`}>
+                <Link href="/blog">
                   Voir tous les articles
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -228,10 +218,10 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
         <div className="container">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              {t('newsletterTitle')}
+              Restez informé
             </h2>
             <p className="text-green-100 mb-8">
-              {t('newsletterDescription')}
+              Recevez nos derniers conseils santé et actualités directement dans votre boîte mail.
             </p>
             <div className="max-w-md mx-auto">
               <NewsletterForm />

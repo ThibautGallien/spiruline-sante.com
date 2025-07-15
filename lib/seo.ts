@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import { Locale } from './i18n';
 
 interface SEOConfig {
   title: string;
@@ -7,7 +6,7 @@ interface SEOConfig {
   keywords?: string[];
   ogImage?: string;
   canonicalUrl?: string;
-  locale: Locale;
+  locale: string;
 }
 
 export function generateSEOMetadata({
@@ -48,14 +47,6 @@ export function generateSEOMetadata({
     },
     alternates: {
       canonical: canonicalUrl ? `${baseUrl}${canonicalUrl}` : baseUrl,
-      languages: {
-        'fr': `${baseUrl}/fr`,
-        'de': `${baseUrl}/de`,
-        'cs': `${baseUrl}/cs`,
-        'sk': `${baseUrl}/sk`,
-        'sv': `${baseUrl}/sv`,
-        'en': `${baseUrl}/en`,
-      },
     },
   };
 }

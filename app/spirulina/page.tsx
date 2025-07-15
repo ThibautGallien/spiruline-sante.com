@@ -1,7 +1,5 @@
-import { useTranslations } from 'next-intl';
 import { generateSEOMetadata, generateProductSchema } from '@/lib/seo';
 import { StructuredData } from '@/components/seo/structured-data';
-import { locales } from '@/lib/i18n';
 import { Breadcrumb } from '@/components/ui/breadcrumb';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -10,29 +8,20 @@ import { Leaf, Heart, Shield, Zap, Brain, Dumbbell } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export async function generateStaticParams() {
-  return locales.map((locale) => ({
-    locale,
-  }));
-}
-
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+export async function generateMetadata() {
   return generateSEOMetadata({
     title: 'Spiruline : Bienfaits, Propriétés et Utilisation - Guide Complet',
     description: 'Découvrez tous les bienfaits de la spiruline, ses propriétés nutritionnelles exceptionnelles, son utilisation et dosage optimal pour votre santé.',
     keywords: ['spiruline', 'algue', 'protéines', 'vitamines', 'antioxydants', 'superfood', 'nutrition'],
-    locale: locale as any,
-    canonicalUrl: `/${locale}/spirulina`,
+    locale: 'fr',
+    canonicalUrl: '/spirulina',
   });
 }
 
-export default function SpirulinaPage({ params: { locale } }: { params: { locale: string } }) {
-  const t = useTranslations('products.spirulina');
-  const commonT = useTranslations('common');
-
+export default function SpirulinaPage() {
   const productSchema = generateProductSchema({
-    name: t('title'),
-    description: t('description'),
+    name: 'Spiruline',
+    description: 'Découvrez la spiruline, micro-algue aux propriétés nutritionnelles exceptionnelles',
     benefits: [
       'Riche en protéines complètes',
       'Source de vitamines B12 et fer',
@@ -40,7 +29,7 @@ export default function SpirulinaPage({ params: { locale } }: { params: { locale
       'Renforce le système immunitaire',
       'Améliore les performances sportives'
     ],
-    locale
+    locale: 'fr'
   });
 
   const benefits = [
@@ -86,7 +75,7 @@ export default function SpirulinaPage({ params: { locale } }: { params: { locale
   ];
 
   const breadcrumbItems = [
-    { label: t('title') }
+    { label: 'Spiruline' }
   ];
 
   return (
@@ -100,10 +89,10 @@ export default function SpirulinaPage({ params: { locale } }: { params: { locale
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           <div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              {t('title')}
+              Spiruline
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              {t('description')}
+              Découvrez la spiruline, micro-algue aux propriétés nutritionnelles exceptionnelles
             </p>
             <div className="flex flex-wrap gap-2 mb-8">
               <Badge variant="secondary">100% Naturel</Badge>
@@ -128,7 +117,7 @@ export default function SpirulinaPage({ params: { locale } }: { params: { locale
         {/* Benefits Section */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-            {t('benefits')}
+            Bienfaits
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((benefit, index) => (
@@ -176,7 +165,7 @@ export default function SpirulinaPage({ params: { locale } }: { params: { locale
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <Card>
               <CardHeader>
-                <CardTitle className="text-2xl">{t('usage')}</CardTitle>
+                <CardTitle className="text-2xl">Utilisation</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
@@ -196,7 +185,7 @@ export default function SpirulinaPage({ params: { locale } }: { params: { locale
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-2xl">{t('dosage')}</CardTitle>
+                <CardTitle className="text-2xl">Dosage</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
@@ -229,7 +218,7 @@ export default function SpirulinaPage({ params: { locale } }: { params: { locale
               Voir nos produits
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <Link href={`/${locale}/blog`}>
+              <Link href="/blog">
                 Lire nos articles
               </Link>
             </Button>
