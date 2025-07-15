@@ -1,12 +1,19 @@
 import { useTranslations } from 'next-intl';
 import { generateSEOMetadata } from '@/lib/seo';
 import { getBlogPosts } from '@/lib/content';
+import { locales } from '@/lib/i18n';
 import { Breadcrumb } from '@/components/ui/breadcrumb';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Clock, Calendar, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+
+export async function generateStaticParams() {
+  return locales.map((locale) => ({
+    locale,
+  }));
+}
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   return generateSEOMetadata({

@@ -2,12 +2,19 @@ import { useTranslations } from 'next-intl';
 import { generateSEOMetadata } from '@/lib/seo';
 import { StructuredData } from '@/components/seo/structured-data';
 import { getBlogPosts } from '@/lib/content';
+import { locales } from '@/lib/i18n';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { NewsletterForm } from '@/components/forms/newsletter-form';
 import { Leaf, Shield, Zap, Award, ArrowRight, Clock } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+
+export async function generateStaticParams() {
+  return locales.map((locale) => ({
+    locale,
+  }));
+}
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   return generateSEOMetadata({
