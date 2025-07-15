@@ -2,9 +2,9 @@ import { generateSEOMetadata } from '@/lib/seo';
 
 export async function generateMetadata() {
   return generateSEOMetadata({
-    title: 'Blog Spiruline et Santé Naturelle',
-    description: 'Articles, conseils et actualités sur la spiruline, phycocyanine et compléments naturels.',
-    canonicalUrl: 'blog',
+    title: 'A3 Spirulina Pills Xelliss : avis',
+    description: 'Test et avis sur les gélules A3 Spirulina Pills de Xelliss : efficacité et qualité.',
+    canonicalUrl: 'blog/a3-spirulina-pills-de-xelliss-avis',
   });
 }
 
@@ -12,10 +12,10 @@ export default function Page() {
   return (
     <div className="container py-8">
       <h1 className="text-4xl font-bold text-gray-900 mb-6">
-        Blog Spiruline et Santé Naturelle
+        A3 Spirulina Pills Xelliss : avis
       </h1>
       <p className="text-xl text-gray-600">
-        Articles, conseils et actualités sur la spiruline, phycocyanine et compléments naturels.
+        Test et avis sur les gélules A3 Spirulina Pills de Xelliss : efficacité et qualité.
       </p>
       <div className="mt-8 p-4 bg-yellow-50 border border-yellow-200 rounded">
         <p className="text-yellow-800">

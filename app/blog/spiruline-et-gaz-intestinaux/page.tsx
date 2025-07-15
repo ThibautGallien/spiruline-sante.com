@@ -2,9 +2,9 @@ import { generateSEOMetadata } from '@/lib/seo';
 
 export async function generateMetadata() {
   return generateSEOMetadata({
-    title: 'Blog Spiruline et Santé Naturelle',
-    description: 'Articles, conseils et actualités sur la spiruline, phycocyanine et compléments naturels.',
-    canonicalUrl: 'blog',
+    title: 'Spiruline et problèmes digestifs',
+    description: 'La spiruline peut-elle causer des gaz ? Conseils pour éviter les troubles digestifs.',
+    canonicalUrl: 'blog/spiruline-et-gaz-intestinaux',
   });
 }
 
@@ -12,10 +12,10 @@ export default function Page() {
   return (
     <div className="container py-8">
       <h1 className="text-4xl font-bold text-gray-900 mb-6">
-        Blog Spiruline et Santé Naturelle
+        Spiruline et problèmes digestifs
       </h1>
       <p className="text-xl text-gray-600">
-        Articles, conseils et actualités sur la spiruline, phycocyanine et compléments naturels.
+        La spiruline peut-elle causer des gaz ? Conseils pour éviter les troubles digestifs.
       </p>
       <div className="mt-8 p-4 bg-yellow-50 border border-yellow-200 rounded">
         <p className="text-yellow-800">

@@ -2,9 +2,9 @@ import { generateSEOMetadata } from '@/lib/seo';
 
 export async function generateMetadata() {
   return generateSEOMetadata({
-    title: 'Blog Spiruline et Santé Naturelle',
-    description: 'Articles, conseils et actualités sur la spiruline, phycocyanine et compléments naturels.',
-    canonicalUrl: 'blog',
+    title: 'Oméga-3 et cheveux : guide complet',
+    description: 'Les bienfaits des oméga-3 pour la santé capillaire et la beauté des cheveux.',
+    canonicalUrl: 'blog/omega-3-cheveux',
   });
 }
 
@@ -12,10 +12,10 @@ export default function Page() {
   return (
     <div className="container py-8">
       <h1 className="text-4xl font-bold text-gray-900 mb-6">
-        Blog Spiruline et Santé Naturelle
+        Oméga-3 et cheveux : guide complet
       </h1>
       <p className="text-xl text-gray-600">
-        Articles, conseils et actualités sur la spiruline, phycocyanine et compléments naturels.
+        Les bienfaits des oméga-3 pour la santé capillaire et la beauté des cheveux.
       </p>
       <div className="mt-8 p-4 bg-yellow-50 border border-yellow-200 rounded">
         <p className="text-yellow-800">

@@ -2,9 +2,9 @@ import { generateSEOMetadata } from '@/lib/seo';
 
 export async function generateMetadata() {
   return generateSEOMetadata({
-    title: 'Blog Spiruline et Santé Naturelle',
-    description: 'Articles, conseils et actualités sur la spiruline, phycocyanine et compléments naturels.',
-    canonicalUrl: 'blog',
+    title: 'Composition de la spiruline',
+    description: 'Analyse complète des nutriments : protéines, vitamines, minéraux et antioxydants de la spiruline.',
+    canonicalUrl: 'spiruline/composition-spiruline',
   });
 }
 
@@ -12,10 +12,10 @@ export default function Page() {
   return (
     <div className="container py-8">
       <h1 className="text-4xl font-bold text-gray-900 mb-6">
-        Blog Spiruline et Santé Naturelle
+        Composition de la spiruline
       </h1>
       <p className="text-xl text-gray-600">
-        Articles, conseils et actualités sur la spiruline, phycocyanine et compléments naturels.
+        Analyse complète des nutriments : protéines, vitamines, minéraux et antioxydants de la spiruline.
       </p>
       <div className="mt-8 p-4 bg-yellow-50 border border-yellow-200 rounded">
         <p className="text-yellow-800">
