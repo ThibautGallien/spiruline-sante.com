@@ -148,6 +148,7 @@
 - **Listes** : `text-lg` pour faciliter la lecture
 - **Cartes** : `text-lg` dans le contenu
 - **Titres** : Hiérarchie H1 > H2 > H3 > H4
+- **Formatage** : L'article est centré sur la page
 
 ### Couleurs par Type de Contenu
 
@@ -174,6 +175,7 @@
 - **H1** : Unique, descriptif
 - **H2-H6** : Structure logique
 - **Mots-clés** : Intégration naturelle
+- **CTA** : Mettre plusieurs CTA dans la page pour maximiser la conversion
 
 ### Données Structurées
 
@@ -335,8 +337,6 @@
 **Ce guide est évolutif et doit être adapté selon les retours performance et les changements d'algorithme Google.**
 
 Pages à refaire :
-https://www.spiruline-sante.com/spiruline/les-bienfaits-spiruline/
-https://www.spiruline-sante.com/blog/spiruline-danger-coeur/
 https://www.spiruline-sante.com/phycocyanine/guide-posologie-phycocyanine-usage-optimal/
 https://www.spiruline-sante.com/spiruline/
 https://www.spiruline-sante.com/blog/phycocyanine-remede-naturel-contre-stress/
