@@ -337,7 +337,6 @@
 **Ce guide est évolutif et doit être adapté selon les retours performance et les changements d'algorithme Google.**
 
 Pages à refaire :
-https://www.spiruline-sante.com/phycocyanine/guide-posologie-phycocyanine-usage-optimal/
 https://www.spiruline-sante.com/spiruline/
 https://www.spiruline-sante.com/blog/phycocyanine-remede-naturel-contre-stress/
 https://www.spiruline-sante.com/phycocyanine/composition-phycocyanine-guide-complet/
