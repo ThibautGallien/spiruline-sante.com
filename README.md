@@ -337,8 +337,6 @@
 **Ce guide est évolutif et doit être adapté selon les retours performance et les changements d'algorithme Google.**
 
 Pages à refaire :
-https://www.spiruline-sante.com/blog/phycocyanine-remede-naturel-contre-stress/
-https://www.spiruline-sante.com/phycocyanine/composition-phycocyanine-guide-complet/
 https://www.spiruline-sante.com/blog/omega-3-bienfaits-pour-la-peau/
 https://www.spiruline-sante.com/blog/les-bienfaits-des-omega-3-contre-la-chute-de-cheveux/
 https://www.spiruline-sante.com/avis-client-spiruline/
@@ -346,9 +344,7 @@ https://www.spiruline-sante.com/blog/omega-3-cheveux/
 https://www.spiruline-sante.com/phycocyanine/phycocyanine-proprietes-bienfaits-applications/
 https://www.spiruline-sante.com/blog/Zinzino-Omega-3/
 https://www.spiruline-sante.com/phycocyanine/
-https://www.spiruline-sante.com/blog/spiruline-danger-fumeur/
 https://www.spiruline-sante.com/phycocyanine/guide-complet-phycocyanine/
-https://www.spiruline-sante.com/blog/a3-spirulina-pills-de-xelliss-avis/
 https://www.spiruline-sante.com/blog/devenir-distributeur-xelliss/
 https://www.spiruline-sante.com/blog/natura4ever-xelliss/
 https://www.spiruline-sante.com/blog/boutique-natura4ever-xelliss-zinzino/
