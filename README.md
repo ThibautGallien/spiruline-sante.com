@@ -336,23 +336,6 @@
 
 **Ce guide est évolutif et doit être adapté selon les retours performance et les changements d'algorithme Google.**
 
-Pages à refaire :
-https://www.spiruline-sante.com/blog/omega-3-bienfaits-pour-la-peau/
-https://www.spiruline-sante.com/blog/les-bienfaits-des-omega-3-contre-la-chute-de-cheveux/
-https://www.spiruline-sante.com/blog/omega-3-cheveux/
-https://www.spiruline-sante.com/blog/Zinzino-Omega-3/
-https://www.spiruline-sante.com/blog/boutique-natura4ever-xelliss-zinzino/
-
-A ne pas changer :
-https://www.spiruline-sante.com/blog/avis-xelliss-arnaque-ou-opportunite/
-https://www.spiruline-sante.com/blog/avis-zinzino-arnaque-ou-produits-de-qualite/
-https://www.spiruline-sante.com/blog/carafe-filtrante-xelliss-xelliwater/
-https://www.spiruline-sante.com/de/non-classe-de/zinzino-im-test-unserios-oder-qualitatsprodukte/
-https://www.spiruline-sante.com/blog/x-gold-xelliss-avis/
-https://www.spiruline-sante.com/blog/phycosci-x14-xelliss/
-https://www.spiruline-sante.com/blog/avis-phycosci-x14-xelliss/
-https://www.spiruline-sante.com/blog/balance-oil-zinzino-avis/
-
 A fusionner :
 
 https://www.spiruline-sante.com/blog/xelliss-produits/
