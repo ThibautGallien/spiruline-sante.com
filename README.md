@@ -335,8 +335,3 @@
 ---
 
 **Ce guide est évolutif et doit être adapté selon les retours performance et les changements d'algorithme Google.**
-
-A fusionner :
-
-https://www.spiruline-sante.com/blog/xelliss-produits/
-https://www.spiruline-sante.com/blog/xelliss-produit/

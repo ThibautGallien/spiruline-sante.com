@@ -57,21 +57,21 @@ const A3SpirulinaPillsArticle = () => {
 
   const testimonials = [
     {
-      name: "Marie L.",
+      name: "Isabelle",
       rating: 5,
-      text: "J'ai retrouvé une énergie incroyable après 3 semaines d'utilisation. Je recommande vivement !",
+      text: "Grâce au jeûne intermittent, aux plantes et aux produits Xelliss, j’ai retrouvé le sommeil, perdu 29 kg et vu mes douleurs disparaître. Après 18 ans de polyarthrite, je revis : je marche, fais du sport et n’ai plus besoin de traitement.",
       verified: true,
     },
     {
-      name: "Pierre D.",
+      name: "Pascale",
       rating: 5,
-      text: "Très pratique à prendre, pas de goût désagréable. Mes analyses de fer se sont améliorées.",
+      text: "Après un AVC, j’ai retrouvé toute ma mobilité, ma parole et ma forme grâce à une prise régulière de spiruline et une hygiène de vie renforcée. Mon neurologue n’en revenait pas de ma récupération complète, confirmée par les examens médicaux.",
       verified: true,
     },
     {
-      name: "Sophie M.",
-      rating: 4,
-      text: "Bon produit, je sens une différence au niveau de ma résistance à la fatigue.",
+      name: "David",
+      rating: 5,
+      text: "Opéré d’une hernie discale début octobre, j’ai cicatrisé rapidement et repris le vélo bien plus tôt que prévu. Je suis convaincu que la spiruline et les produits naturels Xelliss ont grandement aidé ma récupération.",
       verified: true,
     },
   ];
@@ -150,9 +150,11 @@ const A3SpirulinaPillsArticle = () => {
               </div>
               <div className="text-right">
                 <p className="text-2xl font-bold text-green-800">37€</p>
-                <Button className="mt-2 bg-green-600 hover:bg-green-700">
-                  Voir sur Zinzino <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                <a href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/">
+                  <Button className="mt-2 bg-green-600 hover:bg-green-700">
+                    Voir sur Zinzino
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
@@ -426,7 +428,7 @@ const A3SpirulinaPillsArticle = () => {
         <Card className="bg-blue-50">
           <CardContent className="p-6 text-center">
             <p className="text-blue-800 font-medium">
-              ⭐ Note moyenne : 4.6/5 basée sur plus de 200 avis clients
+              ⭐ Note moyenne : 4.1/5 basée sur plus de 14 291 avis clients
             </p>
           </CardContent>
         </Card>
@@ -534,10 +536,11 @@ const A3SpirulinaPillsArticle = () => {
                   <li>• Guide d'utilisation détaillé</li>
                   <li>• Certificat de qualité</li>
                 </ul>
-
-                <Button className="w-full mt-4 bg-green-600 hover:bg-green-700">
-                  Acheter sur Zinzino <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                <a href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/">
+                  <Button className="w-full mt-4 bg-green-600 hover:bg-green-700">
+                    Acheter sur Zinzino
+                  </Button>
+                </a>
               </div>
             </div>
           </CardContent>
@@ -618,11 +621,12 @@ const A3SpirulinaPillsArticle = () => {
                 <div className="text-sm text-blue-600">Prix mensuel</div>
               </div>
             </div>
-
-            <Button className="mt-6 bg-blue-600 hover:bg-blue-700 text-lg px-8 py-3">
-              Commencer ma cure aujourd'hui{" "}
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <a href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/">
+              <Button className="mt-6 bg-blue-600 hover:bg-blue-700 text-lg px-8 py-3">
+                Commencer ma cure aujourd'hui{" "}
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
           </CardContent>
         </Card>
       </section>
