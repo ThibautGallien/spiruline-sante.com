@@ -15,7 +15,6 @@ import {
 import { Badge } from "@/components/ui/badge";
 import {
   CheckCircle,
-  Star,
   ArrowRight,
   Heart,
   Shield,
@@ -116,10 +115,9 @@ export default function SpirulineBienfaitsPage() {
 
         {/* Résumé en bullet points */}
         <div className="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg mb-8 border-l-4 border-green-500">
-          <h2 className="text-2xl font-bold text-green-800 mb-4 flex items-center">
-            <Star className="h-6 w-6 mr-2" />
+          <p className="text-2xl font-bold text-green-800 mb-4 flex items-center">
             🌟 Ce que vous allez découvrir :
-          </h2>
+          </p>
           <div className="grid md:grid-cols-2 gap-3 text-lg">
             <div className="flex items-start space-x-2">
               <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
@@ -155,7 +153,7 @@ export default function SpirulineBienfaitsPage() {
                 href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                 target="_blank"
               >
-                🛒 Découvrir A3 Spirulina Pills (39€ - 3 semaines)
+                🛒 Découvrir A3 Spirulina Pills (37€ - 3 semaines)
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
@@ -934,7 +932,7 @@ export default function SpirulineBienfaitsPage() {
                   A3 Spirulina Pills Xelliss
                 </h3>
                 <div className="flex justify-center items-center space-x-4 mb-4">
-                  <span className="text-3xl font-bold text-green-600">39€</span>
+                  <span className="text-3xl font-bold text-green-600">37€</span>
                   <span className="text-gray-600">• 3 semaines de cure</span>
                 </div>
                 <div className="grid grid-cols-2 gap-4 text-sm text-gray-700 mb-4">
@@ -948,24 +946,12 @@ export default function SpirulineBienfaitsPage() {
                   </div>
                   <div className="flex items-center space-x-2">
                     <CheckCircle className="h-4 w-4 text-green-600" />
-                    <span>Livraison rapide 48h</span>
+                    <span>Livraison rapide </span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <CheckCircle className="h-4 w-4 text-green-600" />
                     <span>Garantie qualité</span>
                   </div>
-                </div>
-                <div className="bg-green-50 p-4 rounded-lg mb-4">
-                  <p className="text-sm text-gray-700">
-                    <strong>Pourquoi choisir A3 Spirulina Pills ?</strong>
-                    <br />
-                    • Origine contrôlée et certifiée
-                    <br />
-                    • Tests de pureté rigoureux
-                    <br />
-                    • Pas de contaminants (métaux lourds, pesticides)
-                    <br />• Dosage précis et constant
-                  </p>
                 </div>
               </div>
               <Button
@@ -982,8 +968,8 @@ export default function SpirulineBienfaitsPage() {
                 </Link>
               </Button>
               <p className="text-sm text-gray-600 mt-3">
-                ✅ Paiement sécurisé • 🚚 Livraison gratuite dès 50€ • 💰
-                Garantie satisfait ou remboursé
+                ✅ Paiement sécurisé • 🚚 Livraison rapide • 💰 Garantie
+                satisfait ou remboursé
               </p>
             </CardContent>
           </Card>

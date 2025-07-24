@@ -10,7 +10,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { NewsletterForm } from "@/components/forms/newsletter-form";
-import { ArrowRight, Star, CheckCircle, Heart, Gift } from "lucide-react";
+import { ArrowRight, Star, CheckCircle, Heart } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -56,22 +56,26 @@ export default function HomePage() {
 
   const carouselImages = [
     {
-      src: "https://images.pexels.com/photos/6995247/pexels-photo-6995247.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      alt: "Spiruline premium en poudre",
-      title: "Spiruline Premium",
+      src: "/A3-Spirulina-Pills-Xelliss.webp",
+      alt: "Spiruline Xelliss",
+      title: "Spiruline Xelliss",
       subtitle: "La micro-algue aux 1000 vertus",
+      link: "https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/",
     },
     {
-      src: "https://images.pexels.com/photos/4033148/pexels-photo-4033148.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      alt: "Compléments Oméga-3 naturels",
+      src: "/BalanceOil-Zinzino.webp",
+      alt: "Compléments Oméga-3 Zinzino",
       title: "Oméga-3 Essentiels",
-      subtitle: "Pour votre santé cardiovasculaire",
+      subtitle:
+        "Pour votre santé cardiovasculaire et réduire les inflammations",
+      link: "https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/",
     },
     {
-      src: "https://images.pexels.com/photos/7689732/pexels-photo-7689732.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      src: "/PhycoSciX14-Xelliss.webp",
       alt: "Phycocyanine liquide concentrée",
       title: "Phycocyanine Pure",
       subtitle: "Le pigment bleu aux propriétés exceptionnelles",
+      link: "https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302771/",
     },
   ];
 
@@ -82,7 +86,7 @@ export default function HomePage() {
         "Découvrez la puissance concentrée de la phycocyanine avec PhycoSci X14, un extrait naturel aux bienfaits revitalisants pour l'énergie et l'immunité.",
       detailedDescription:
         "Boostez votre vitalité grâce à cette solution pure et efficace, conçue pour soutenir votre bien-être au quotidien.",
-      image: "/images/phycosci-x14.jpg", // Tu changeras cette image
+      image: "/PhycoSciX14.webp",
       benefits: [
         "Énergie naturelle",
         "Immunité renforcée",
@@ -99,7 +103,7 @@ export default function HomePage() {
         "Faites le plein de nutriments essentiels avec A3 Spirulina Pills. Ces comprimés concentrés de spiruline vous apportent un soutien naturel.",
       detailedDescription:
         "Pour une énergie durable, un système immunitaire renforcé et un bien-être global. Idéal pour ceux qui recherchent un coup de pouce quotidien en toute simplicité.",
-      image: "/images/a3-spirulina-pills.jpg", // Tu changeras cette image
+      image: "/A3-Spirulina-Pills.webp", // Tu changeras cette image
       benefits: [
         "Nutriments concentrés",
         "Énergie durable",
@@ -116,7 +120,7 @@ export default function HomePage() {
         "Équilibrez votre santé avec Balance Oil+, une synergie puissante d'Omega-3 et de Vitamine D pour nourrir votre corps.",
       detailedDescription:
         "Chaque dose favorise la clarté mentale, l'immunité et le bien-être global. Adoptez cette solution complète pour une vitalité durable.",
-      image: "/images/balance-oil-plus.jpg", // Tu changeras cette image
+      image: "/BalanceOil-Zinzino.webp",
       benefits: [
         "Ratio oméga parfait",
         "Clarté mentale",
@@ -124,7 +128,7 @@ export default function HomePage() {
         "Vitalité durable",
       ],
       cta: "Je Découvre",
-      href: "https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/health/701005/BalanceOil",
+      href: "/blog/balance-oil-zinzino-avis",
       color: "orange",
       external: true,
     },
@@ -132,14 +136,14 @@ export default function HomePage() {
 
   const testimonials = [
     {
-      name: "Marie L.",
-      text: "Grâce à BalanceOil+, mes analyses sanguines se sont considérablement améliorées en 3 mois.",
+      name: "Agnès",
+      text: "Grâce à BalanceOil et à un rééquilibrage en oméga-3, notre fils atteint de TDAH est devenu plus calme, concentré et apaisé. En quelques mois, les effets ont été si positifs que nous avons pu arrêter les médicaments, avec l'accord des médecins.",
       rating: 5,
       product: "BalanceOil+",
     },
     {
-      name: "Pierre D.",
-      text: "PhycoSci X14 m'a redonné une énergie que je n'avais plus depuis des années !",
+      name: "Isabelle",
+      text: "Grâce au jeûne intermittent, aux plantes et aux produits Xelliss, j'ai retrouvé le sommeil, perdu 29 kg et vu mes douleurs disparaître. Après 18 ans de polyarthrite, je revis : je marche, fais du sport et n'ai plus besoin de traitement.",
       rating: 5,
       product: "PhycoSci X14",
     },
@@ -167,7 +171,8 @@ export default function HomePage() {
               </div>
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
                 Transformez Votre Santé avec les
-                <span className="text-green-600"> Super-Aliments</span>
+                <br />
+                <span className="text-green-600">Super-Aliments</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8">
                 Découvrez notre sélection de produits premium Zinzino et
@@ -210,21 +215,32 @@ export default function HomePage() {
                 <CarouselContent>
                   {carouselImages.map((image, index) => (
                     <CarouselItem key={index}>
-                      <div className="relative h-96 rounded-2xl overflow-hidden group">
-                        <Image
-                          src={image.src}
-                          alt={image.alt}
-                          fill
-                          className="object-cover group-hover:scale-105 transition-transform duration-700"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                        <div className="absolute bottom-6 left-6 text-white">
-                          <h3 className="text-2xl font-bold mb-2">
-                            {image.title}
-                          </h3>
-                          <p className="text-white/90">{image.subtitle}</p>
+                      <a
+                        href={image.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block cursor-pointer"
+                      >
+                        <div className="relative h-96 rounded-2xl overflow-hidden group">
+                          <Image
+                            src={image.src}
+                            alt={image.alt}
+                            fill
+                            className="object-cover group-hover:scale-105 transition-transform duration-700"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                          <div className="absolute bottom-6 left-6 text-white">
+                            <h3 className="text-2xl font-bold mb-2">
+                              {image.title}
+                            </h3>
+                            <p className="text-white/90">{image.subtitle}</p>
+                          </div>
+                          {/* Indicateur de lien */}
+                          <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full px-3 py-1 text-white text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            Cliquez pour découvrir →
+                          </div>
                         </div>
-                      </div>
+                      </a>
                     </CarouselItem>
                   ))}
                 </CarouselContent>
@@ -242,9 +258,6 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center mb-6">
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
-                  <Gift className="h-6 w-6 text-white" />
-                </div>
                 <div>
                   <h2 className="text-3xl md:text-4xl font-bold">
                     🎁 Recevez Votre Guide Gratuit !

@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button";
 import {
   CheckCircle,
   Star,
-  Gift,
   ArrowRight,
   AlertTriangle,
   Heart,
@@ -940,7 +939,6 @@ const SpirulineCompositionArticle = () => {
       <Card className="border-2 border-green-300 bg-gradient-to-r from-green-50 to-blue-50">
         <CardHeader className="text-center">
           <CardTitle className="text-2xl text-green-800 flex items-center justify-center">
-            <Gift className="h-6 w-6 mr-2" />
             🎁 Recevez notre guide complet de la spiruline
           </CardTitle>
           <CardDescription className="text-lg">
@@ -1049,7 +1047,7 @@ const SpirulineCompositionArticle = () => {
           <div className="flex justify-center space-x-6 text-sm text-gray-600">
             <div className="flex items-center">
               <CheckCircle className="h-4 w-4 text-green-600 mr-1" />
-              <span>Livraison rapide 48h</span>
+              <span>Livraison rapide</span>
             </div>
             <div className="flex items-center">
               <CheckCircle className="h-4 w-4 text-green-600 mr-1" />

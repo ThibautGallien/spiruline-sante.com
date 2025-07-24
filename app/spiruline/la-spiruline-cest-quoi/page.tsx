@@ -89,7 +89,6 @@ const SpirulineArticle = () => {
       <Card className="bg-green-50 border-green-200">
         <CardHeader>
           <CardTitle className="flex items-center gap-2 text-green-800">
-            <Star className="h-5 w-5" />
             🌟 Ce que vous allez découvrir :
           </CardTitle>
         </CardHeader>
@@ -125,12 +124,14 @@ const SpirulineArticle = () => {
             </div>
           </div>
           <div className="mt-6 p-4 bg-white rounded-lg">
-            <Button className="w-full bg-green-600 hover:bg-green-700 text-lg py-3">
-              🛒 Découvrir A3 Spirulina Pills - 37€
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <a href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/">
+              <Button className="w-full bg-green-600 hover:bg-green-700 text-lg py-3">
+                🛒 Découvrir A3 Spirulina Pills - 37€
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
             <p className="text-sm text-gray-600 text-center mt-2">
-              ✅ 80 comprimés • 🚚 Livraison 48h • 💰 Qualité garantie
+              ✅ 80 comprimés • 🚚 Livraison rapide • 💰 Qualité garantie
             </p>
           </div>
         </CardContent>
@@ -473,13 +474,13 @@ const SpirulineArticle = () => {
                 </div>
               </div>
             </div>
-
-            <Button className="bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-4">
-              <ShoppingBag className="mr-2 h-5 w-5" />
-              Commander A3 Spirulina Pills - 37€
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-
+            <a href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/">
+              <Button className="bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-4">
+                <ShoppingBag className="mr-2 h-5 w-5" />
+                Commander A3 Spirulina Pills - 37€
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
             <p className="text-sm text-gray-600 mt-4">
               ✅ Livraison rapide • 💰 Paiement sécurisé • 📞 Support client
             </p>
@@ -581,7 +582,7 @@ const SpirulineArticle = () => {
         <div className="prose prose-lg max-w-none">
           <p className="text-lg text-gray-700 leading-relaxed">
             La spiruline n'est pas qu'une simple tendance santé : c'est un{" "}
-            <strong>aliment complet</strong>
+            <strong>aliment complet </strong>
             aux propriétés nutritionnelles exceptionnelles, consommé depuis des
             millénaires et validé par la science moderne.
           </p>
@@ -623,11 +624,13 @@ const SpirulineArticle = () => {
 
       {/* CTA Final */}
       <div className="text-center py-12">
-        <Button className="bg-green-600 hover:bg-green-700 text-white text-xl px-12 py-6">
-          <Leaf className="mr-3 h-6 w-6" />
-          Commencer avec A3 Spirulina Pills
-          <ArrowRight className="ml-3 h-6 w-6" />
-        </Button>
+        <a href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/">
+          <Button className="bg-green-600 hover:bg-green-700 text-white text-xl px-12 py-6">
+            <Leaf className="mr-3 h-6 w-6" />
+            Commencer avec A3 Spirulina Pills
+            <ArrowRight className="ml-3 h-6 w-6" />
+          </Button>
+        </a>
         <p className="text-gray-600 mt-4">
           Votre voyage vers une meilleure santé commence ici 🌱
         </p>

@@ -16,9 +16,7 @@ export function generateSEOMetadata({
   canonicalUrl,
 }: SEOConfig): Metadata {
   const baseUrl = "https://spiruline-sante.com";
-  const fullTitle = title.includes("Spirulina Health")
-    ? title
-    : `${title} | Spirulina Health`;
+  const fullTitle = title.includes("Spiruline Santé") ? title : `${title}`;
 
   return {
     title: fullTitle,
@@ -75,7 +73,7 @@ export function generateProductSchema(product: {
     category: "Complément Alimentaire",
     brand: {
       "@type": "Brand",
-      name: "Spirulina Health",
+      name: "Spiruline Santé",
     },
     offers: {
       "@type": "AggregateOffer",
@@ -112,7 +110,7 @@ export function generateArticleSchema(article: {
     },
     publisher: {
       "@type": "Organization",
-      name: "Spirulina Health",
+      name: "Spiruline-sante",
       logo: {
         "@type": "ImageObject",
         url: "https://spiruline-sante.com/images/logo.png",

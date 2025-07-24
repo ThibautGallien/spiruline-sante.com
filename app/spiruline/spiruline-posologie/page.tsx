@@ -18,7 +18,6 @@ import {
   Clock,
   Users,
   Target,
-  Shield,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -57,11 +56,11 @@ export default function SpirulnePosologiePage() {
     dateModified: "2025-01-15",
     author: {
       "@type": "Person",
-      name: "Dr. Sophie Leclerc",
+      name: "Thibaut",
     },
     publisher: {
       "@type": "Organization",
-      name: "Spirulina Health",
+      name: "Spiruline-sante",
       logo: {
         "@type": "ImageObject",
         url: "https://spiruline-sante.com/images/logo.png",
@@ -192,40 +191,54 @@ export default function SpirulnePosologiePage() {
           </Card>
 
           {/* CTA immédiat */}
-          <Card className="bg-gradient-to-r from-green-600 to-blue-600 text-white mb-8">
-            <CardContent className="text-center py-6">
-              <h3 className="text-xl font-bold mb-2">
-                🛒 A3 Spirulina Pills - Spiruline Premium
-              </h3>
-              <p className="text-lg mb-4">
-                37€ - 80 comprimés (20 jours de cure)
-              </p>
-              <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-4">
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4" />
-                  <span>Spiruline pure</span>
+          <Card className="bg-[#15803D] text-white mb-8">
+            <CardContent className="py-6">
+              <div className="flex flex-col md:flex-row items-center gap-6">
+                {/* Image à gauche */}
+                <div className="flex-shrink-0">
+                  <img
+                    src="/A3-Spirulina-Pills.webp"
+                    alt="A3 Spirulina Pills"
+                    className="w-38 h-38 md:w-40 md:h-40 object-cover rounded-lg"
+                  />
                 </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4" />
-                  <span>🚚 Livraison 48h</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-4 w-4" />
-                  <span>💰 Qualité garantie</span>
+
+                {/* Contenu à droite */}
+                <div className="flex-1 text-center md:text-left">
+                  <h3 className="text-xl font-bold mb-2">
+                    🛒 A3 Spirulina Pills - Spiruline Premium
+                  </h3>
+                  <p className="text-lg mb-4">
+                    37€ - 80 comprimés (20 jours de cure)
+                  </p>
+                  <div className="flex flex-col sm:flex-row justify-center md:justify-start items-center gap-4 mb-4">
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="h-4 w-4" />
+                      <span>Spiruline pure</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="h-4 w-4" />
+                      <span>🚚 Livraison rapide</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="h-4 w-4" />
+                      <span>💰 Qualité garantie</span>
+                    </div>
+                  </div>
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-yellow-500 text-black hover:bg-yellow-400 font-semibold"
+                  >
+                    <Link
+                      href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
+                      target="_blank"
+                    >
+                      Découvrir A3 Spirulina Pills
+                    </Link>
+                  </Button>
                 </div>
               </div>
-              <Button
-                asChild
-                size="lg"
-                className="bg-yellow-500 text-black hover:bg-yellow-400 font-semibold"
-              >
-                <Link
-                  href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
-                  target="_blank"
-                >
-                  Découvrir A3 Spirulina Pills
-                </Link>
-              </Button>
             </CardContent>
           </Card>
         </header>
@@ -759,7 +772,6 @@ export default function SpirulnePosologiePage() {
           <Card className="bg-red-50 border-red-200 mb-6">
             <CardHeader>
               <CardTitle className="text-red-800 flex items-center">
-                <Shield className="h-6 w-6 mr-2" />
                 🚫 Contre-indications absolues :
               </CardTitle>
             </CardHeader>
@@ -1049,24 +1061,55 @@ export default function SpirulnePosologiePage() {
           </Card>
 
           {/* CTA Final */}
-          <Card className="bg-gradient-to-r from-green-600 to-blue-600 text-white text-center">
-            <CardContent className="py-8">
-              <h3 className="text-2xl font-bold mb-4">
-                🛒 Commencer ma cure A3 Spirulina dès maintenant
-              </h3>
-              <p className="text-xl mb-6">37€ - 80 comprimés - Livraison 48h</p>
-              <Button
-                asChild
-                size="lg"
-                className="bg-yellow-500 text-black hover:bg-yellow-400 font-semibold text-lg px-8 py-4"
-              >
-                <Link
-                  href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
-                  target="_blank"
-                >
-                  Découvrir A3 Spirulina Pills
-                </Link>
-              </Button>
+          {/* CTA immédiat */}
+          <Card className="bg-[#15803D] text-white mb-8">
+            <CardContent className="py-6">
+              <div className="flex flex-col md:flex-row items-center gap-6">
+                {/* Image à gauche */}
+                <div className="flex-shrink-0">
+                  <img
+                    src="/A3-Spirulina-Pills.webp"
+                    alt="A3 Spirulina Pills"
+                    className="w-38 h-38 md:w-40 md:h-40 object-cover rounded-lg"
+                  />
+                </div>
+
+                {/* Contenu à droite */}
+                <div className="flex-1 text-center md:text-left">
+                  <h3 className="text-xl font-bold mb-2">
+                    🛒 A3 Spirulina Pills - Spiruline Premium
+                  </h3>
+                  <p className="text-lg mb-4">
+                    37€ - 80 comprimés (20 jours de cure)
+                  </p>
+                  <div className="flex flex-col sm:flex-row justify-center md:justify-start items-center gap-4 mb-4">
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="h-4 w-4" />
+                      <span>Spiruline pure</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="h-4 w-4" />
+                      <span>🚚 Livraison rapide</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <CheckCircle className="h-4 w-4" />
+                      <span>💰 Qualité garantie</span>
+                    </div>
+                  </div>
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-yellow-500 text-black hover:bg-yellow-400 font-semibold"
+                  >
+                    <Link
+                      href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
+                      target="_blank"
+                    >
+                      Découvrir A3 Spirulina Pills
+                    </Link>
+                  </Button>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </section>
