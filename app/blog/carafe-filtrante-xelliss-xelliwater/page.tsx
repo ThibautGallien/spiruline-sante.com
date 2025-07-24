@@ -82,14 +82,14 @@ export default function XellissCarafePage() {
 
   const testimonials = [
     {
-      name: "Nathalie",
-      text: "Je voulais remercier Nathalie car mon fils qui est Asperger donc spectre de l'autisme et TDA a eu quelques changements en 15 jours après avoir commencé à boire l'eau par la carafe Xelliss, ses résultats ont étonné mon fils dans sa capacité de retenir des définitions à retranscrire en contrôle en classe. Il sent une amélioration chez lui en concentration et plus posé nous allons commencer le traitement phycocyanine 🙏",
-      highlight: "Amélioration concentration",
+      name: "Denise",
+      text: "J’avais une tendinite depuis 4 ans, le bras en écharpe pendant des mois, et la kiné ne changeait rien. En 3 semaines avec l’eau, la phycocyanine et le Gold, j’ai retrouvé une quasi-totalité de mes capacités — une vraie libération.",
+      highlight: "Amélioration tendinite",
     },
     {
-      name: "Eva",
-      text: "Avant, je buvais l'eau du robinet sachant qu'elle n'était pas bonne ou alors je la filtrais avec la gourde Puritii de la marque Ariix. Un jour, un ami me parle de la carafe XelliWater. Je me suis intéressée de près à la qualité de l'eau en général et me suis empressée de l'acheter. En l'espace d'une semaine, j'ai senti les effets : plus aucune fatigue physique ni intellectuelle et le moral au top ! Je carbure à fond, motivée comme jamais.",
-      highlight: "Énergie retrouvée",
+      name: "Fazile",
+      text: "Atteint de spondylarthrite, j’ai commencé il y a 5 mois l’eau, la phycocyanine et le Gold de Xelliss. Aujourd’hui, j’ai retrouvé mobilité et confort de vie — un vrai changement au quotidien.",
+      highlight: "Mobilitée augmentée",
     },
   ];
 
@@ -147,7 +147,7 @@ export default function XellissCarafePage() {
               className="bg-blue-600 hover:bg-blue-700 text-white"
             >
               <Link
-                href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop"
+                href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brand-shop/xelliss-premier-kits/910685/"
                 target="_blank"
               >
                 Commandez votre carafe ici
@@ -169,7 +169,7 @@ export default function XellissCarafePage() {
             <div className="md:col-span-1">
               <div className="relative h-64 md:h-full bg-gradient-to-br from-blue-50 to-teal-50 rounded-lg flex items-center justify-center">
                 <Image
-                  src="/images/xelliwater-carafe-placeholder.jpg"
+                  src="/XelliWater-Xelliss.webp"
                   alt="Carafe filtrante Xelliss XelliWater"
                   width={300}
                   height={300}
@@ -375,10 +375,10 @@ export default function XellissCarafePage() {
                     Pack complet
                   </h4>
                   <div className="text-2xl font-bold text-blue-600 mb-1">
-                    74€ TTC
+                    72€ TTC
                   </div>
                   <p className="text-blue-700 text-sm">
-                    Carafe + filtre XelliAlka inclus
+                    Carafe + 2 filtres XelliAlka inclus
                   </p>
                 </div>
                 <div className="bg-white p-4 rounded-lg">
@@ -386,7 +386,7 @@ export default function XellissCarafePage() {
                     Abonnement mensuel
                   </h4>
                   <div className="text-2xl font-bold text-blue-600 mb-1">
-                    52€ TTC/mois
+                    18€ TTC/mois
                   </div>
                   <p className="text-blue-700 text-sm">
                     Nouveau filtre chaque mois
@@ -446,7 +446,7 @@ export default function XellissCarafePage() {
               className="bg-purple-600 hover:bg-purple-700 text-white"
             >
               <Link
-                href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop"
+                href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brand-shop/xelliss-premier-kits/910685/"
                 target="_blank"
               >
                 Commander maintenant
@@ -485,7 +485,7 @@ export default function XellissCarafePage() {
               className="bg-yellow-500 text-black hover:bg-yellow-400 font-semibold text-lg px-8 py-4"
             >
               <Link
-                href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop"
+                href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brand-shop/xelliss-premier-kits/910685/"
                 target="_blank"
               >
                 🛒 Commander la carafe Xelliss

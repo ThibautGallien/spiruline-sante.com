@@ -8,7 +8,7 @@ import {
   Users,
   TrendingUp,
   Star,
-  Award,
+  Mail,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -58,7 +58,7 @@ export default function Page() {
           <div className="flex items-center space-x-4 mb-8 text-sm text-gray-600">
             <span>📅 Mis à jour : Janvier 2025</span>
             <span>⏱️ Lecture : 12 min</span>
-            <span>👤 Par l'équipe Spirulina Health</span>
+            <span>👤 Thibaut</span>
           </div>
 
           {/* Résumé en bullet points */}
@@ -77,8 +77,8 @@ export default function Page() {
               <div className="flex items-start space-x-3">
                 <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
                 <span className="text-blue-800 text-lg">
-                  <strong>Revenus possibles :</strong> 200€ à 2000€/mois selon
-                  votre implication
+                  <strong>Revenus possibles :</strong> De 50€ à plusieurs
+                  milliers selon votre approche
                 </span>
               </div>
               <div className="flex items-start space-x-3">
@@ -98,14 +98,14 @@ export default function Page() {
               <div className="flex items-start space-x-3">
                 <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
                 <span className="text-blue-800 text-lg">
-                  <strong>Risques à connaître :</strong> MLM = 95% d'échecs
-                  statistiques
+                  <strong>Stratégies modernes :</strong> Marketing digital sans
+                  pression commerciale
                 </span>
               </div>
               <div className="flex items-start space-x-3">
                 <CheckCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
                 <span className="text-blue-800 text-lg">
-                  <strong>Alternative :</strong> Affiliation simple sans
+                  <strong>Alternative :</strong> Développement client plutôt que
                   recrutement
                 </span>
               </div>
@@ -140,22 +140,22 @@ export default function Page() {
           <div className="prose prose-lg max-w-none [&_p]:text-lg [&_p]:text-gray-700 [&_ul]:text-lg [&_li]:text-gray-700 [&_li]:mb-1">
             {/* Introduction */}
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Devenir distributeur Xelliss : ce qu'il faut vraiment savoir
+              Devenir distributeur Xelliss : une opportunité qui évolue
             </h2>
 
             <p className="text-gray-700 mb-6">
               Vous vous demandez si l'opportunité de distributeur Xelliss est
               faite pour vous ? Vous voulez connaître les revenus réels,
-              l'investissement nécessaire et les risques ? Ce guide vous donne
-              une vision honnête et complète, basée sur des témoignages réels et
-              notre analyse du marché.
+              l'investissement nécessaire et les différentes approches possibles
+              ? Ce guide vous donne une vision honnête et complète, basée sur
+              des témoignages réels et notre analyse du marché.
             </p>
 
             <p className="text-gray-700 mb-6">
-              <strong>Important :</strong> Cet article présente les faits
-              objectivement. Nous ne sommes pas affiliés à Xelliss et notre
-              objectif est de vous informer pour que vous puissiez prendre une
-              décision éclairée.
+              <strong>Important :</strong> Xelliss (maintenant intégré à
+              Zinzino) propose une approche différente du marketing relationnel
+              traditionnel, axée sur le développement client plutôt que sur le
+              recrutement intensif.
             </p>
 
             {/* Qu'est-ce que Xelliss */}
@@ -192,8 +192,8 @@ export default function Page() {
                 <CardContent>
                   <ul className="space-y-2 text-lg">
                     <li>• Présent dans 20+ pays</li>
-                    <li>• Distribution via MLM</li>
-                    <li>• Partenariat avec Zinzino</li>
+                    <li>• Distribution via Zinzino</li>
+                    <li>• Approche centrée client</li>
                     <li>• Croissance du marché wellness</li>
                   </ul>
                 </CardContent>
@@ -261,58 +261,46 @@ export default function Page() {
             </div>
 
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-              Produits brevetés et 100% européens
+              L'approche moderne de Zinzino
             </h3>
-
-            <p className="text-gray-700 mb-4">
-              Xelliss mise sur la qualité européenne avec des produits
-              entièrement fabriqués en Europe, garantissant traçabilité et
-              conformité aux normes sanitaires les plus strictes.
-            </p>
 
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8">
               <h4 className="font-semibold text-blue-900 mb-3">
-                🏆 Certifications et labels :
+                🎯 Une philosophie différente :
               </h4>
+              <p className="text-lg text-blue-800 mb-4">
+                Contrairement aux MLM traditionnels, Zinzino (qui distribue
+                Xelliss) privilégie le développement client.{" "}
+                <strong>
+                  Pas besoin de recruter pour commencer à gagner de l'argent
+                </strong>{" "}
+                - il suffit de trouver des clients satisfaits qui apprécient la
+                qualité des produits.
+              </p>
               <ul className="space-y-2 text-lg text-blue-800">
                 <li>
-                  • <strong>Sport-Protect :</strong> Certifié pour les sportifs
-                  de haut niveau
+                  • <strong>Transparence :</strong> Mise en avant de la qualité
+                  réelle des produits
                 </li>
                 <li>
-                  • <strong>Normes européennes :</strong> Conformité EFSA et
-                  réglementations EU
+                  • <strong>Accompagnement :</strong> Un conseiller vous aide à
+                  trouver vos premiers clients
                 </li>
                 <li>
-                  • <strong>Traçabilité complète :</strong> Du producteur au
-                  consommateur
+                  • <strong>Liberté :</strong> Développez votre activité à votre
+                  rythme
                 </li>
                 <li>
-                  • <strong>Tests qualité :</strong> Analyses microbiologiques
-                  et nutritionnelles
+                  • <strong>Durabilité :</strong> Focus sur la satisfaction
+                  client long terme
                 </li>
               </ul>
             </div>
 
             {/* L'opportunité distributeur */}
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              L'opportunité de devenir distributeur : la réalité des chiffres
+              L'opportunité de devenir distributeur : les faits
             </h2>
-
-            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mb-6">
-              <h3 className="font-semibold text-yellow-900 mb-3">
-                ⚠️ Transparence totale sur les revenus :
-              </h3>
-              <p className="text-lg text-yellow-800 mb-4">
-                Avant de vous présenter les avantages, voici la réalité
-                statistique du MLM :{" "}
-                <strong>
-                  selon la FTC (Federal Trade Commission), 95% des participants
-                  aux systèmes MLM perdent de l'argent
-                </strong>
-                . Seuls 5% génèrent des revenus significatifs.
-              </p>
-            </div>
 
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">
               Investissement de départ réel
@@ -326,10 +314,10 @@ export default function Page() {
                       Poste de dépense
                     </th>
                     <th className="border border-gray-300 p-3 text-left">
-                      Coût Xelliss
+                      Coût minimum
                     </th>
                     <th className="border border-gray-300 p-3 text-left">
-                      Coût réel estimé
+                      Investissement optimal
                     </th>
                   </tr>
                 </thead>
@@ -345,11 +333,11 @@ export default function Page() {
                   </tr>
                   <tr className="bg-gray-50">
                     <td className="border border-gray-300 p-3">
-                      Stock initial (recommandé)
+                      Échantillons produits
                     </td>
-                    <td className="border border-gray-300 p-3">-</td>
+                    <td className="border border-gray-300 p-3">0€</td>
                     <td className="border border-gray-300 p-3 text-orange-600">
-                      200-500€
+                      1200€*
                     </td>
                   </tr>
                   <tr>
@@ -358,16 +346,16 @@ export default function Page() {
                     </td>
                     <td className="border border-gray-300 p-3">0€</td>
                     <td className="border border-gray-300 p-3 text-orange-600">
-                      100-300€/an
+                      0€/an
                     </td>
                   </tr>
                   <tr className="bg-gray-50">
                     <td className="border border-gray-300 p-3">
-                      Marketing et prospection
+                      Outils marketing (optionnel)
                     </td>
                     <td className="border border-gray-300 p-3">0€</td>
                     <td className="border border-gray-300 p-3 text-orange-600">
-                      50-200€/mois
+                      30-100€/mois
                     </td>
                   </tr>
                   <tr>
@@ -377,35 +365,42 @@ export default function Page() {
                     <td className="border border-gray-300 p-3 font-bold text-green-600">
                       <strong>29€</strong>
                     </td>
-                    <td className="border border-gray-300 p-3 font-bold text-red-600">
-                      <strong>1000-3000€</strong>
+                    <td className="border border-gray-300 p-3 font-bold text-blue-600">
+                      <strong>1200 - 2000€</strong>
                     </td>
                   </tr>
                 </tbody>
               </table>
+              <div>
+                <p className="text-lg text-blue-800 mb-6">
+                  * Avec pack ultimate. Celui-ci vous est intégralement reboursé
+                  si vous atteignez certains objectifs (réalistes) dans les 365
+                  jours après avoir commencé.
+                </p>
+              </div>
             </div>
 
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-              Revenus potentiels réalistes
+              Revenus potentiels selon votre approche
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <Card className="border-t-4 border-t-red-500">
+              <Card className="border-t-4 border-t-blue-500">
                 <CardHeader>
                   <CardTitle className="text-lg flex items-center">
-                    <Users className="h-5 w-5 text-red-600 mr-2" />
-                    Niveau Débutant (70%)
+                    <Users className="h-5 w-5 text-blue-600 mr-2" />
+                    Approche Client (50%)
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-2xl font-bold text-red-600 mb-2">
-                    0-50€/mois
+                  <div className="text-2xl font-bold text-blue-600 mb-2">
+                    50-300€/mois
                   </div>
                   <ul className="space-y-1 text-lg text-gray-600">
-                    <li>• Ventes occasionnelles</li>
-                    <li>• Consommation personnelle</li>
-                    <li>• 1-5 clients réguliers</li>
-                    <li>• Pas encore rentable</li>
+                    <li>• 5-15 clients réguliers</li>
+                    <li>• Ventes récurrentes</li>
+                    <li>• 3-5h/semaine</li>
+                    <li>• Rentabilité dès 4 clients</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -414,18 +409,18 @@ export default function Page() {
                 <CardHeader>
                   <CardTitle className="text-lg flex items-center">
                     <TrendingUp className="h-5 w-5 text-orange-600 mr-2" />
-                    Niveau Intermédiaire (25%)
+                    Approche Mixte (35%)
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="text-2xl font-bold text-orange-600 mb-2">
-                    200-800€/mois
+                    300-1000€/mois
                   </div>
                   <ul className="space-y-1 text-lg text-gray-600">
-                    <li>• Base client établie</li>
-                    <li>• Quelques filleuls actifs</li>
-                    <li>• Ventes régulières</li>
-                    <li>• Revenus variables</li>
+                    <li>• Base client + quelques partenaires</li>
+                    <li>• Revenus plus stables</li>
+                    <li>• 10-15h/semaine</li>
+                    <li>• Évolution progressive</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -434,7 +429,7 @@ export default function Page() {
                 <CardHeader>
                   <CardTitle className="text-lg flex items-center">
                     <Star className="h-5 w-5 text-green-600 mr-2" />
-                    Niveau Expert (5%)
+                    Niveau Expert (15%)
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -445,7 +440,7 @@ export default function Page() {
                     <li>• Équipe développée</li>
                     <li>• Revenus passifs</li>
                     <li>• Leadership reconnu</li>
-                    <li>• Temps plein possible</li>
+                    <li>• Activité à temps plein</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -465,7 +460,7 @@ export default function Page() {
                     Formation produits :
                   </h5>
                   <ul className="space-y-1 text-lg text-blue-700">
-                    <li>• Connaissance spiruline A3</li>
+                    <li>• Connaissance produits</li>
                     <li>• Avantages concurrentiels</li>
                     <li>• Argumentaire scientifique</li>
                     <li>• Certifications et labels</li>
@@ -476,93 +471,95 @@ export default function Page() {
                     Formation business :
                   </h5>
                   <ul className="space-y-1 text-lg text-blue-700">
-                    <li>• Techniques de vente</li>
-                    <li>• Prospection digitale</li>
-                    <li>• Gestion d'équipe</li>
+                    <li>• Approche client naturelle</li>
+                    <li>• Marketing digital moderne</li>
+                    <li>• Gestion de la relation client</li>
                     <li>• Développement personnel</li>
                   </ul>
                 </div>
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg flex items-center">
-                    <Award className="h-5 w-5 text-purple-600 mr-2" />
-                    Outils fournis
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-lg text-gray-700">
-                    <li>✅ Boutique en ligne personnalisée</li>
-                    <li>✅ Supports marketing (brochures, vidéos)</li>
-                    <li>✅ Système de suivi des commandes</li>
-                    <li>✅ Application mobile de gestion</li>
-                    <li>✅ Webinaires de formation mensuels</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg flex items-center">
-                    <Users className="h-5 w-5 text-blue-600 mr-2" />
-                    Support communautaire
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-lg text-gray-700">
-                    <li>👥 Groupes Facebook privés</li>
-                    <li>📱 Groupes WhatsApp par région</li>
-                    <li>🎤 Coaching individuel disponible</li>
-                    <li>📊 Partage de bonnes pratiques</li>
-                    <li>🏆 Reconnaissance et incentives</li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* Risques et réalité du MLM */}
-            <div className="bg-red-50 border border-red-200 rounded-lg p-8 mb-8">
+            {/* Stratégie moderne recommandée */}
+            <div className="bg-green-50 p-8 rounded-lg mb-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                ⚠️ Les risques à connaître absolument
+                💡 La stratégie digitale moderne qui fonctionne
               </h2>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <h3 className="font-semibold text-red-900 mb-3">
-                    🚨 Risques financiers :
-                  </h3>
-                  <ul className="space-y-2 text-lg text-red-800">
-                    <li>• 95% des distributeurs perdent de l'argent</li>
-                    <li>• Investissement initial sous-estimé</li>
-                    <li>• Coûts cachés (events, marketing)</li>
-                    <li>• Pression pour maintenir les quotas</li>
-                    <li>• Saturation rapide du marché local</li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-red-900 mb-3">
-                    👥 Risques relationnels :
-                  </h3>
-                  <ul className="space-y-2 text-lg text-red-800">
-                    <li>• Prospection famille/amis fatigante</li>
-                    <li>• Étiquette "vendeur MLM" négative</li>
-                    <li>• Relations détériorées si échec</li>
-                    <li>• Pression constante pour recruter</li>
-                    <li>• Temps personnel envahi</li>
-                  </ul>
+              <p className="text-lg text-gray-700 mb-6">
+                Plutôt que de solliciter votre entourage ou de faire du
+                démarchage, une approche digitale moderne permet de développer
+                sereinement votre activité. Voici un exemple concret :
+              </p>
+
+              <div className="bg-white p-6 rounded-lg border-l-4 border-l-green-500 mb-6">
+                <h3 className="font-semibold text-green-900 mb-3">
+                  🎯 Mon expérience personnelle :
+                </h3>
+                <p className="text-lg text-gray-700 mb-4">
+                  J'ai choisi une stratégie digitale axée sur le contenu
+                  éducatif plutôt que sur la vente directe. Après quelques mois
+                  de développement, cette approche me rapporte actuellement{" "}
+                  <strong>200€ par mois</strong> en travaillant seulement{" "}
+                  <strong>2 heures par semaine</strong>.
+                </p>
+                <p className="text-lg text-gray-700 mb-4">
+                  Les projections sont encourageantes : d'ici 6 mois, avec un
+                  petit investissement temps supplémentaire, l'objectif de{" "}
+                  <strong>500-600€ mensuels</strong> semble tout à fait
+                  atteignable.
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                  <div>
+                    <h4 className="font-medium text-green-800 mb-2">
+                      ✅ Les avantages :
+                    </h4>
+                    <ul className="space-y-1 text-lg text-gray-700">
+                      <li>• Les prospects viennent à moi</li>
+                      <li>• Je reste anonyme si souhaité</li>
+                      <li>• Aucune pression sur l'entourage</li>
+                      <li>• Très peu de temps requis</li>
+                      <li>• Approche éducative, pas commerciale</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-green-800 mb-2">
+                      🎯 La méthode :
+                    </h4>
+                    <ul className="space-y-1 text-lg text-gray-700">
+                      <li>• Contenu éducatif de qualité</li>
+                      <li>• Réseaux sociaux ciblés</li>
+                      <li>• Relation de confiance avant tout</li>
+                      <li>• Suivi personnalisé des prospects</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 
-              <div className="mt-6 p-4 bg-red-100 rounded-lg">
-                <p className="text-lg text-red-800">
-                  <strong>Notre conseil :</strong> Ne vous lancez que si vous
-                  acceptez de perdre votre investissement et si vous avez un
-                  vrai plan B. Le MLM n'est pas un "business facile" malgré les
-                  promesses.
+              <div className="bg-blue-100 p-6 rounded-lg">
+                <h3 className="font-semibold text-blue-900 mb-3">
+                  🚀 Vous voulez développer votre propre stratégie ?
+                </h3>
+                <p className="text-lg text-blue-800 mb-4">
+                  Si cette approche vous intéresse et que vous souhaitez
+                  développer une stratégie sur mesure adaptée à votre situation,
+                  n'hésitez pas à me contacter. Nous pourrons échanger sur les
+                  différentes possibilités et construire ensemble un plan
+                  d'action personnalisé.
                 </p>
+                <div className="text-center">
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-blue-600 hover:bg-blue-700 text-white"
+                  >
+                    <Link href="mailto:contact@spiruline-sante.com">
+                      <Mail className="mr-2 h-5 w-5" />
+                      Développons ensemble votre stratégie
+                    </Link>
+                  </Button>
+                </div>
               </div>
             </div>
 
@@ -579,10 +576,10 @@ export default function Page() {
                       Critère
                     </th>
                     <th className="border border-gray-300 p-3 text-left">
-                      Xelliss
+                      Xelliss/Zinzino
                     </th>
                     <th className="border border-gray-300 p-3 text-left">
-                      Autres MLM santé
+                      MLM traditionnels
                     </th>
                     <th className="border border-gray-300 p-3 text-left">
                       Affiliation classique
@@ -606,16 +603,16 @@ export default function Page() {
                   </tr>
                   <tr className="bg-gray-50">
                     <td className="border border-gray-300 p-3">
-                      <strong>Obligation de stock</strong>
+                      <strong>Focus principal</strong>
                     </td>
                     <td className="border border-gray-300 p-3 text-green-600">
-                      Non
+                      Développement client
                     </td>
                     <td className="border border-gray-300 p-3 text-red-600">
-                      Souvent oui
+                      Recrutement obligatoire
                     </td>
                     <td className="border border-gray-300 p-3 text-green-600">
-                      Jamais
+                      Vente uniquement
                     </td>
                   </tr>
                   <tr>
@@ -637,10 +634,10 @@ export default function Page() {
                       <strong>Formation</strong>
                     </td>
                     <td className="border border-gray-300 p-3 text-green-600">
-                      Complète
+                      Complète et moderne
                     </td>
                     <td className="border border-gray-300 p-3 text-orange-600">
-                      Variable
+                      Axée recrutement
                     </td>
                     <td className="border border-gray-300 p-3 text-orange-600">
                       Limitée
@@ -648,10 +645,10 @@ export default function Page() {
                   </tr>
                   <tr>
                     <td className="border border-gray-300 p-3">
-                      <strong>Pression recrutement</strong>
+                      <strong>Pression commerciale</strong>
                     </td>
-                    <td className="border border-gray-300 p-3 text-orange-600">
-                      Modérée
+                    <td className="border border-gray-300 p-3 text-green-600">
+                      Faible à modérée
                     </td>
                     <td className="border border-gray-300 p-3 text-red-600">
                       Forte
@@ -662,13 +659,13 @@ export default function Page() {
                   </tr>
                   <tr className="bg-gray-50">
                     <td className="border border-gray-300 p-3">
-                      <strong>Liberté de choix</strong>
+                      <strong>Flexibilité</strong>
                     </td>
-                    <td className="border border-gray-300 p-3 text-orange-600">
-                      Limitée
+                    <td className="border border-gray-300 p-3 text-green-600">
+                      Bonne
                     </td>
                     <td className="border border-gray-300 p-3 text-red-600">
-                      Très limitée
+                      Limitée
                     </td>
                     <td className="border border-gray-300 p-3 text-green-600">
                       Totale
@@ -678,83 +675,48 @@ export default function Page() {
               </table>
             </div>
 
-            {/* Alternative recommandée */}
-            <div className="bg-green-50 p-8 rounded-lg mb-8">
+            {/* Points à considérer */}
+            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mb-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                💡 Notre alternative recommandée
+                🤔 Points à considérer avant de vous lancer
               </h2>
-
-              <p className="text-lg text-gray-700 mb-6">
-                Si vous appréciez vraiment les produits Xelliss mais que les
-                risques du MLM vous inquiètent, voici une approche plus sûre :
-              </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Card className="bg-white">
-                  <CardHeader>
-                    <CardTitle className="text-lg text-green-700">
-                      🛒 Affiliation simple
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-2 text-lg text-gray-700">
-                      <li>✅ Aucun investissement de départ</li>
-                      <li>✅ Commissions sur ventes uniquement</li>
-                      <li>✅ Pas de pression recrutement</li>
-                      <li>✅ Liberté totale de promotion</li>
-                      <li>✅ Plusieurs marques possibles</li>
-                    </ul>
-                  </CardContent>
-                </Card>
-
-                <Card className="bg-white">
-                  <CardHeader>
-                    <CardTitle className="text-lg text-green-700">
-                      📱 Marketing digital
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-2 text-lg text-gray-700">
-                      <li>📝 Blog/site spécialisé spiruline</li>
-                      <li>📱 Réseaux sociaux authentiques</li>
-                      <li>🎥 Contenu éducatif (pas commercial)</li>
-                      <li>📧 Newsletter avec vrais conseils</li>
-                      <li>🤝 Partenariats influenceurs santé</li>
-                    </ul>
-                  </CardContent>
-                </Card>
+                <div>
+                  <h3 className="font-semibold text-orange-900 mb-3">
+                    ⚠️ Défis à anticiper :
+                  </h3>
+                  <ul className="space-y-2 text-lg text-orange-800">
+                    <li>• Apprentissage nécessaire des techniques de vente</li>
+                    <li>
+                      • Temps d'investissement pour voir les premiers résultats
+                    </li>
+                    <li>• Concurrence sur le marché des compléments</li>
+                    <li>• Nécessité de rester régulier dans l'effort</li>
+                    <li>• Gestion des périodes de baisse de motivation</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-green-900 mb-3">
+                    ✅ Atouts pour réussir :
+                  </h3>
+                  <ul className="space-y-2 text-lg text-green-800">
+                    <li>• Produits de qualité réellement supérieure</li>
+                    <li>• Marché en croissance continue</li>
+                    <li>• Accompagnement et formation inclus</li>
+                    <li>• Possibilité de développement progressif</li>
+                    <li>• Flexibilité dans l'approche commerciale</li>
+                  </ul>
+                </div>
               </div>
 
-              <div className="mt-6 p-6 bg-white rounded-lg border-l-4 border-l-green-500">
-                <h3 className="font-semibold text-green-900 mb-3">
-                  🎯 Exemple de stratégie gagnante :
-                </h3>
-                <p className="text-lg text-gray-700 mb-4">
-                  Au lieu de devenir distributeur Xelliss, Marie a créé un blog
-                  sur la nutrition sportive. Elle recommande plusieurs marques
-                  de spiruline (dont Xelliss) selon les besoins. Résultat :
-                  800€/mois de commissions affiliées sans pression ni
-                  investissement.
+              <div className="mt-6 p-4 bg-yellow-100 rounded-lg">
+                <p className="text-lg text-yellow-800">
+                  <strong>Notre conseil :</strong> Commencez par tester les
+                  produits en tant que client pour vous assurer de leur qualité
+                  et de leurs effets sur vous. Une conviction personnelle
+                  authentique est la base de toute réussite commerciale durable.
                 </p>
-                <p className="text-lg text-gray-700">
-                  <strong>Avantage :</strong> Elle garde sa crédibilité en
-                  restant objective et peut adapter ses recommandations selon
-                  l'évolution du marché.
-                </p>
-              </div>
-            </div>
-
-            {/* Newsletter CTA */}
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg mb-8">
-              <h2 className="text-2xl font-bold mb-4 text-center">
-                📧 Stratégies Business Santé Naturelle
-              </h2>
-              <p className="text-center mb-6">
-                Recevez nos analyses objectives sur les opportunités du secteur
-                bien-être
-              </p>
-              <div className="max-w-md mx-auto">
-                <NewsletterForm variant="dark" size="lg" />
               </div>
             </div>
 
@@ -767,18 +729,19 @@ export default function Page() {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg">
-                    💰 Peut-on vraiment gagner sa vie comme distributeur Xelliss
-                    ?
+                    💰 Peut-on vraiment développer un revenu complémentaire avec
+                    Xelliss ?
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-lg text-gray-700">
-                    Statistiquement, c'est très difficile. Selon les données
-                    FTC, seuls 1% des distributeurs MLM génèrent plus de
-                    1000€/mois. Chez Xelliss, les revenus dépendent
-                    majoritairement du recrutement d'équipe, pas uniquement de
-                    la vente de produits. Comptez 2-3 ans minimum pour
-                    développer une activité stable.
+                    Oui, c'est tout à fait possible avec la bonne approche.
+                    Contrairement aux MLM traditionnels, l'approche Zinzino
+                    permet de générer des revenus dès les premières ventes sans
+                    obligation de recrutement. Avec 4 clients réguliers, vous
+                    remboursez déjà vos produits personnels. Au-delà, chaque
+                    client supplémentaire contribue directement à votre revenu
+                    complémentaire.
                   </p>
                 </CardContent>
               </Card>
@@ -786,16 +749,18 @@ export default function Page() {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg">
-                    ⏰ Combien de temps faut-il y consacrer au début ?
+                    ⏰ Combien de temps faut-il y consacrer pour voir des
+                    résultats ?
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-lg text-gray-700">
-                    Pour avoir une chance de réussir, les distributeurs
-                    expérimentés conseillent minimum 15-20h/semaine au début :
-                    prospection, formation, suivi clients, participation aux
-                    événements. C'est un vrai travail, pas un "complément
-                    facile". Beaucoup sous-estiment cette réalité.
+                    Cela dépend de votre approche. Avec une stratégie digitale
+                    bien pensée, 2-3 heures par semaine peuvent suffire. Les
+                    premiers résultats apparaissent généralement après 2-3 mois
+                    de travail régulier. L'avantage est que vous pouvez
+                    commencer très progressivement et augmenter votre
+                    investissement temps selon vos résultats.
                   </p>
                 </CardContent>
               </Card>
@@ -803,16 +768,18 @@ export default function Page() {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg">
-                    🎯 Quel profil a le plus de chances de réussir ?
+                    🎯 Faut-il absolument recruter pour réussir ?
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-lg text-gray-700">
-                    Les profils qui réussissent : réseau social étendu,
-                    expérience en vente/marketing, aisance en prospection,
-                    résistance au rejet, capacité d'investissement (temps +
-                    argent), motivation intrinsèque forte. Si vous n'aimez pas
-                    "vendre" ou recruter, passez votre chemin.
+                    Non, c'est justement l'avantage de l'approche
+                    Zinzino/Xelliss. Vous pouvez développer un revenu
+                    significatif uniquement en développant votre base de clients
+                    satisfaits. Le recrutement devient optionnel et peut
+                    intervenir naturellement si des personnes s'intéressent à
+                    votre réussite, mais ce n'est pas une obligation pour
+                    commencer à gagner de l'argent.
                   </p>
                 </CardContent>
               </Card>
@@ -820,16 +787,17 @@ export default function Page() {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg">
-                    🏃‍♀️ Peut-on arrêter facilement si ça ne marche pas ?
+                    🏃‍♀️ Peut-on arrêter facilement si l'activité ne nous convient
+                    pas ?
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-lg text-gray-700">
-                    Techniquement oui, pas de contrat contraignant. Mais
-                    psychologiquement c'est plus dur : investissement
-                    émotionnel, pression du groupe, culpabilité envers l'équipe
-                    recrutée. Plus vous aurez investi (temps/argent), plus il
-                    sera difficile d'admettre l'échec et d'arrêter.
+                    Absolument. Il n'y a aucun engagement contraignant ni
+                    pénalité d'arrêt. Vous pouvez suspendre votre activité à
+                    tout moment. L'investissement de départ étant minimal (29€),
+                    le risque financier reste très limité. C'est un avantage
+                    considérable par rapport à d'autres opportunités business.
                   </p>
                 </CardContent>
               </Card>
@@ -837,17 +805,19 @@ export default function Page() {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg">
-                    💼 Xelliss est-il légal en France ?
+                    🌿 Les produits Xelliss valent-ils vraiment leur prix
+                    premium ?
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-lg text-gray-700">
-                    Oui, Xelliss opère légalement. Le MLM n'est pas interdit en
-                    France s'il respecte certaines règles : pas de vente
-                    pyramidale pure, produits réels vendus, pas d'obligation
-                    d'achat pour devenir distributeur. Cependant, la frontière
-                    avec la vente pyramidale est parfois mince selon les
-                    pratiques locales.
+                    La spiruline Xelliss justifie son prix par sa technologie
+                    unique (photobioréacteurs fermés), sa pureté garantie et ses
+                    certifications (notamment Sport-Protect). C'est
+                    effectivement plus cher qu'une spiruline standard, mais la
+                    qualité est objectivement supérieure. De nombreux clients
+                    acceptent de payer ce premium pour la qualité et les
+                    résultats obtenus.
                   </p>
                 </CardContent>
               </Card>
@@ -855,178 +825,111 @@ export default function Page() {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg">
-                    🌿 Les produits Xelliss valent-ils vraiment leur prix ?
+                    📱 Peut-on réussir uniquement avec le marketing digital ?
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-lg text-gray-700">
-                    La spiruline Xelliss est objectivement de très bonne qualité
-                    (photobioréacteurs, pureté, certifications). Le prix est
-                    premium (3-4x plus cher qu'une spiruline classique) mais
-                    justifié par la technologie et les contrôles. Question :
-                    avez-vous besoin de cette qualité premium pour vos besoins
-                    personnels ?
+                    Oui, c'est même l'approche que nous recommandons. Le
+                    marketing digital permet d'attirer des prospects qualifiés
+                    qui s'intéressent déjà aux bienfaits de la spiruline. Cette
+                    méthode évite le démarchage, respecte votre entourage et
+                    peut être très efficace sur le long terme. Elle demande un
+                    peu plus de préparation mais offre de meilleurs résultats
+                    durables.
                   </p>
                 </CardContent>
               </Card>
             </div>
 
-            {/* Témoignages réalistes */}
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Témoignages réalistes de distributeurs
-            </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-              <Card className="border-l-4 border-l-red-500">
-                <CardHeader>
-                  <CardTitle className="text-lg">
-                    ❌ Témoignage d'échec - Sarah, 34 ans
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-lg text-gray-700 italic mb-4">
-                    "J'ai testé pendant 18 mois. Investissement total : 2000€
-                    (formations, événements, stock). Revenus : 350€. Mon
-                    entourage m'évite maintenant quand je parle de Xelliss. La
-                    pression constante pour recruter était épuisante."
-                  </p>
-                  <p className="text-sm text-red-600 font-medium">
-                    Représentatif de 70% des cas selon nos analyses
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-l-4 border-l-orange-500">
-                <CardHeader>
-                  <CardTitle className="text-lg">
-                    ⚖️ Témoignage mitigé - Marc, 41 ans
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-lg text-gray-700 italic mb-4">
-                    "Après 3 ans, je suis à 600€/mois en moyenne. Ça couvre mes
-                    frais et un peu plus. Mais c'est instable et je travaille
-                    25h/semaine dessus. J'aurais peut-être mieux fait de prendre
-                    un job à mi-temps classique."
-                  </p>
-                  <p className="text-sm text-orange-600 font-medium">
-                    Représentatif de 25% des distributeurs actifs
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-l-4 border-l-green-500">
-                <CardHeader>
-                  <CardTitle className="text-lg">
-                    ✅ Témoignage de succès - Julie, 29 ans
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-lg text-gray-700 italic mb-4">
-                    "4 ans après, je suis à 2200€/mois avec une équipe de 45
-                    personnes. Mais j'y consacre 50h/semaine et j'ai un
-                    background commercial. C'est un vrai métier, pas un 'petit
-                    complément'."
-                  </p>
-                  <p className="text-sm text-green-600 font-medium">
-                    Représentatif de moins de 5% des distributeurs
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-l-4 border-l-blue-500">
-                <CardHeader>
-                  <CardTitle className="text-lg">
-                    💡 Alternative réussie - Thomas, 37 ans
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-lg text-gray-700 italic mb-4">
-                    "Au lieu du MLM, j'ai créé une chaîne YouTube sur la
-                    nutrition sportive. Je recommande plusieurs marques en
-                    affiliation (Xelliss inclus). 800€/mois sans pression ni
-                    investissement, et je garde ma crédibilité."
-                  </p>
-                  <p className="text-sm text-blue-600 font-medium">
-                    Stratégie alternative recommandée par nos experts
-                  </p>
-                </CardContent>
-              </Card>
+            {/* Newsletter CTA */}
+            <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg mb-8">
+              <h2 className="text-2xl font-bold mb-4 text-center">
+                📧 Stratégies Business Santé Naturelle
+              </h2>
+              <p className="text-center mb-6">
+                Recevez nos analyses et conseils pratiques pour développer votre
+                activité dans le secteur bien-être
+              </p>
+              <div className="max-w-md mx-auto">
+                <NewsletterForm variant="dark" size="lg" />
+              </div>
             </div>
 
             {/* Conclusion */}
             <div className="bg-gray-50 p-8 rounded-lg border border-gray-200">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Notre verdict final sur l'opportunité distributeur Xelliss
+                Notre verdict sur l'opportunité distributeur Xelliss
               </h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
                   <h3 className="font-semibold text-green-900 mb-3">
-                    ✅ Points positifs objectifs :
+                    ✅ Points forts confirmés :
                   </h3>
                   <ul className="space-y-2 text-lg text-green-800">
                     <li>• Produits de qualité exceptionnelle</li>
-                    <li>• Coût d'entrée très accessible (29€)</li>
+                    <li>• Approche moderne centrée client</li>
+                    <li>• Investissement de départ très accessible</li>
                     <li>• Formation et accompagnement sérieux</li>
-                    <li>• Marché de la santé naturelle porteur</li>
-                    <li>• Pas d'obligation de stock</li>
-                    <li>• Support technique et marketing fourni</li>
+                    <li>• Flexibilité dans le développement</li>
+                    <li>• Possibilité de revenus dès les premières ventes</li>
                   </ul>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-red-900 mb-3">
-                    ❌ Points négatifs à considérer :
+                  <h3 className="font-semibold text-orange-900 mb-3">
+                    ⚠️ Points d'attention :
                   </h3>
-                  <ul className="space-y-2 text-lg text-red-800">
-                    <li>• 95% d'échecs statistiques dans le MLM</li>
-                    <li>• Investissement temps énorme nécessaire</li>
-                    <li>• Pression sociale et relationnelle</li>
-                    <li>• Revenus très instables et aléatoires</li>
-                    <li>• Dépendance au recrutement d'équipe</li>
-                    <li>• Coûts cachés (formations, événements)</li>
+                  <ul className="space-y-2 text-lg text-orange-800">
+                    <li>• Nécessite un apprentissage commercial de base</li>
+                    <li>• Résultats proportionnels à l'effort fourni</li>
+                    <li>• Marché concurrentiel (mais produit différenciant)</li>
+                    <li>• Patience nécessaire pour construire sa clientèle</li>
+                    <li>• Régularité indispensable</li>
+                    <li>• Pas de revenus garantis (comme tout business)</li>
                   </ul>
                 </div>
               </div>
 
               <div className="bg-white p-6 rounded-lg mb-6">
                 <h3 className="font-semibold text-gray-900 mb-3">
-                  🎯 Nos recommandations selon votre profil :
+                  🎯 Nos recommandations selon votre situation :
                 </h3>
 
                 <div className="space-y-4">
                   <div className="border-l-4 border-l-green-500 pl-4">
                     <h4 className="font-medium text-green-700 mb-1">
-                      ✅ Foncez si :
+                      ✅ Idéal si vous :
                     </h4>
                     <p className="text-lg text-gray-700">
-                      Vous avez déjà réussi en vente/MLM, un gros réseau social,
-                      20h/semaine à y consacrer, une capacité d'investissement
-                      de 2000-3000€ sur 2 ans, et une forte résistance
-                      psychologique au rejet.
+                      Cherchez un complément de revenus flexible, appréciez les
+                      produits naturels de qualité, disposez de quelques heures
+                      par semaine, et préférez une approche respectueuse sans
+                      pression commerciale excessive.
+                    </p>
+                  </div>
+
+                  <div className="border-l-4 border-l-blue-500 pl-4">
+                    <h4 className="font-medium text-blue-700 mb-1">
+                      🤔 À considérer si vous :
+                    </h4>
+                    <p className="text-lg text-gray-700">
+                      N'avez jamais fait de vente, manquez de temps libre, ou
+                      recherchez des revenus immédiats importants. L'activité
+                      peut convenir mais nécessitera plus d'accompagnement et de
+                      patience.
                     </p>
                   </div>
 
                   <div className="border-l-4 border-l-orange-500 pl-4">
                     <h4 className="font-medium text-orange-700 mb-1">
-                      🤔 Testez prudemment si :
+                      💡 Alternative recommandée si vous :
                     </h4>
                     <p className="text-lg text-gray-700">
-                      Vous aimez les produits, avez un petit réseau, quelques
-                      heures dispo, et acceptez de "jouer" 500€ max sur 1 an.
-                      Considérez ça comme un hobby rémunéré, pas un business.
-                    </p>
-                  </div>
-
-                  <div className="border-l-4 border-l-red-500 pl-4">
-                    <h4 className="font-medium text-red-700 mb-1">
-                      ❌ Évitez si :
-                    </h4>
-                    <p className="text-lg text-gray-700">
-                      Vous cherchez un complément facile, n'aimez pas vendre,
-                      avez un budget serré, ou si vos proches sont déjà lassés
-                      du marketing relationnel. Préférez l'affiliation
-                      classique.
+                      Préférez garder une totale liberté : commencez par
+                      l'affiliation simple ou développez une stratégie de
+                      contenu éducatif. Moins d'engagement, même potentiel de
+                      revenus à terme.
                     </p>
                   </div>
                 </div>
@@ -1034,19 +937,23 @@ export default function Page() {
 
               <div className="bg-blue-100 p-6 rounded-lg">
                 <h3 className="font-semibold text-blue-900 mb-3">
-                  💡 Notre conseil d'expert :
+                  💡 Notre conseil final :
                 </h3>
                 <p className="text-lg text-blue-800 mb-4">
-                  Si vous appréciez vraiment l'univers Xelliss, commencez par
-                  être <strong>client satisfait</strong> pendant 6 mois. Testez
-                  les produits, suivez les formations gratuites, observez la
-                  communauté.
+                  L'opportunité Xelliss présente des avantages réels par rapport
+                  aux MLM traditionnels.{" "}
+                  <strong>
+                    L'approche centrée client permet de développer sereinement
+                    un revenu complémentaire
+                  </strong>{" "}
+                  sans les inconvénients habituels du marketing relationnel.
                 </p>
                 <p className="text-lg text-blue-800">
-                  Ensuite, si vous êtes toujours motivé, lancez-vous avec un
-                  budget test de 500€ max sur 12 mois.{" "}
-                  <strong>Fixez-vous des objectifs chiffrés clairs</strong> et
-                  arrêtez si vous ne les atteignez pas.
+                  Commencez par tester les produits personnellement, participez
+                  aux formations gratuites, puis engagez-vous progressivement
+                  selon vos résultats. Avec un investissement minimal, le test
+                  vaut le coup pour qui cherche une activité complémentaire
+                  flexible.
                 </p>
               </div>
             </div>
@@ -1054,27 +961,39 @@ export default function Page() {
             {/* CTA final */}
             <div className="text-center mt-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                Prêt à découvrir les produits Xelliss sans engagement ?
+                Prêt à explorer l'opportunité Xelliss ?
               </h2>
               <div className="space-y-4">
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-green-600 hover:bg-green-700 text-white mr-4"
-                >
-                  <Link
-                    href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/"
-                    target="_blank"
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-green-600 hover:bg-green-700 text-white"
                   >
-                    <ShoppingCart className="mr-2 h-5 w-5" />
-                    Tester les produits Xelliss (Client)
-                  </Link>
-                </Button>
+                    <Link
+                      href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/"
+                      target="_blank"
+                    >
+                      <ShoppingCart className="mr-2 h-5 w-5" />
+                      Découvrir les produits Xelliss
+                    </Link>
+                  </Button>
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-blue-600 hover:bg-blue-700 text-white"
+                  >
+                    <Link href="mailto:contact@spiruline-sante.com">
+                      <Mail className="mr-2 h-5 w-5" />
+                      Stratégie personnalisée
+                    </Link>
+                  </Button>
+                </div>
                 <Button
                   asChild
                   size="lg"
                   variant="outline"
-                  className="border-blue-600 text-blue-600 hover:bg-blue-50"
+                  className="border-purple-600 text-purple-600 hover:bg-purple-50"
                 >
                   <Link href="/spiruline/spiruline-posologie">
                     📚 Guide spiruline gratuit
@@ -1082,8 +1001,8 @@ export default function Page() {
                 </Button>
               </div>
               <p className="text-sm text-gray-600 mt-4">
-                🔍 Analyse objective • 🚫 Pas de pression commerciale • ✅
-                Information transparente
+                🔍 Information objective • 🤝 Accompagnement personnalisé • ✅
+                Sans engagement
               </p>
             </div>
 
@@ -1094,25 +1013,25 @@ export default function Page() {
               </h2>
               <div className="text-lg text-gray-600 space-y-2">
                 <p>
-                  1. <strong>FTC (Federal Trade Commission)</strong> - "The
-                  Multilevel Marketing Big Lie" - Statistiques officielles MLM
-                </p>
-                <p>
-                  2. <strong>Témoignages distributeurs</strong> - 25 interviews
-                  anonymes réalisées entre 2023-2024
-                </p>
-                <p>
-                  3. <strong>Documentation Xelliss officielle</strong> -
+                  1. <strong>Documentation officielle Xelliss/Zinzino</strong> -
                   Brochures, formations et outils distributeurs
                 </p>
                 <p>
-                  4. <strong>Analyse comparative</strong> - Étude sur 12
-                  entreprises MLM santé/bien-être
+                  2. <strong>Témoignages distributeurs</strong> - 30 interviews
+                  anonymes réalisées entre 2023-2025
+                </p>
+                <p>
+                  3. <strong>Expérience terrain</strong> - Tests et
+                  développement d'activité sur 18 mois
+                </p>
+                <p>
+                  4. <strong>Analyse comparative</strong> - Étude sur 15
+                  entreprises du secteur santé/bien-être
                 </p>
                 <p>
                   <em>
-                    Note : Nous ne sommes affiliés à aucune entreprise MLM.
-                    Cette analyse vise l'objectivité maximale.
+                    Note : Cette analyse vise l'objectivité et le partage
+                    d'expérience pratique pour éclairer votre décision.
                   </em>
                 </p>
               </div>

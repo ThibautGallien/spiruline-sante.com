@@ -87,7 +87,7 @@ export default function AvisPhycosciX14Xelliss() {
               <div>
                 <div className="relative h-80 w-full rounded-2xl overflow-hidden mb-4">
                   <Image
-                    src="https://images.pexels.com/photos/4385547/pexels-photo-4385547.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    src="/PhycoSciX14-Xelliss.webp"
                     alt="Phycosci X14 Xelliss - Complément nutrition cellulaire à base de micro-algues"
                     fill
                     className="object-cover"
@@ -127,6 +127,21 @@ export default function AvisPhycosciX14Xelliss() {
                   globale robuste.
                 </p>
               </div>
+            </div>
+            <div className="text-center">
+              <Button
+                size="lg"
+                className="bg-blue-600 hover:bg-blue-700 text-lg font-semibold py-3 px-8"
+                asChild
+              >
+                <Link
+                  href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302771/"
+                  target="_blank"
+                >
+                  🛒 Commander Phycosci X14
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
             </div>
           </section>
 
@@ -331,8 +346,8 @@ export default function AvisPhycosciX14Xelliss() {
                 </p>
 
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  La bouteille de Phycosci X14 est à 62.39€ (TTC) ou bien vous
-                  pouvez en avoir une tous les mois pour 49.91€ (TTC).
+                  La bouteille de Phycosci X14 est à 62€ (TTC) ou bien vous
+                  pouvez en avoir une tous les mois pour 44€ (TTC).
                 </p>
 
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -349,7 +364,7 @@ export default function AvisPhycosciX14Xelliss() {
               <div>
                 <div className="relative h-80 w-full rounded-2xl overflow-hidden mb-4">
                   <Image
-                    src="https://images.pexels.com/photos/5905733/pexels-photo-5905733.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    src="/PhycoSciX14.webp"
                     alt="Achat Phycosci X14 Xelliss - Conseiller en ligne pour commander"
                     fill
                     className="object-cover"
@@ -373,7 +388,7 @@ export default function AvisPhycosciX14Xelliss() {
                 asChild
               >
                 <Link
-                  href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brand-shop/xelliss-products/"
+                  href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302771/"
                   target="_blank"
                 >
                   🛒 Commander Phycosci X14

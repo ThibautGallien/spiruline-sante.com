@@ -30,7 +30,7 @@ export async function generateMetadata() {
     title:
       "Guide Complet Phycocyanine 2024 : Bienfaits, Posologie et Conseils d'Experts",
     description:
-      "Découvrez tout sur la phycocyanine : bienfaits scientifiquement prouvés, posologie optimale, meilleurs produits et conseils d'utilisation. Guide complet 2024.",
+      "Découvrez tout sur la phycocyanine : bienfaits, posologie optimale, meilleurs produits et conseils d'utilisation. Guide complet 2025.",
     keywords: [
       "phycocyanine guide complet",
       "phycocyanine bienfaits",
@@ -232,7 +232,6 @@ export default function GuideCompletPhycocyaninePage() {
         <Card className="mb-8 border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-green-50">
           <CardHeader>
             <CardTitle className="flex items-center text-2xl text-blue-800">
-              <Star className="h-6 w-6 mr-2" />
               🌟 Ce que vous allez découvrir :
             </CardTitle>
           </CardHeader>
@@ -258,7 +257,7 @@ export default function GuideCompletPhycocyaninePage() {
                 className="bg-blue-600 hover:bg-blue-700 text-lg py-6 px-8"
               >
                 <Link
-                  href="https://www.xelliss.com/phycosci-x14"
+                  href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302771/"
                   target="_blank"
                 >
                   🛒 Découvrir PhycoSci X14 (44€)
@@ -704,18 +703,16 @@ export default function GuideCompletPhycocyaninePage() {
                     <Heart className="h-6 w-6 text-green-600" />
                   </div>
                   <div>
-                    <CardTitle className="text-green-700">
-                      Marie, 42 ans
-                    </CardTitle>
-                    <p className="text-sm text-gray-600">Mère de famille</p>
+                    <CardTitle className="text-green-700">Isabelle</CardTitle>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-lg text-gray-700 italic mb-4">
-                  "Après 3 semaines de PhycoSci X14, j'ai retrouvé une énergie
-                  que je n'avais plus depuis des mois. Plus de coup de fatigue à
-                  15h, et un sommeil vraiment réparateur !"
+                  "Grâce au jeûne intermittent, aux plantes et aux produits
+                  Xelliss, j'ai retrouvé le sommeil, perdu 29 kg et vu mes
+                  douleurs disparaître. Après 18 ans de polyarthrite, je revis :
+                  je marche, fais du sport et n'ai plus besoin de traitement."
                 </p>
                 <div className="flex items-center space-x-1">
                   {[...Array(5)].map((_, i) => (
@@ -735,18 +732,18 @@ export default function GuideCompletPhycocyaninePage() {
                     <Zap className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <CardTitle className="text-blue-700">
-                      Pierre, 35 ans
-                    </CardTitle>
-                    <p className="text-sm text-gray-600">Sportif amateur</p>
+                    <CardTitle className="text-blue-700">Anne-Cécile</CardTitle>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-lg text-gray-700 italic mb-4">
-                  "En tant que triathlète, je cherchais un antioxydant naturel
-                  pour la récupération. Avec 10ml par jour, mes courbatures ont
-                  diminué de moitié !"
+                  "Atteinte d’un cancer du sein avec métastases, j’ai pu suivre
+                  mes chimiothérapies chaque semaine sans interruption grâce à
+                  la phyco, qui a stabilisé mes globules. En augmentant les
+                  doses, mes métastases ont significativement diminué — je
+                  continue aujourd’hui ce soutien naturel en parallèle de mon
+                  traitement."
                 </p>
                 <div className="flex items-center space-x-1">
                   {[...Array(5)].map((_, i) => (
@@ -766,18 +763,17 @@ export default function GuideCompletPhycocyaninePage() {
                     <Shield className="h-6 w-6 text-purple-600" />
                   </div>
                   <div>
-                    <CardTitle className="text-purple-700">
-                      Sophie, 58 ans
-                    </CardTitle>
-                    <p className="text-sm text-gray-600">Retraitée active</p>
+                    <CardTitle className="text-purple-700">Claire</CardTitle>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-lg text-gray-700 italic mb-4">
-                  "Mon médecin m'a conseillé la phycocyanine pour soutenir mes
-                  défenses. Résultat : aucun rhume cet hiver, alors que j'en
-                  avais 3-4 par an avant !"
+                  "Après deux ans de douleurs à l’épaule et plusieurs séances
+                  d’ostéo sans résultat durable, j’ai testé l’eau et la
+                  phycocyanine de Xelliss. En seulement 15 jours, malgré un
+                  déménagement stressant, la douleur avait disparu — une vraie
+                  surprise pour moi qui étais sceptique"
                 </p>
                 <div className="flex items-center space-x-1">
                   {[...Array(5)].map((_, i) => (
@@ -797,20 +793,18 @@ export default function GuideCompletPhycocyaninePage() {
                     <Microscope className="h-6 w-6 text-orange-600" />
                   </div>
                   <div>
-                    <CardTitle className="text-orange-700">
-                      Thomas, 29 ans
-                    </CardTitle>
-                    <p className="text-sm text-gray-600">
-                      Étudiant en médecine
-                    </p>
+                    <CardTitle className="text-orange-700">Thierry</CardTitle>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-lg text-gray-700 italic mb-4">
-                  "J'ai choisi la phycocyanine après avoir étudié les recherches
-                  scientifiques. L'amélioration de ma concentration pendant les
-                  révisions a été spectaculaire !"
+                  "Grâce à la phycocyanine prise chaque matin, nous avons
+                  enchaîné randonnées, footing et windsurf avec une récupération
+                  impressionnante et une énergie constante. Sommeil profond,
+                  oxygénation optimale et régénération cellulaire : la phyco a
+                  révélé tout son potentiel — un vrai trésor pour notre
+                  vitalité."
                 </p>
                 <div className="flex items-center space-x-1">
                   {[...Array(5)].map((_, i) => (
@@ -973,8 +967,8 @@ export default function GuideCompletPhycocyaninePage() {
                 <ul className="space-y-1 text-lg">
                   <li>💰 Prix : 44€ (250ml)</li>
                   <li>⏱️ Durée : 25-30 jours</li>
-                  <li>🚚 Livraison 48h</li>
-                  <li>💎 Garantie satisfaction</li>
+                  <li>🚚 Livraison rapide</li>
+                  <li>💎 Produit premium</li>
                 </ul>
               </div>
             </div>
@@ -982,7 +976,10 @@ export default function GuideCompletPhycocyaninePage() {
               asChild
               className="bg-blue-600 hover:bg-blue-700 text-lg py-3 px-6"
             >
-              <Link href="https://www.xelliss.com/phycosci-x14" target="_blank">
+              <Link
+                href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302771/"
+                target="_blank"
+              >
                 Commander PhycoSci X14
                 <ExternalLink className="ml-2 h-4 w-4" />
               </Link>
@@ -1126,7 +1123,7 @@ export default function GuideCompletPhycocyaninePage() {
                   className="bg-white text-blue-600 hover:bg-gray-100 text-lg py-4 px-8 mb-4"
                 >
                   <Link
-                    href="https://www.xelliss.com/phycosci-x14"
+                    href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302771/"
                     target="_blank"
                   >
                     🛒 Commander PhycoSci X14 (44€)
@@ -1143,8 +1140,8 @@ export default function GuideCompletPhycocyaninePage() {
                 </Button>
               </div>
               <p className="text-sm text-blue-100 mt-4">
-                ✅ Satisfaction garantie • ✅ Livraison rapide • ✅ Support
-                client expert
+                ✅ Produit premium • ✅ Livraison rapide • ✅ Support client
+                expert
               </p>
             </CardContent>
           </Card>

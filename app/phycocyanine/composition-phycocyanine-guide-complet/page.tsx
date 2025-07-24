@@ -27,8 +27,7 @@ import Link from "next/link";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
-    title:
-      "Composition de la phycocyanine : Guide complet - Structure moléculaire et propriétés",
+    title: "Composition de la phycocyanine : Guide complet",
     description:
       "Découvrez la composition complète de la phycocyanine : structure moléculaire, propriétés chimiques et biochimiques de ce pigment bleu exceptionnel.",
     keywords: [
@@ -261,7 +260,7 @@ export default function CompositionPhycocyaninePage() {
                 className="bg-green-600 hover:bg-green-700 text-lg py-6 px-8"
               >
                 <Link
-                  href="https://www.xelliss.com/phycosci-x14"
+                  href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302771/"
                   target="_blank"
                 >
                   🛒 Découvrir PhycoSci X14
@@ -758,7 +757,7 @@ export default function CompositionPhycocyaninePage() {
                   className="bg-white text-green-600 hover:bg-gray-100 text-lg py-3 px-8"
                 >
                   <Link
-                    href="https://www.xelliss.com/phycosci-x14"
+                    href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302771/"
                     target="_blank"
                   >
                     Découvrir PhycoSci X14
@@ -1068,7 +1067,7 @@ export default function CompositionPhycocyaninePage() {
                 className="bg-white text-orange-600 hover:bg-gray-100 text-lg py-4 px-8 mb-4"
               >
                 <Link
-                  href="https://www.xelliss.com/phycosci-x14"
+                  href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302771/"
                   target="_blank"
                 >
                   Découvrir PhycoSci X14 - 44€
@@ -1076,7 +1075,7 @@ export default function CompositionPhycocyaninePage() {
                 </Link>
               </Button>
               <p className="text-sm text-orange-100">
-                ✅ Livraison 48h • 💰 Satisfaction garantie • 🔬 Analysé en
+                ✅ Livraison rapide • 💰 Satisfaction garantie • 🔬 Analysé en
                 laboratoire
               </p>
             </CardContent>

@@ -18,7 +18,7 @@ export async function generateMetadata() {
     title:
       "Phycocyanine : Propriétés, Bienfaits et Applications Thérapeutiques",
     description:
-      "Découvrez les propriétés exceptionnelles de la phycocyanine, ses bienfaits scientifiquement prouvés et ses applications pour la santé. Guide complet d'experts.",
+      "Découvrez les propriétés de la phycocyanine, ses bienfaits scientifiquement prouvés et ses applications pour la santé.",
     keywords: [
       "phycocyanine",
       "propriétés phycocyanine",
@@ -62,7 +62,7 @@ export default function Page() {
           <div className="flex items-center space-x-4 mb-8 text-sm text-gray-600">
             <span>📅 Mise à jour : Janvier 2025</span>
             <span>⏱️ Lecture : 12 min</span>
-            <span>👤 Par Dr. Jean-Michel Lecerf</span>
+            <span>👤 Par Thibaut</span>
           </div>
 
           {/* Résumé en bullet points */}
@@ -122,7 +122,7 @@ export default function Page() {
                 className="bg-blue-600 hover:bg-blue-700 text-white"
               >
                 <Link
-                  href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/301050/"
+                  href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302771/"
                   target="_blank"
                 >
                   <ShoppingCart className="mr-2 h-5 w-5" />
@@ -789,20 +789,12 @@ export default function Page() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-lg text-gray-700 italic mb-4">
-                    "Après 3 mois de PhycoSci X14, mes douleurs articulaires ont
-                    diminué de moitié. Je peux enfin jardiner sans souffrir le
-                    lendemain. Mon rhumatologue est étonné de l'amélioration de
-                    mes analyses sanguines."
+                    "Grâce au jeûne intermittent, aux plantes et aux produits
+                    Xelliss, j'ai retrouvé le sommeil, perdu 29 kg et vu mes
+                    douleurs disparaître. Après 18 ans de polyarthrite, je revis
+                    : je marche, fais du sport et n'ai plus besoin de
+                    traitement."
                   </p>
-                  <div className="space-y-1 text-sm text-green-700">
-                    <p>
-                      <strong>Dosage :</strong> 8ml/jour pendant 12 semaines
-                    </p>
-                    <p>
-                      <strong>Résultats :</strong> -50% douleur, inflammations
-                      réduites
-                    </p>
-                  </div>
                 </CardContent>
               </Card>
 
@@ -820,21 +812,13 @@ export default function Page() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-lg text-gray-700 italic mb-4">
-                    "Depuis que je prends de la phycocyanine, ma récupération
-                    après les entraînements intensifs s'est considérablement
-                    améliorée. Moins de courbatures, plus d'énergie le
-                    lendemain. Mes performances en course à pied ont progressé
-                    de 12%."
+                    "Atteinte d’un cancer du sein avec métastases, j’ai pu
+                    suivre mes chimiothérapies chaque semaine sans interruption
+                    grâce à la phyco, qui a stabilisé mes globules. En
+                    augmentant les doses, mes métastases ont significativement
+                    diminué — je continue aujourd’hui ce soutien naturel en
+                    parallèle de mon traitement."
                   </p>
-                  <div className="space-y-1 text-sm text-blue-700">
-                    <p>
-                      <strong>Protocole :</strong> 4ml matin + 4ml post-workout
-                    </p>
-                    <p>
-                      <strong>Amélioration :</strong> +12% endurance,
-                      récupération -30%
-                    </p>
-                  </div>
                 </CardContent>
               </Card>
             </div>
@@ -895,7 +879,7 @@ export default function Page() {
             </div>
 
             {/* Conclusion et call-to-action final */}
-            <div className="bg-gradient-to-br from-blue-600 to-purple-600 text-white p-8 rounded-lg mb-8">
+            <div className="p-8 rounded-lg mb-8">
               <h2 className="text-3xl font-bold mb-4 text-center">
                 🎯 Phycocyanine : Votre Allié Santé du Futur
               </h2>
@@ -913,7 +897,7 @@ export default function Page() {
                   className="bg-yellow-500 text-black hover:bg-yellow-400 font-semibold text-lg py-4 px-8 h-auto"
                 >
                   <Link
-                    href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/301050/"
+                    href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302771/"
                     target="_blank"
                   >
                     🛒 Commencer Ma Transformation

@@ -53,7 +53,7 @@ export default function Page() {
           <div className="flex items-center space-x-4 mb-8 text-sm text-gray-600">
             <span>📅 Mise à jour : Janvier 2025</span>
             <span>⏱️ Lecture : 8 min</span>
-            <span>👤 Par Dr. Sophie Martin</span>
+            <span>👤 Thibaut</span>
           </div>
 
           {/* Résumé en bullet points */}
@@ -121,7 +121,7 @@ export default function Page() {
                 </Link>
               </Button>
               <p className="text-sm text-gray-600 mt-2">
-                ✅ Spiruline pure • 🚚 Livraison 48h • 💰 Qualité garantie
+                ✅ Spiruline pure • 🚚 Livraison rapide • 💰 Qualité garantie
               </p>
             </div>
           </div>
@@ -614,12 +614,12 @@ export default function Page() {
                   </CardHeader>
                   <CardContent className="text-center">
                     <div className="text-2xl font-bold text-green-600 mb-2">
-                      39€
+                      37€
                     </div>
                     <div className="text-lg text-gray-600">
                       <div>80 comprimés</div>
                       <div>20 jours de cure</div>
-                      <div>Soit 1,95€/jour</div>
+                      <div>Soit 1,85€/jour</div>
                     </div>
                   </CardContent>
                 </Card>
@@ -640,7 +640,7 @@ export default function Page() {
                   </Link>
                 </Button>
                 <p className="text-sm text-gray-600">
-                  ✅ Livraison 48-72h • 💳 Paiement sécurisé • 📞 Support client
+                  ✅ Livraison rapide • 💳 Paiement sécurisé • 📞 Support client
                 </p>
               </div>
             </div>

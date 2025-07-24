@@ -75,11 +75,6 @@ export default function BalanceOilZinzinoAvis() {
       title: "Une formulation scientifiquement validée",
       description: "Testée sur plus d'un million d'échantillons avec des résultats mesurables.",
     },
-    {
-      icon: Zap,
-      title: "Des avis positifs",
-      description: "De nombreux utilisateurs témoignent d'une amélioration de leur énergie, de leur concentration et de leur bien-être général.",
-    },
   ];
 
   const benefits = [

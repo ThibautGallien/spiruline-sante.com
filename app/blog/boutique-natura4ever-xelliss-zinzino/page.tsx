@@ -73,7 +73,7 @@ export default function BoutiqueNatura4EverPage() {
       oldProduct: "Natura4Ever Spiruline",
       newProduct: "A3 Spirulina Xelliss",
       status: "Amélioré",
-      price: "35€/mois",
+      price: "26€/mois",
       benefits: [
         "70% protéines vs 65% avant",
         "Pureté accrue",
@@ -85,16 +85,16 @@ export default function BoutiqueNatura4EverPage() {
       oldProduct: "NaturaBlue (phycocyanine)",
       newProduct: "PhycoSci X14",
       status: "Reformulé",
-      price: "80€/mois",
+      price: "44€/mois",
       benefits: [
-        "Concentration 2x supérieure",
+        "Même Concentration",
         "Forme liquide",
         "Biodisponibilité optimisée",
       ],
       available: true,
     },
     {
-      oldProduct: "Natura4Ever Oméga-3",
+      oldProduct: "Oméga-3",
       newProduct: "BalanceOil+ Zinzino",
       status: "Nouveau",
       price: "42€/mois",
@@ -140,19 +140,19 @@ export default function BoutiqueNatura4EverPage() {
       category: "Spiruline Premium",
       original: "Natura4Ever Spiruline",
       recommended: "A3 Spirulina Xelliss (Zinzino)",
-      price: "35€",
+      price: "26€",
       quality: "★★★★★",
       availability: "En stock",
-      link: "https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brand-shop/xelliss-products/302780/",
+      link: "https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/",
     },
     {
       category: "Phycocyanine Liquide",
       original: "NaturaBlue",
       recommended: "PhycoSci X14 (Zinzino)",
-      price: "80€",
+      price: "44€",
       quality: "★★★★★",
       availability: "Sur commande",
-      link: "https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brand-shop/xelliss-products/",
+      link: "https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302771/",
     },
     {
       category: "Oméga-3 Premium",
@@ -216,8 +216,7 @@ export default function BoutiqueNatura4EverPage() {
               <div className="flex items-start space-x-3">
                 <CheckCircle className="h-5 w-5 text-orange-600 mt-0.5 flex-shrink-0" />
                 <span className="text-orange-800">
-                  <strong>Mêmes produits,</strong> qualité maintenue ou
-                  améliorée
+                  <strong>Mêmes produits,</strong> même qualité
                 </span>
               </div>
               <div className="flex items-start space-x-3">
@@ -250,14 +249,6 @@ export default function BoutiqueNatura4EverPage() {
                 🛒 Accéder à la Boutique Zinzino
                 <ExternalLink className="ml-2 h-5 w-5" />
               </Link>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="text-lg px-8 py-4"
-              asChild
-            >
-              <Link href="#alternatives">📋 Voir les Alternatives</Link>
             </Button>
           </div>
         </div>
@@ -740,18 +731,20 @@ export default function BoutiqueNatura4EverPage() {
                           />
                         ))}
                       </div>
-                      <span className="font-semibold">Catherine, 48 ans</span>
+                      <span className="font-semibold">Thierry</span>
                     </div>
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-700 italic mb-3">
-                      "Cliente Natura4Ever depuis 2018, j'avais peur de perdre
-                      mes produits favoris. Finalement, les nouveaux produits
-                      Zinzino sont encore meilleurs ! Le test sanguin m'a permis
-                      de comprendre mes vraies carences."
+                      "Grâce à la phycocyanine prise chaque matin, nous avons
+                      enchaîné randonnées, footing et windsurf avec une
+                      récupération impressionnante et une énergie constante.
+                      Sommeil profond, oxygénation optimale et régénération
+                      cellulaire : la phyco a révélé tout son potentiel — un
+                      vrai trésor pour notre vitalité."
                     </p>
                     <Badge className="bg-green-100 text-green-800">
-                      Transition réussie → BalanceOil+ et A3 Spirulina
+                      PhycoSciX14
                     </Badge>
                   </CardContent>
                 </Card>
@@ -767,20 +760,19 @@ export default function BoutiqueNatura4EverPage() {
                           />
                         ))}
                       </div>
-                      <span className="font-semibold">
-                        Michel, Ancien Distributeur
-                      </span>
+                      <span className="font-semibold">Anne-Cécile</span>
                     </div>
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-700 italic mb-3">
-                      "Distributeur Natura4Ever puis Xelliss, je suis maintenant
-                      partenaire Zinzino. La différence ? Une vraie structure
-                      internationale, des outils marketing pros et surtout des
-                      produits qui se vendent tout seuls !"
+                      "Grâce à BalanceOil et à un rééquilibrage en oméga-3,
+                      notre fils atteint de TDAH est devenu plus calme,
+                      concentré et apaisé. En quelques mois, les effets ont été
+                      si positifs que nous avons pu arrêter les médicaments,
+                      avec l'accord des médecins."
                     </p>
                     <Badge className="bg-blue-100 text-blue-800">
-                      Partenaire Zinzino • Chiffre d'affaires x3
+                      BalanceOil+
                     </Badge>
                   </CardContent>
                 </Card>
@@ -860,7 +852,7 @@ export default function BoutiqueNatura4EverPage() {
                       </p>
                     </div>
                     <div className="text-xs text-gray-600">
-                      Livraison gratuite dès 50€
+                      Des frais de livraison s'appliquent.
                       <br />
                       Paiement 100% sécurisé
                     </div>
@@ -874,7 +866,7 @@ export default function BoutiqueNatura4EverPage() {
               <h2 className="text-3xl font-bold mb-4">
                 🎯 Ne Restez Plus Sans Vos Produits Favoris !
               </h2>
-              <p className="text-gray-300 text-lg mb-6">
+              <p className="text-lg mb-6 !text-green-700">
                 Accédez dès maintenant aux nouveaux produits Zinzino-Xelliss,
                 améliorés et disponibles immédiatement
               </p>
@@ -909,7 +901,7 @@ export default function BoutiqueNatura4EverPage() {
                     href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brand-shop/xelliss-products/302780/"
                     target="_blank"
                   >
-                    🛒 Commander A3 Spirulina (35€)
+                    🛒 Commander A3 Spirulina (26€)
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
@@ -980,7 +972,7 @@ export default function BoutiqueNatura4EverPage() {
                         • <strong>Tests gratuits</strong> pour tous
                       </li>
                       <li>
-                        • <strong>Livraison 48h</strong> partout en Europe
+                        • <strong>Livraison rapide</strong> partout en Europe
                       </li>
                       <li>
                         • <strong>R&D continue</strong> avec nouveautés

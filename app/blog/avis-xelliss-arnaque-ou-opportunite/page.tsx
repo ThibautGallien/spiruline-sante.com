@@ -69,7 +69,7 @@ export default function XellissReviewPage() {
         "Soutient le système immunitaire",
         "Lutte contre le stress oxydatif",
       ],
-      image: "/images/phycosci-x14-placeholder.jpg",
+      image: "/PhycoSciX14-Xelliss.webp",
     },
     {
       name: "XelliWater",
@@ -81,7 +81,7 @@ export default function XellissReviewPage() {
         "Conserve le magnésium",
         "Augmente le pH pour rendre l'eau alcaline",
       ],
-      image: "/images/xelliwater-placeholder.jpg",
+      image: "/XelliWater-Xelliss.webp",
     },
     {
       name: "A3 Spirulina Pills",
@@ -93,7 +93,7 @@ export default function XellissReviewPage() {
         "Booster d'état général",
         "Vitalité, tonus et bien-être au quotidien",
       ],
-      image: "/images/a3-spirulina-pills-placeholder.jpg",
+      image: "/A3-Spirulina-Pills-Xelliss.webp",
     },
   ];
 
@@ -765,37 +765,6 @@ export default function XellissReviewPage() {
                 coup. Mais à mon avis, Xelliss a un net avantage avec sa
                 convivialité ainsi que sa licence à très faible coût.
               </p>
-            </div>
-          </CardContent>
-        </Card>
-      </section>
-
-      {/* Section commentaires */}
-      <section className="mb-12">
-        <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-          11 réflexions sur "Avis Xelliss (ex Natura4Ever) Arnaque ou bon
-          produit ?"
-        </h3>
-        <Card className="border-gray-200">
-          <CardContent className="pt-6">
-            <div className="text-center py-12">
-              <div className="text-6xl mb-4">💬</div>
-              <h4 className="text-xl font-semibold text-gray-800 mb-2">
-                Partagez votre expérience
-              </h4>
-              <p className="text-gray-600 mb-6">
-                Vous avez testé les produits Xelliss ? Partagez votre avis et
-                aidez notre communauté à faire le bon choix.
-              </p>
-              <Button
-                asChild
-                className="bg-blue-600 hover:bg-blue-700 text-white"
-              >
-                <Link href="/contact">
-                  Laisser un commentaire
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
             </div>
           </CardContent>
         </Card>

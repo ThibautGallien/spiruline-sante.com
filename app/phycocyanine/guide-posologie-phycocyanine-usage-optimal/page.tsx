@@ -1,5 +1,10 @@
 "use client";
 
+import {
+  generateArticleSchema,
+  generateFAQSchema,
+  generateBreadcrumbSchema,
+} from "@/lib/seo";
 import { StructuredData } from "@/components/seo/structured-data";
 import { useState } from "react";
 import {
@@ -131,74 +136,55 @@ export default function Page() {
     { label: "Guide Posologie" },
   ];
 
-  // Données structurées pour le SEO
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline:
+  // Données structurées pour le SEO - Article Schema
+  const articleSchema = generateArticleSchema({
+    title:
       "Guide Posologie Phycocyanine : Usage Optimal et Dosage Personnalisé",
-    description:
-      "Guide complet sur le dosage optimal de phycocyanine selon votre profil, âge et objectifs santé. Includes simulateur personnalisé.",
+    excerpt:
+      "Guide complet sur le dosage optimal de phycocyanine selon votre profil, âge et objectifs santé. Simulateur personnalisé et conseils d'experts inclus.",
     datePublished: "2024-01-20",
-    dateModified: "2024-01-20",
-    author: {
-      "@type": "Person",
-      name: "Équipe Spirulina Health",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "Spirulina Health",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://spiruline-sante.com/images/logo.png",
-      },
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id":
-        "https://spiruline-sante.com/phycocyanine/guide-posologie-phycocyanine-usage-optimal",
-    },
-    articleSection: "Phycocyanine",
-    keywords:
-      "posologie phycocyanine, dosage phycocyanine, phycocyanine enfant, simulateur dosage",
-    inLanguage: "fr-FR",
-  };
+    author: "Équipe Spirulina Health",
+    category: "Phycocyanine",
+    url: "phycocyanine/guide-posologie-phycocyanine-usage-optimal",
+  });
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "Quelle est la dose optimale de phycocyanine par jour ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Pour un adulte en bonne santé, la dose optimale se situe entre 75-150mg de phycocyanine par jour. Avec PhycoSci X14, cela correspond à 5-11ml par jour.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Puis-je donner de la phycocyanine à mon enfant ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Pour les enfants de plus de 3 ans, une dose de 25-50mg par jour (2-4ml de PhycoSci X14) est généralement sûre. Consultez toujours un pédiatre.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Quand prendre la phycocyanine pour une efficacité maximale ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "L'absorption est optimale le matin à jeun, 30 minutes avant le petit-déjeuner.",
-        },
-      },
-    ],
-  };
+  // FAQ Schema
+  const faqSchema = generateFAQSchema([
+    {
+      question: "Quelle est la dose optimale de phycocyanine par jour ?",
+      answer:
+        "Pour un adulte en bonne santé, la dose optimale se situe entre 75-150mg de phycocyanine par jour. Avec PhycoSci X14, cela correspond à 5-11ml par jour.",
+    },
+    {
+      question: "Puis-je donner de la phycocyanine à mon enfant ?",
+      answer:
+        "Pour les enfants de plus de 3 ans, une dose de 25-50mg par jour (2-4ml de PhycoSci X14) est généralement sûre. Consultez toujours un pédiatre.",
+    },
+    {
+      question: "Quand prendre la phycocyanine pour une efficacité maximale ?",
+      answer:
+        "L'absorption est optimale le matin à jeun, 30 minutes avant le petit-déjeuner.",
+    },
+    {
+      question: "Combien de temps pour voir les premiers effets ?",
+      answer:
+        "Les premiers effets se ressentent généralement après 2-3 semaines d'utilisation régulière. L'énergie et la vitalité s'améliorent d'abord, suivies des effets immunostimulants après 4-6 semaines.",
+    },
+    {
+      question: "Puis-je prendre la phycocyanine avec d'autres suppléments ?",
+      answer:
+        "Oui, la phycocyanine se marie bien avec la vitamine C, le zinc, les oméga-3 et les probiotiques. Évitez la prise simultanée avec des anticoagulants sans avis médical.",
+    },
+  ]);
+
+  // Breadcrumb Schema
+  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbItems);
 
   return (
     <>
       <StructuredData data={articleSchema} />
       <StructuredData data={faqSchema} />
+      <StructuredData data={breadcrumbSchema} />
 
       <div className="min-h-screen bg-white">
         {/* Breadcrumb */}
@@ -657,51 +643,6 @@ export default function Page() {
                         <p className="text-lg">
                           Amélioration de 15-25% de l'activité des cellules NK
                           en 4-6 semaines
-                        </p>
-                      </div>
-                    </div>
-                    <ul className="space-y-2 text-lg">
-                      <li className="flex items-center">
-                        <CheckCircle className="h-4 w-4 text-green-600 mr-2" />
-                        Réduction de 30% des infections respiratoires hivernales
-                      </li>
-                      <li className="flex items-center">
-                        <CheckCircle className="h-4 w-4 text-green-600 mr-2" />
-                        Augmentation de la production d'anticorps IgA
-                      </li>
-                      <li className="flex items-center">
-                        <CheckCircle className="h-4 w-4 text-green-600 mr-2" />
-                        Modulation équilibrée de la réponse inflammatoire
-                      </li>
-                    </ul>
-                  </CardContent>
-                </Card>
-              </TabsContent>
-
-              <TabsContent value="sport" className="mt-6">
-                <Card className="border-l-4 border-l-orange-500">
-                  <CardHeader>
-                    <CardTitle className="text-orange-700">
-                      Performance sportive
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div>
-                        <h4 className="font-semibold mb-2">
-                          Dosage recommandé
-                        </h4>
-                        <p className="text-lg">
-                          <strong>150-200mg/jour</strong> de phycocyanine
-                        </p>
-                        <p className="text-sm text-gray-600">
-                          Équivalent à 11-14ml de PhycoSci X14
-                        </p>
-                      </div>
-                      <div>
-                        <h4 className="font-semibold mb-2">Timing optimal</h4>
-                        <p className="text-lg">
-                          30min avant l'effort + dose post-entraînement
                         </p>
                       </div>
                     </div>

@@ -54,27 +54,27 @@ export default function ZinzinoReviewPage() {
       name: "BalanceOil+",
       description:
         "L'alliance parfaite entre science et nature. Combine huile de poisson riche en oméga-3 avec huile d'olive extra vierge pour une absorption optimale.",
-      price: "58€ pour 300ml ou 41€ en abonnement",
+      price: "59€ pour 300ml ou 42€ en abonnement",
       benefits: [
         "Soutient une fonction cérébrale optimale (700 mg de DHA par dose)",
         "Protège votre système cardiovasculaire",
         "Renforce votre immunité avec 400% des apports journaliers en vitamine D3",
         "Protège vos cellules contre le stress oxydatif",
       ],
-      image: "/images/balance-oil-plus-placeholder.jpg",
+      image: "/BalanceOil-Zinzino.webp",
     },
     {
       name: "BalanceTest",
       description:
         "Test sanguin facile à réaliser chez soi. Mesure 11 acides gras essentiels pour une vision claire de votre équilibre corporel.",
-      price: "183€",
+      price: "189€",
       benefits: [
         "Mesure 11 acides gras avec précision",
         "Résultats en 10-20 jours",
         "Analyse par laboratoire certifié VITAS",
         "Suivi personnalisé de vos progrès",
       ],
-      image: "/images/balance-test-placeholder.jpg",
+      image: "/Balance-Test-Zinzino.webp",
     },
     {
       name: "Xtend+",
@@ -87,7 +87,7 @@ export default function ZinzinoReviewPage() {
         "Énergie durable avec vitamines B",
         "100% naturel et certifié végétalien",
       ],
-      image: "/images/xtend-plus-placeholder.jpg",
+      image: "/Xtend-Zinzino.webp",
     },
     {
       name: "ZinoBiotic+",
@@ -100,7 +100,7 @@ export default function ZinzinoReviewPage() {
         "Cholestérol maintenu à un niveau normal",
         "Sensation de satiété et confort digestif",
       ],
-      image: "/images/zinobiotic-plus-placeholder.jpg",
+      image: "/ZinoBiotic-Zinzino.webp",
     },
     {
       name: "LeanShake",
@@ -113,7 +113,7 @@ export default function ZinzinoReviewPage() {
         "25 vitamines et minéraux essentiels",
         "Seulement 231 kcal par portion",
       ],
-      image: "/images/leanshake-placeholder.jpg",
+      image: "/LeanShake-chocolat-Zinzino.webp",
     },
   ];
 

@@ -139,7 +139,6 @@ export default function PhycocyaninePage() {
 
           <div className="flex items-center space-x-6 text-sm text-gray-500 mb-8">
             <span>⏱️ Lecture : 8 min</span>
-            <span>👁️ 12 487 vues ce mois</span>
             <span>⭐ Note : 4.8/5</span>
           </div>
         </div>
@@ -820,16 +819,14 @@ export default function PhycocyaninePage() {
                     ))}
                   </div>
                   <span className="ml-2 font-semibold text-gray-700">
-                    Marie, 42 ans
+                    Isabelle
                   </span>
                 </div>
                 <p className="text-lg text-gray-700 italic mb-2">
-                  "J'ai retrouvé une énergie incroyable dès la première semaine
-                  avec PhycoSci X14. Plus de coup de fatigue en fin de journée
-                  !"
-                </p>
-                <p className="text-sm text-gray-600">
-                  Utilise PhycoSci X14 depuis 3 mois
+                  "Grâce au jeûne intermittent, aux plantes et aux produits
+                  Xelliss, j'ai retrouvé le sommeil, perdu 29 kg et vu mes
+                  douleurs disparaître. Après 18 ans de polyarthrite, je revis :
+                  je marche, fais du sport et n'ai plus besoin de traitement."
                 </p>
               </CardContent>
             </Card>
@@ -843,15 +840,16 @@ export default function PhycocyaninePage() {
                     ))}
                   </div>
                   <span className="ml-2 font-semibold text-gray-700">
-                    Thomas, 35 ans
+                    Anne-Cecile
                   </span>
                 </div>
                 <p className="text-lg text-gray-700 italic mb-2">
-                  "Mes douleurs articulaires ont nettement diminué après 4
-                  semaines. Je recommande à tous les sportifs !"
-                </p>
-                <p className="text-sm text-gray-600">
-                  Coureur, utilise depuis 6 mois
+                  "Atteinte d’un cancer du sein avec métastases, j’ai pu suivre
+                  mes chimiothérapies chaque semaine sans interruption grâce à
+                  la phyco, qui a stabilisé mes globules. En augmentant les
+                  doses, mes métastases ont significativement diminué — je
+                  continue aujourd’hui ce soutien naturel en parallèle de mon
+                  traitement."
                 </p>
               </CardContent>
             </Card>
@@ -964,8 +962,8 @@ export default function PhycocyaninePage() {
 
               <div className="text-sm text-gray-600">
                 <p>
-                  ✅ Livraison gratuite • ✅ Satisfait ou remboursé • ✅ Support
-                  client expert
+                  ✅ Livraison rapide • ✅ Produit premium • ✅ Support client
+                  expert
                 </p>
               </div>
 

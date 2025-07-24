@@ -32,9 +32,9 @@ import Image from "next/image";
 export async function generateMetadata() {
   return generateSEOMetadata({
     title:
-      "Oméga-3 contre la chute de cheveux : Guide Complet 2024 - Bienfaits Prouvés et Solutions Efficaces",
+      "Oméga-3 contre la chute de cheveux : Guide Complet 2025 - Bienfaits et Solutions",
     description:
-      "Découvrez comment les oméga-3 peuvent réduire la chute de cheveux de 60% et stimuler la croissance capillaire. Guide complet avec dosages, aliments et compléments recommandés.",
+      "Découvrez comment les oméga-3 peuvent réduire la chute de cheveux de 60% et stimuler la croissance capillaire. Guide complet.",
     keywords: [
       "omega 3 chute cheveux",
       "omega 3 croissance cheveux",
@@ -364,7 +364,7 @@ export default function OmegaTroisCheveux() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-1 gap-6">
               <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-xl border border-green-200">
                 <div className="text-center lg:text-left">
                   <div className="flex items-center justify-center lg:justify-start mb-3">
@@ -386,38 +386,10 @@ export default function OmegaTroisCheveux() {
                     asChild
                   >
                     <Link
-                      href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/health/701005/BalanceOil"
+                      href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
                       target="_blank"
                     >
                       🛒 Commander Maintenant
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </Link>
-                  </Button>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-xl border border-blue-200">
-                <div className="text-center lg:text-left">
-                  <div className="flex items-center justify-center lg:justify-start mb-3">
-                    <span className="text-2xl mr-2">📊</span>
-                    <h4 className="text-xl font-bold text-gray-800">
-                      TEST PERSONNEL GRATUIT
-                    </h4>
-                  </div>
-                  <p className="text-gray-700 mb-4 text-lg">
-                    <strong>Évaluez votre statut oméga-3</strong>
-                    <br />
-                    <span className="text-blue-600">
-                      Test sanguin • Analyse personnalisée • Recommandations
-                    </span>
-                  </p>
-                  <Button
-                    size="lg"
-                    className="bg-blue-600 hover:bg-blue-700 w-full text-lg font-semibold py-3"
-                    asChild
-                  >
-                    <Link href="#newsletter">
-                      📋 Faire le Test Gratuit
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Link>
                   </Button>
@@ -434,7 +406,7 @@ export default function OmegaTroisCheveux() {
               asChild
             >
               <Link
-                href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/health/701005/BalanceOil"
+                href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
                 target="_blank"
               >
                 🚀 Découvrir BalanceOil+
@@ -456,7 +428,7 @@ export default function OmegaTroisCheveux() {
           {/* Image principale */}
           <div className="relative h-96 rounded-2xl overflow-hidden mb-12">
             <Image
-              src="https://images.pexels.com/photos/4033148/pexels-photo-4033148.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              src="/BalanceOil-Zinzino.webp"
               alt="Compléments oméga-3 pour cheveux - Gélules d'huile de poisson premium"
               fill
               className="object-cover"
@@ -807,7 +779,7 @@ export default function OmegaTroisCheveux() {
                           asChild
                         >
                           <Link
-                            href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/health/701005/BalanceOil"
+                            href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
                             target="_blank"
                           >
                             🛒 Commander BalanceOil+ (59€)
@@ -1054,10 +1026,10 @@ export default function OmegaTroisCheveux() {
                     asChild
                   >
                     <Link
-                      href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/health/701005/BalanceTest"
+                      href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
                       target="_blank"
                     >
-                      🧪 Commander Test (Gratuit avec BalanceOil+)
+                      🧪 Équilibrer mon ratio oméga-6/oméga-3 maintenant
                     </Link>
                   </Button>
                 </CardContent>
@@ -1326,16 +1298,16 @@ export default function OmegaTroisCheveux() {
                   asChild
                 >
                   <Link
-                    href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/health/701005/BalanceOil"
+                    href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
                     target="_blank"
                   >
-                    🛒 Commander BalanceOil+ (59€ - 4 mois)
+                    🛒 Commander BalanceOil+ (59€ - 1 mois)
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
                 
                 <p className="text-sm text-gray-200">
-                  ✅ Livraison gratuite • 💳 Paiement sécurisé • 📞 Support client français
+                  ✅ Livraison rapide • 💳 Paiement sécurisé • 📞 Support client français
                 </p>
               </div>
             </div>
@@ -1581,7 +1553,7 @@ export default function OmegaTroisCheveux() {
                     <strong>🏆 Avantages BalanceOil+ :</strong> Test personnalisé inclus • Synergie huile d'olive • Absorption 90% • Certification qualité • 4 mois de cure.
                   </div>
                   <Button className="w-full mt-3 bg-indigo-600 hover:bg-indigo-700" asChild>
-                    <Link href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/health/701005/BalanceOil" target="_blank">
+                    <Link href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/" target="_blank">
                       🛒 Découvrir BalanceOil+ (59€)
                     </Link>
                   </Button>
@@ -1711,7 +1683,7 @@ export default function OmegaTroisCheveux() {
                 className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white font-semibold text-lg px-12 py-4"
                 asChild
               >
-                <Link href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/health/701005/BalanceOil" target="_blank">
+                <Link href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/" target="_blank">
                   🚀 Commencer ma Transformation (59€)
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
