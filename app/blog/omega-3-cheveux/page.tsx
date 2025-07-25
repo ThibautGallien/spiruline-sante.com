@@ -500,7 +500,7 @@ export default function Omega3Cheveux() {
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {testimonials.map((testimonial, index) => (
-                  <Card key={index} className="border-l-4 border-blue-500">
+                  <Card key={index} className="border-l-4 border-green-500">
                     <CardHeader>
                       <div className="flex items-center justify-between">
                         <div>
@@ -519,7 +519,7 @@ export default function Omega3Cheveux() {
                       </div>
                       <Badge
                         variant="secondary"
-                        className="bg-blue-100 text-blue-800 w-fit"
+                        className="bg-green-100 text-green-800 w-fit"
                       >
                         {testimonial.result}
                       </Badge>
@@ -528,8 +528,6 @@ export default function Omega3Cheveux() {
                       <p className="text-gray-700 italic mb-4">
                         "{testimonial.quote}"
                       </p>
-                      
-                      </div>
                     </CardContent>
                   </Card>
                 ))}

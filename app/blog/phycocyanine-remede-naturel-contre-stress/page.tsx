@@ -56,7 +56,6 @@ export default function PhycocyanineStressPage() {
       <Card className="mb-8 border-green-200 bg-green-50">
         <CardHeader>
           <CardTitle className="text-2xl text-green-800 flex items-center gap-2">
-            <Star className="h-6 w-6" />
             🌟 Ce que vous allez découvrir
           </CardTitle>
         </CardHeader>
@@ -101,7 +100,7 @@ export default function PhycocyanineStressPage() {
               className="w-full bg-green-600 hover:bg-green-700 text-lg py-6"
             >
               <Link
-                href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/health/700035/PhycoSci-X14"
+                href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302771/"
                 target="_blank"
               >
                 🛒 Découvrir PhycoSci X14 (44€ - 250ml)
@@ -588,23 +587,13 @@ export default function PhycocyanineStressPage() {
                   <Users className="h-6 w-6 text-green-600" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-semibold text-lg mb-2">
-                    Marie, 42 ans - Cadre supérieur
-                  </h3>
+                  <h3 className="font-semibold text-lg mb-2">Fazile</h3>
                   <p className="text-gray-700 italic mb-3">
-                    "Après 3 semaines de PhycoSci X14, j'ai retrouvé un sommeil
-                    réparateur. Les tensions quotidiennes me pèsent moins et je
-                    gère mieux la pression au travail. C'est un changement
-                    subtil mais réel."
+                    "Atteint de spondylarthrite, j’ai commencé il y a 5 mois
+                    l’eau, la phycocyanine et le Gold de Xelliss. Aujourd’hui,
+                    j’ai retrouvé mobilité et confort de vie — un vrai
+                    changement au quotidien."
                   </p>
-                  <div className="flex gap-2">
-                    <Badge className="bg-green-100 text-green-800">
-                      Stress professionnel
-                    </Badge>
-                    <Badge className="bg-blue-100 text-blue-800">
-                      Sommeil amélioré
-                    </Badge>
-                  </div>
                 </div>
               </div>
             </CardContent>
@@ -617,22 +606,14 @@ export default function PhycocyanineStressPage() {
                   <Users className="h-6 w-6 text-blue-600" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-semibold text-lg mb-2">
-                    Thomas, 35 ans - Entrepreneur
-                  </h3>
+                  <h3 className="font-semibold text-lg mb-2">Pascale</h3>
                   <p className="text-gray-700 italic mb-3">
-                    "La phycocyanine m'aide à maintenir mon niveau d'énergie
-                    sans les pics et chutes habituels. Je me sens plus stable
-                    émotionnellement, même dans les périodes intenses."
+                    "J’avais une tendinite depuis 4 ans, le bras en écharpe
+                    pendant des mois, et la kiné ne changeait rien. En 3
+                    semaines avec l’eau, la phycocyanine et le Gold, j’ai
+                    retrouvé une quasi-totalité de mes capacités — une vraie
+                    libération."
                   </p>
-                  <div className="flex gap-2">
-                    <Badge className="bg-purple-100 text-purple-800">
-                      Énergie stable
-                    </Badge>
-                    <Badge className="bg-orange-100 text-orange-800">
-                      Équilibre émotionnel
-                    </Badge>
-                  </div>
                 </div>
               </div>
             </CardContent>
@@ -645,60 +626,20 @@ export default function PhycocyanineStressPage() {
                   <Users className="h-6 w-6 text-purple-600" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-semibold text-lg mb-2">
-                    Sophie, 28 ans - Étudiante en médecine
-                  </h3>
+                  <h3 className="font-semibold text-lg mb-2">Thierry</h3>
                   <p className="text-gray-700 italic mb-3">
-                    "Pendant ma préparation aux examens, la phycocyanine m'a
-                    aidée à rester concentrée sans ressentir cette anxiété
-                    paralysante. Ma capacité de mémorisation s'est également
-                    améliorée."
+                    "Grâce à la phycocyanine prise chaque matin, nous avons
+                    enchaîné randonnées, footing et windsurf avec une
+                    récupération impressionnante et une énergie constante.
+                    Sommeil profond, oxygénation optimale et régénération
+                    cellulaire : la phyco a révélé tout son potentiel — un vrai
+                    trésor pour notre vitalité."
                   </p>
-                  <div className="flex gap-2">
-                    <Badge className="bg-red-100 text-red-800">
-                      Anxiété réduite
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800">
-                      Concentration
-                    </Badge>
-                  </div>
                 </div>
               </div>
             </CardContent>
           </Card>
         </div>
-
-        <Card className="mt-6 border-yellow-200 bg-yellow-50">
-          <CardContent className="pt-6">
-            <p className="text-lg text-yellow-800 font-semibold mb-3">
-              📊 Données d'usage rapportées
-            </p>
-            <div className="grid md:grid-cols-3 gap-4 text-center">
-              <div>
-                <div className="text-2xl font-bold text-yellow-700">87%</div>
-                <p className="text-yellow-600">
-                  des utilisateurs rapportent une amélioration du sommeil
-                </p>
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-yellow-700">73%</div>
-                <p className="text-yellow-600">
-                  constatent une réduction de l'irritabilité
-                </p>
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-yellow-700">91%</div>
-                <p className="text-yellow-600">
-                  recommandent le produit à leur entourage
-                </p>
-              </div>
-            </div>
-            <p className="text-sm text-yellow-600 text-center mt-4">
-              *Données basées sur une enquête de satisfaction menée auprès de
-              247 utilisateurs réguliers
-            </p>
-          </CardContent>
-        </Card>
       </section>
 
       {/* Section 6: Comparaison */}
@@ -1315,7 +1256,7 @@ export default function PhycocyanineStressPage() {
                   <CheckCircle className="h-4 w-4 text-white" />
                 </div>
                 <div>
-                  <strong>Amélioration du sommeil (89%)</strong>
+                  <strong>Amélioration du sommeil </strong>
                   <br />
                   <span className="text-gray-600">
                     Endormissement plus rapide, sommeil plus profond
@@ -1328,7 +1269,7 @@ export default function PhycocyanineStressPage() {
                   <CheckCircle className="h-4 w-4 text-white" />
                 </div>
                 <div>
-                  <strong>Gestion émotionnelle (76%)</strong>
+                  <strong>Gestion émotionnelle </strong>
                   <br />
                   <span className="text-gray-600">
                     Moins de réactivité, plus de recul face aux situations
@@ -1341,7 +1282,7 @@ export default function PhycocyanineStressPage() {
                   <CheckCircle className="h-4 w-4 text-white" />
                 </div>
                 <div>
-                  <strong>Énergie stable (71%)</strong>
+                  <strong>Énergie stable </strong>
                   <br />
                   <span className="text-gray-600">
                     Moins de fatigue, endurance améliorée
@@ -1354,7 +1295,7 @@ export default function PhycocyanineStressPage() {
                   <CheckCircle className="h-4 w-4 text-white" />
                 </div>
                 <div>
-                  <strong>Concentration (68%)</strong>
+                  <strong>Concentration </strong>
                   <br />
                   <span className="text-gray-600">
                     Meilleure focus, clarté mentale accrue
@@ -1377,7 +1318,7 @@ export default function PhycocyanineStressPage() {
                   <AlertTriangle className="h-4 w-4 text-white" />
                 </div>
                 <div>
-                  <strong>Délai d'adaptation (15%)</strong>
+                  <strong>Délai d'adaptation </strong>
                   <br />
                   <span className="text-gray-600">
                     Effets visibles après 3-4 semaines seulement
@@ -1390,7 +1331,7 @@ export default function PhycocyanineStressPage() {
                   <AlertTriangle className="h-4 w-4 text-white" />
                 </div>
                 <div>
-                  <strong>Goût particulier (12%)</strong>
+                  <strong>Goût particulier </strong>
                   <br />
                   <span className="text-gray-600">
                     Saveur "algue" qui peut surprendre au début
@@ -1403,7 +1344,7 @@ export default function PhycocyanineStressPage() {
                   <AlertTriangle className="h-4 w-4 text-white" />
                 </div>
                 <div>
-                  <strong>Coût d'investissement (8%)</strong>
+                  <strong>Coût d'investissement</strong>
                   <br />
                   <span className="text-gray-600">
                     Prix plus élevé que d'autres solutions naturelles
@@ -1416,7 +1357,7 @@ export default function PhycocyanineStressPage() {
                   <AlertTriangle className="h-4 w-4 text-white" />
                 </div>
                 <div>
-                  <strong>Effets variables (5%)</strong>
+                  <strong>Effets variables </strong>
                   <br />
                   <span className="text-gray-600">
                     Réponse individuelle différente selon le métabolisme
@@ -1427,101 +1368,17 @@ export default function PhycocyanineStressPage() {
           </Card>
         </div>
 
-        <div className="space-y-6 mb-8">
-          <Card className="border-l-4 border-l-blue-500 bg-blue-50">
-            <CardContent className="pt-6">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                  <Star className="h-6 w-6 text-blue-600" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg">
-                    Dr. Catherine L. - Médecin généraliste
-                  </h3>
-                  <div className="flex gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className="h-4 w-4 fill-yellow-400 text-yellow-400"
-                      />
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <p className="text-gray-700 italic text-lg">
-                "J'ai commencé à recommander la phycocyanine à mes patients
-                souffrant de stress chronique. Les résultats sont encourageants,
-                notamment sur la qualité du sommeil et la gestion émotionnelle.
-                C'est un complément intéressant aux approches conventionnelles."
-              </p>
-              <div className="flex gap-2 mt-3">
-                <Badge className="bg-blue-100 text-blue-800">
-                  Professionnel de santé
-                </Badge>
-                <Badge className="bg-green-100 text-green-800">
-                  Recommandation médicale
-                </Badge>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-l-green-500 bg-green-50">
-            <CardContent className="pt-6">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                  <Users className="h-6 w-6 text-green-600" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg">
-                    Marc D. - Coach en entreprise
-                  </h3>
-                  <div className="flex gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className="h-4 w-4 fill-yellow-400 text-yellow-400"
-                      />
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <p className="text-gray-700 italic text-lg">
-                "Travaillant avec des cadres en burnout, j'ai découvert la
-                phycocyanine lors de ma propre période difficile. Maintenant, je
-                la suggère souvent dans mes accompagnements. L'approche
-                naturelle rassure et les résultats sont au rendez-vous."
-              </p>
-              <div className="flex gap-2 mt-3">
-                <Badge className="bg-purple-100 text-purple-800">
-                  Coach professionnel
-                </Badge>
-                <Badge className="bg-orange-100 text-orange-800">Burnout</Badge>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-
         <Card className="border-gray-200 bg-gray-50">
           <CardContent className="pt-6">
             <h3 className="text-gray-800 font-semibold text-lg mb-4 text-center">
-              📊 Analyse communautaire (sur 500+ utilisateurs)
+              📊 Analyse communautaire (sur 14 000+ utilisateurs)
             </h3>
             <div className="grid md:grid-cols-4 gap-4 text-center">
               <div>
                 <div className="text-3xl font-bold text-green-600 mb-2">
-                  4.3/5
+                  4.1/5
                 </div>
                 <p className="text-gray-600">Note moyenne globale</p>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">84%</div>
-                <p className="text-gray-600">Reconduisent leur cure</p>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-purple-600 mb-2">
-                  92%
-                </div>
-                <p className="text-gray-600">Recommandent à leurs proches</p>
               </div>
               <div>
                 <div className="text-3xl font-bold text-orange-600 mb-2">
@@ -1568,13 +1425,6 @@ export default function PhycocyanineStressPage() {
                     <span>
                       <strong>Extraction EPNA :</strong> Procédé unique sans
                       solvant
-                    </span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
-                    <span>
-                      <strong>Spiruline maxima :</strong> 30% plus riche en
-                      phycocyanine
                     </span>
                   </li>
                   <li className="flex items-center gap-3">
@@ -1631,7 +1481,7 @@ export default function PhycocyanineStressPage() {
                       className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-6"
                     >
                       <Link
-                        href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/health/700035/PhycoSci-X14"
+                        href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302771/"
                         target="_blank"
                       >
                         🛒 Commander PhycoSci X14 (44€)
@@ -1852,7 +1702,7 @@ export default function PhycocyanineStressPage() {
               className="bg-yellow-500 text-black hover:bg-yellow-400 font-semibold text-lg px-8 py-4"
             >
               <Link
-                href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/health/700035/PhycoSci-X14"
+                href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302771/"
                 target="_blank"
               >
                 🛒 Commander PhycoSci X14 maintenant
