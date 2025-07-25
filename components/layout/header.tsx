@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X, Leaf, ShoppingBag } from "lucide-react";
+import Image from "next/image";
+import { Menu, X, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -63,14 +64,17 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-      <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-green-600">
-            <Leaf className="h-5 w-5 text-white" />
+      <div className="container flex h-16 items-center justify-between px-4">
+        <Link href="/" className="flex items-center space-x-3">
+          <div className="relative h-10 w-10">
+            <Image
+              src="/Logo.png"
+              alt="Spirulina Health Logo"
+              fill
+              className="object-contain"
+              priority
+            />
           </div>
-          <span className="text-xl font-bold text-green-800">
-            Spirulina Health
-          </span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -216,8 +220,8 @@ export function Header() {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden border-t bg-white">
-          <nav className="container py-4 space-y-4">
+        <div className="md:hidden border-t bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+          <nav className="container py-4 space-y-4 px-4">
             <Link
               href="/"
               className="block text-sm font-medium text-gray-700 hover:text-green-600 transition-colors"

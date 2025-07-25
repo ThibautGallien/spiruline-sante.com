@@ -134,7 +134,6 @@ export default function SpirulinePertePoids() {
         <Card className="mb-12 border-l-4 border-green-500 bg-green-50">
           <CardHeader>
             <CardTitle className="flex items-center text-2xl text-green-800">
-              <Star className="h-6 w-6 mr-2" />
               🌟 Ce que vous allez découvrir :
             </CardTitle>
           </CardHeader>

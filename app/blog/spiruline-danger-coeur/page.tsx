@@ -17,7 +17,6 @@ import {
   AlertTriangle,
   Microscope,
   Shield,
-  Target,
   Droplets,
   ArrowRight,
   Clock,
@@ -153,7 +152,6 @@ export default function SpirulineDangerCoeurPage() {
               <Card className="bg-green-50 border-green-200 mb-8">
                 <CardHeader>
                   <CardTitle className="text-xl text-green-800 flex items-center gap-2">
-                    <Target className="h-5 w-5" />
                     🌟 Ce que vous allez découvrir :
                   </CardTitle>
                 </CardHeader>
@@ -209,7 +207,7 @@ export default function SpirulineDangerCoeurPage() {
               <div className="mb-8">
                 <div className="relative h-64 md:h-80 mb-6 rounded-lg overflow-hidden">
                   <Image
-                    src="https://images.pexels.com/photos/40751/spirulina-micro-algae-nutrient-blue-40751.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                    src="/A3-Spirulina-Pills-Xelliss.webp"
                     alt="Spiruline et santé cardiovasculaire"
                     fill
                     className="object-cover"

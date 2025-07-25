@@ -28,7 +28,7 @@ export async function generateMetadata() {
   return generateSEOMetadata({
     title: "Spiruline et Sport : Performances Optimisées | Guide Complet 2024",
     description:
-      "Découvrez comment la spiruline améliore vos performances sportives : endurance +12%, récupération accélérée, dosages optimaux. Guide expert avec A3 Spirulina.",
+      "Découvrez comment la spiruline améliore vos performances sportives : endurance, récupération, dosages. Guide expert 2025.",
     keywords: [
       "spiruline sport",
       "spiruline musculation",
@@ -200,11 +200,11 @@ export default function SpirulineSportPage() {
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="h-4 w-4 mr-1" />
-                  Livraison 48h
+                  Livraison rapide
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="h-4 w-4 mr-1" />
-                  Qualité garantie
+                  Support client français
                 </div>
               </div>
             </div>
@@ -678,8 +678,8 @@ export default function SpirulineSportPage() {
               </Button>
 
               <div className="flex items-center justify-center space-x-4 mt-3 text-sm text-blue-700">
-                <span>✓ Livraison rapide 48h</span>
-                <span>✓ Garantie satisfaction</span>
+                <span>✓ Livraison rapide </span>
+                <span>✓ Spiruline premium</span>
                 <span>✓ Paiement sécurisé</span>
               </div>
             </CardContent>
@@ -931,8 +931,8 @@ export default function SpirulineSportPage() {
               </Button>
 
               <div className="flex items-center justify-center space-x-6 mt-4 text-sm text-gray-600">
-                <span>✓ Livraison rapide 48h</span>
-                <span>✓ Garantie satisfaction</span>
+                <span>✓ Livraison rapide </span>
+                <span>✓ Spiruline premium</span>
                 <span>✓ Qualité certifiée</span>
               </div>
             </CardContent>

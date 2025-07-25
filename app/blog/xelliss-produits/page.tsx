@@ -161,9 +161,9 @@ export default function XellissProduits() {
                     A3 Spirulina Pills
                   </h3>
 
-                  <div className="relative h-64 rounded-xl overflow-hidden mb-6">
+                  <div className="relative h-80 rounded-xl overflow-hidden mb-6">
                     <Image
-                      src="https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      src="/A3-Spirulina-Pills-Xelliss.webp"
                       alt="A3 Spirulina Pills Xelliss - Comprimés de spiruline premium"
                       fill
                       className="object-cover"
@@ -247,9 +247,9 @@ export default function XellissProduits() {
                     X Gold
                   </h3>
 
-                  <div className="relative h-64 rounded-xl overflow-hidden mb-6">
+                  <div className="relative h-80 rounded-xl overflow-hidden mb-6">
                     <Image
-                      src="https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      src="/X-Gold-Xelliss.webp"
                       alt="X Gold Xelliss - Complément liquide au curcuma et pipérine"
                       fill
                       className="object-cover"
@@ -333,9 +333,9 @@ export default function XellissProduits() {
                     PhycoSci X14
                   </h3>
 
-                  <div className="relative h-64 rounded-xl overflow-hidden mb-6">
+                  <div className="relative h-80 rounded-xl overflow-hidden mb-6">
                     <Image
-                      src="https://images.pexels.com/photos/3762881/pexels-photo-3762881.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      src="/PhycoSciX14-Xelliss.webp"
                       alt="PhycoSci X14 Xelliss - Concentré liquide de spiruline riche en phycocyanine"
                       fill
                       className="object-cover"
@@ -419,9 +419,9 @@ export default function XellissProduits() {
                     Carafe filtrante XelliWater
                   </h3>
 
-                  <div className="relative h-64 rounded-xl overflow-hidden mb-6">
+                  <div className="relative h-80 rounded-xl overflow-hidden mb-6">
                     <Image
-                      src="https://images.pexels.com/photos/416528/pexels-photo-416528.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      src="/XelliWater-Xelliss.webp"
                       alt="Carafe filtrante XelliWater Xelliss - Purification et alcalinisation de l'eau"
                       fill
                       className="object-cover"
@@ -499,8 +499,8 @@ export default function XellissProduits() {
                       Prix
                     </h4>
                     <ul className="space-y-1 text-cyan-700">
-                      <li>• XelliWater : 57 €</li>
-                      <li>• Filtre XelliAlka : 26 €</li>
+                      <li>• XelliWater : 72 € (deux filtres inclus)</li>
+                      <li>• Filtre XelliAlka : 18 €</li>
                     </ul>
                   </div>
 
@@ -564,7 +564,7 @@ export default function XellissProduits() {
                     Adultes actifs, végétariens, seniors
                   </td>
                   <td className="border border-gray-300 p-4 font-semibold text-green-600">
-                    74€
+                    26€
                   </td>
                 </tr>
                 <tr className="hover:bg-gray-50">
@@ -578,7 +578,7 @@ export default function XellissProduits() {
                     Personnes avec douleurs articulaires ou inflammation
                   </td>
                   <td className="border border-gray-300 p-4 font-semibold text-yellow-600">
-                    62€
+                    52€
                   </td>
                 </tr>
                 <tr className="hover:bg-gray-50">
@@ -592,7 +592,7 @@ export default function XellissProduits() {
                     Sportifs, seniors, personnes immunodéprimées
                   </td>
                   <td className="border border-gray-300 p-4 font-semibold text-blue-600">
-                    37€
+                    44€
                   </td>
                 </tr>
                 <tr className="hover:bg-gray-50">
@@ -606,7 +606,7 @@ export default function XellissProduits() {
                     Sportifs, familles, personnes soucieuses de leur santé
                   </td>
                   <td className="border border-gray-300 p-4 font-semibold text-cyan-600">
-                    57 €
+                    72 € (2 filtres inclus)
                   </td>
                 </tr>
                 <tr className="hover:bg-gray-50">
@@ -620,7 +620,7 @@ export default function XellissProduits() {
                     Utilisateurs de la carafe XelliWater
                   </td>
                   <td className="border border-gray-300 p-4 font-semibold text-cyan-600">
-                    26 €
+                    18 €
                   </td>
                 </tr>
               </tbody>

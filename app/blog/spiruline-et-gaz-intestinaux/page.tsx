@@ -18,7 +18,7 @@ export async function generateMetadata() {
   return generateSEOMetadata({
     title: "Spiruline et Gaz Intestinaux : Causes, Solutions et Conseils",
     description:
-      "La spiruline peut-elle causer des gaz ? Découvrez les vraies causes, comment les éviter et choisir une spiruline de qualité qui ne provoque pas de troubles digestifs.",
+      "La spiruline peut-elle causer des gaz ? Découvrez les vraies causes, comment les éviter et choisir une spiruline de qualité.",
     keywords: [
       "spiruline gaz intestinaux",
       "spiruline ballonnements",

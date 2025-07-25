@@ -196,34 +196,25 @@ export default function SpirulineCheveux() {
 
   const testimonials = [
     {
-      name: "Sarah M.",
-      age: "32 ans",
-      result: "Chute divisée par 3 en 2 mois",
+      name: "Pascale",
+      result: "Douleur tendinite disparue",
       quote:
-        "Après ma grossesse, je perdais énormément de cheveux. Avec la spiruline Xelliss, la chute a drastiquement diminué et mes cheveux sont plus épais !",
+        "Après cinq ans de tendinite et capsulite sans amélioration, j’ai découvert le concept de santé cellulaire avec l’eau, la phycocyanine, le krill et le Gold. Depuis, plus aucune douleur, une forme retrouvée, et un vrai tournant avec l’équilibre oméga-6/oméga-3 — une immense gratitude pour ce changement.",
       rating: 5,
-      before: "Perte de 200+ cheveux/jour",
-      after: "Moins de 70 cheveux/jour",
     },
     {
-      name: "Marc L.",
-      age: "45 ans",
-      result: "Repousse visible au niveau des tempes",
+      name: "Eric Masson",
+      result: "Douleurs, allergies, trouble du sommeil disparus",
       quote:
-        "Sceptique au début, mais après 4 mois de spiruline, je vois une vraie repousse. Mes collègues m'ont même fait des remarques positives !",
+        "Mon test Zinzino a révélé un grave déséquilibre oméga-6/oméga-3 (21:1), corrigé en 120 jours grâce à BalanceOil, avec un nouveau ratio de 1,6:1. Depuis, mes douleurs, allergies et troubles du sommeil ont disparu — ma santé s’est transformée, et je me sens enfin en pleine forme.",
       rating: 5,
-      before: "Calvitie débutante",
-      after: "Densité retrouvée",
     },
     {
-      name: "Julie D.",
-      age: "28 ans",
-      result: "Cheveux 2x plus brillants",
+      name: "Anne-Cécile",
+      result: "Meilleure concentration",
       quote:
-        "En plus de stopper la chute, la spiruline a transformé mes cheveux ternes en une chevelure éclatante. Je recommande à 100% !",
+        "Grâce à BalanceOil et à un rééquilibrage en oméga-3, notre fils atteint de TDAH est devenu plus calme, concentré et apaisé. En quelques mois, les effets ont été si positifs que nous avons pu arrêter les médicaments, avec l'accord des médecins.",
       rating: 5,
-      before: "Cheveux ternes et cassants",
-      after: "Brillance et souplesse",
     },
   ];
 
@@ -378,7 +369,7 @@ export default function SpirulineCheveux() {
                     asChild
                   >
                     <Link
-                      href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brand-shop/xelliss-products/302780/"
+                      href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                       target="_blank"
                     >
                       🛒 Commander Maintenant
@@ -470,7 +461,7 @@ export default function SpirulineCheveux() {
           {/* Image principale optimisée */}
           <div className="relative h-96 rounded-2xl overflow-hidden mb-12">
             <Image
-              src="https://images.pexels.com/photos/4033148/pexels-photo-4033148.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              src="/BalanceOil-Zinzino.webp"
               alt="Comprimés de spiruline premium pour cheveux - Gélules naturelles riches en fer et protéines"
               fill
               className="object-cover"
@@ -664,9 +655,6 @@ export default function SpirulineCheveux() {
                           <CardTitle className="text-lg">
                             {testimonial.name}
                           </CardTitle>
-                          <p className="text-sm text-gray-600">
-                            {testimonial.age}
-                          </p>
                         </div>
                         <div className="flex space-x-1">
                           {[...Array(testimonial.rating)].map((_, i) => (
@@ -688,22 +676,6 @@ export default function SpirulineCheveux() {
                       <p className="text-gray-700 italic mb-4">
                         "{testimonial.quote}"
                       </p>
-                      <div className="grid grid-cols-2 gap-2 text-xs">
-                        <div className="bg-red-50 p-2 rounded">
-                          <span className="text-red-700 font-medium">
-                            Avant :
-                          </span>
-                          <br />
-                          {testimonial.before}
-                        </div>
-                        <div className="bg-green-50 p-2 rounded">
-                          <span className="text-green-700 font-medium">
-                            Après :
-                          </span>
-                          <br />
-                          {testimonial.after}
-                        </div>
-                      </div>
                     </CardContent>
                   </Card>
                 ))}
@@ -789,7 +761,7 @@ export default function SpirulineCheveux() {
               {[
                 {
                   form: "Comprimés Premium",
-                  dosage: "6-10 comprimés/jour",
+                  dosage: "4 comprimés/jour",
                   timing: "Matin à jeun",
                   absorption: "95%",
                   ideal: "Usage quotidien facile",
@@ -992,11 +964,10 @@ export default function SpirulineCheveux() {
                   className="bg-yellow-500 text-black hover:bg-yellow-400 font-semibold text-lg px-8 py-4"
                 >
                   <Link
-                    href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brand-shop/xelliss-products/302780/"
+                    href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                     target="_blank"
                   >
                     🛒 Découvrir la Spiruline Xelliss Premium
-                    <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
               </div>
@@ -1373,11 +1344,11 @@ export default function SpirulineCheveux() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-gray-900 text-lg px-8 py-4"
+                  className="border-green text-white hover:bg-white hover:text-gray-900 text-lg px-8 py-4"
                   asChild
                 >
                   <Link
-                    href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop"
+                    href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
                     target="_blank"
                   >
                     🌊 Balance Oil Zinzino

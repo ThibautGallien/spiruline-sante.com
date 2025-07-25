@@ -300,7 +300,7 @@ export default function ZinzinoTestGerman() {
                 <div>
                   <div className="relative h-80 w-full rounded-2xl overflow-hidden mb-4">
                     <Image
-                      src="https://images.pexels.com/photos/4385541/pexels-photo-4385541.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      src="/BalanceOil-Zinzino.webp"
                       alt="BalanceOil+ von Zinzino - Omega-3 Premium Nahrungsergänzung"
                       fill
                       className="object-cover"
@@ -515,7 +515,7 @@ export default function ZinzinoTestGerman() {
                 <div>
                   <div className="relative h-80 w-full rounded-2xl overflow-hidden mb-4">
                     <Image
-                      src="https://images.pexels.com/photos/6129507/pexels-photo-6129507.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      src="/Balance-Test-Zinzino.webp"
                       alt="Zinzino BalanceTest - Omega-3 Bluttest für zu Hause"
                       fill
                       className="object-cover"
@@ -700,7 +700,7 @@ export default function ZinzinoTestGerman() {
                 <div>
                   <div className="relative h-80 w-full rounded-2xl overflow-hidden mb-4">
                     <Image
-                      src="https://images.pexels.com/photos/3683085/pexels-photo-3683085.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      src="/Xtend-Zinzino.webp"
                       alt="Xtend+ von Zinzino - Immunsystem Booster mit Vitaminen und Mineralien"
                       fill
                       className="object-cover"
@@ -871,7 +871,7 @@ export default function ZinzinoTestGerman() {
                 <div>
                   <div className="relative h-80 w-full rounded-2xl overflow-hidden mb-4">
                     <Image
-                      src="https://images.pexels.com/photos/5663568/pexels-photo-5663568.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      src="/ZinoBiotic-Zinzino.webp"
                       alt="ZinoBiotic+ von Zinzino - Ballaststoffe für optimale Darmgesundheit"
                       fill
                       className="object-cover"
@@ -1027,7 +1027,7 @@ export default function ZinzinoTestGerman() {
                 <div>
                   <div className="relative h-80 w-full rounded-2xl overflow-hidden mb-4">
                     <Image
-                      src="https://images.pexels.com/photos/4114721/pexels-photo-4114721.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      src="/LeanShake-chocolat-Zinzino.webp"
                       alt="Zinzino LeanShake - Mahlzeitenersatz für gesundes Abnehmen"
                       fill
                       className="object-cover"
@@ -1398,56 +1398,6 @@ export default function ZinzinoTestGerman() {
               E-Mail an contact@spiruline-sante.com.
             </p>
 
-            <div className="bg-gradient-to-r from-blue-50 to-green-50 p-8 rounded-xl mb-8">
-              <h4 className="text-xl font-semibold text-gray-900 mb-6 text-center">
-                Kontaktformular für Vertriebspartnerschaft
-              </h4>
-              <div className="max-w-lg mx-auto space-y-4">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Ihr Name
-                  </label>
-                  <input
-                    type="text"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md"
-                    placeholder="Ihr Name"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Ihre E-Mail
-                  </label>
-                  <input
-                    type="email"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md"
-                    placeholder="Ihre E-Mail"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Betreff
-                  </label>
-                  <input
-                    type="text"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md"
-                    placeholder="Betreff"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Ihre Nachricht (optional)
-                  </label>
-                  <textarea
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md h-24"
-                    placeholder="Ihre Nachricht (optional)"
-                  ></textarea>
-                </div>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">
-                  Nachricht senden
-                </Button>
-              </div>
-            </div>
-
             {/* Begleitung und Schulungen */}
             <h3 className="text-2xl font-semibold text-gray-900 mb-6">
               Begleitung und Schulungen
@@ -1572,56 +1522,6 @@ export default function ZinzinoTestGerman() {
               Kontaktieren Sie uns gerne für weitere Informationen und eine
               persönliche Beratung.
             </p>
-
-            <div className="bg-gradient-to-r from-blue-50 to-green-50 p-8 rounded-xl mb-8">
-              <h4 className="text-xl font-semibold text-gray-900 mb-6 text-center">
-                Kontakt für weitere Informationen
-              </h4>
-              <div className="max-w-lg mx-auto space-y-4">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Ihr Name
-                  </label>
-                  <input
-                    type="text"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md"
-                    placeholder="Ihr Name"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Ihre E-Mail
-                  </label>
-                  <input
-                    type="email"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md"
-                    placeholder="Ihre E-Mail"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Betreff
-                  </label>
-                  <input
-                    type="text"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md"
-                    placeholder="Betreff"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Ihre Nachricht (optional)
-                  </label>
-                  <textarea
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md h-24"
-                    placeholder="Ihre Nachricht (optional)"
-                  ></textarea>
-                </div>
-                <Button className="w-full bg-green-600 hover:bg-green-700">
-                  Nachricht senden
-                </Button>
-              </div>
-            </div>
           </section>
 
           {/* FAQ zu Zinzino */}

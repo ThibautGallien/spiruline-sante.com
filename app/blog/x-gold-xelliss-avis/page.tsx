@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import { NewsletterForm } from "@/components/forms/newsletter-form";
 import {
   CheckCircle,
-  Star,
   ArrowRight,
   Leaf,
   Shield,
@@ -171,7 +170,7 @@ export default function XGoldXellissAvis() {
                   asChild
                 >
                   <Link
-                    href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brand-shop/xelliss-products/"
+                    href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/xelliss-products/302790"
                     target="_blank"
                   >
                     🛒 Découvrir X Gold
@@ -215,7 +214,7 @@ export default function XGoldXellissAvis() {
               <div>
                 <div className="relative h-80 w-full rounded-2xl overflow-hidden mb-4">
                   <Image
-                    src="https://images.pexels.com/photos/4198491/pexels-photo-4198491.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    src="/X-Gold-Xelliss.webp"
                     alt="X Gold Xelliss - Complément curcuma et pipérine en formule liquide"
                     fill
                     className="object-cover"
@@ -474,96 +473,6 @@ export default function XGoldXellissAvis() {
             </div>
           </div>
 
-          {/* Témoignages Section */}
-          <section className="mb-12" id="temoignages">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
-              Témoignages
-            </h2>
-
-            <div className="space-y-8">
-              {testimonials.map((testimonial, index) => (
-                <Card
-                  key={index}
-                  className="border-l-4 border-green-500 hover:shadow-lg transition-shadow"
-                >
-                  <CardHeader>
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <CardTitle className="text-xl text-green-700">
-                          {testimonial.name}
-                          {testimonial.age && (
-                            <span className="text-gray-600 font-normal">
-                              {" "}
-                              - {testimonial.age}
-                            </span>
-                          )}
-                        </CardTitle>
-                        {testimonial.profession && (
-                          <p className="text-gray-600 mt-1">
-                            {testimonial.profession}
-                          </p>
-                        )}
-                      </div>
-                      <div className="flex space-x-1">
-                        {[...Array(testimonial.rating)].map((_, i) => (
-                          <Star
-                            key={i}
-                            className="h-5 w-5 fill-yellow-400 text-yellow-400"
-                          />
-                        ))}
-                      </div>
-                    </div>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="bg-red-50 p-4 rounded-lg border border-red-200">
-                      <h4 className="font-semibold text-red-700 mb-2">
-                        Problème initial :
-                      </h4>
-                      <p className="text-gray-700">{testimonial.issue}</p>
-                    </div>
-
-                    <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
-                      <h4 className="font-semibold text-blue-700 mb-2">
-                        Produits utilisés :
-                      </h4>
-                      <p className="text-gray-700">{testimonial.products}</p>
-                      {testimonial.duration && (
-                        <p className="text-sm text-blue-600 mt-1">
-                          Durée : {testimonial.duration}
-                        </p>
-                      )}
-                    </div>
-
-                    <div className="bg-green-50 p-4 rounded-lg border border-green-200">
-                      <h4 className="font-semibold text-green-700 mb-2">
-                        Résultats obtenus :
-                      </h4>
-                      <p className="text-gray-700">{testimonial.result}</p>
-                      {testimonial.timeline && (
-                        <p className="text-sm text-green-600 mt-1">
-                          {testimonial.timeline}
-                        </p>
-                      )}
-                      {testimonial.satisfaction && (
-                        <p className="text-sm font-medium text-green-700 mt-2">
-                          Se dit « {testimonial.satisfaction} » de cette
-                          évolution.
-                        </p>
-                      )}
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-
-            <div className="mt-8 p-4 bg-gray-50 rounded-lg border border-gray-200">
-              <p className="text-sm text-gray-600 italic text-center">
-                Les témoignages reflètent des expériences individuelles et ne
-                constituent pas une garantie de résultats.
-              </p>
-            </div>
-          </section>
-
           {/* Où acheter Section */}
           <section className="mb-12" id="ou-acheter">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
@@ -635,7 +544,7 @@ export default function XGoldXellissAvis() {
                     asChild
                   >
                     <Link
-                      href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brand-shop/xelliss-products/"
+                      href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/xelliss-products/302790"
                       target="_blank"
                     >
                       🛒 Commander X Gold
@@ -670,7 +579,7 @@ export default function XGoldXellissAvis() {
                 asChild
               >
                 <Link
-                  href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brand-shop/xelliss-products/"
+                  href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/xelliss-products/302790"
                   target="_blank"
                 >
                   🛒 Commander X Gold

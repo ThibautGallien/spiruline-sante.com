@@ -52,7 +52,7 @@ export default function Page() {
           <div className="flex items-center space-x-4 mb-8 text-sm text-gray-600">
             <span>📅 Mise à jour : Janvier 2025</span>
             <span>⏱️ Lecture : 10 min</span>
-            <span>👤 Par Dr. Marie Dubois</span>
+            <span>👤 Thibaut</span>
           </div>
 
           {/* Résumé en bullet points */}
@@ -500,12 +500,12 @@ export default function Page() {
                   </CardHeader>
                   <CardContent className="text-center">
                     <div className="text-2xl font-bold text-blue-600 mb-2">
-                      39€
+                      37€
                     </div>
                     <div className="text-lg text-gray-600">
                       <div>80 comprimés</div>
                       <div>20-40 jours selon dosage</div>
-                      <div>Soit 0,98€/jour (2g)</div>
+                      <div>Soit 1.85€/jour (2g)</div>
                     </div>
                   </CardContent>
                 </Card>
@@ -546,7 +546,7 @@ export default function Page() {
                   </Link>
                 </Button>
                 <p className="text-sm text-gray-600">
-                  🩸 Riche en fer • 🚚 Livraison 48h • 💳 Paiement sécurisé
+                  🩸 Riche en fer • 🚚 Livraison rapide • 💳 Paiement sécurisé
                 </p>
               </div>
             </div>
@@ -743,7 +743,7 @@ export default function Page() {
                     target="_blank"
                   >
                     <ShoppingCart className="mr-2 h-5 w-5" />
-                    Commencer ma cure de fer (39€)
+                    Commencer ma cure de fer (37€)
                   </Link>
                 </Button>
                 <p className="text-sm text-gray-600 mt-2">

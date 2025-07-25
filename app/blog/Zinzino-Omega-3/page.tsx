@@ -26,12 +26,13 @@ import {
   Info,
 } from "lucide-react";
 import { NewsletterForm } from "@/components/forms/newsletter-form";
+import Image from "next/image";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
     title: "Zinzino Omega 3 : Tout savoir sur BalanceOil+ (Guide Complet 2024)",
     description:
-      "BalanceOil+ de Zinzino révolutionne les oméga-3. Découvrez sa formulation unique, ses bienfaits prouvés et comment il rééquilibre votre ratio oméga-6:3 en 120 jours.",
+      "BalanceOil+ de Zinzino. Découvrez sa formulation unique, ses bienfaits prouvés et comment il rééquilibre votre ratio oméga-6:3.",
     keywords: [
       "Zinzino",
       "BalanceOil+",
@@ -272,7 +273,7 @@ export default function ZinzinoOmega3Page() {
                     <p className="text-2xl font-bold text-green-800">59€</p>
                     <Button className="mt-2 bg-green-600 hover:bg-green-700">
                       <a
-                        href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop"
+                        href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center"
@@ -341,21 +342,15 @@ export default function ZinzinoOmega3Page() {
                   naturelle.
                 </p>
 
-                {/* Image du produit */}
-                <div className="flex justify-center my-6">
-                  <div className="bg-gradient-to-br from-blue-100 to-green-100 p-8 rounded-lg">
-                    <div className="w-64 h-40 bg-orange-200 rounded-lg flex items-center justify-center">
-                      <div className="text-center">
-                        <div className="text-orange-800 font-bold text-lg mb-2">
-                          BalanceOil+
-                        </div>
-                        <div className="text-orange-600 text-sm">
-                          Bouteille 300ml
-                        </div>
-                        <div className="text-orange-600 text-sm">Zinzino</div>
-                      </div>
-                    </div>
-                  </div>
+                {/* Image du produit avec de l'air autour */}
+                <div className="relative h-80 rounded-2xl overflow-hidden mb-4 bg-gradient-to-br from-blue-50 via-white to-green-50 shadow-sm border border-gray-100">
+                  <Image
+                    src="/BalanceOil-Zinzino.webp"
+                    alt="BalanceOil+ Zinzino - Complément Omega-3 premium avec huile d'olive"
+                    fill
+                    className="object-contain p-8 drop-shadow-md"
+                    priority
+                  />
                 </div>
 
                 <div className="bg-blue-50 p-4 rounded-lg">
@@ -625,46 +620,6 @@ export default function ZinzinoOmega3Page() {
               </Card>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <Card className="border-l-4 border-l-blue-500">
-                  <CardContent className="p-6">
-                    <h3 className="font-semibold text-blue-800 mb-3">
-                      🐟 Huile de poisson
-                    </h3>
-                    <p className="text-gray-700 text-sm mb-2">
-                      Issue de petits poissons sauvages (anchois, maquereaux,
-                      sardines) pêchés de manière durable.
-                    </p>
-                    <ul className="text-sm text-gray-600 space-y-1">
-                      <li>
-                        • <strong>EPA :</strong> 1283 mg - Anti-inflammatoire
-                      </li>
-                      <li>
-                        • <strong>DHA :</strong> 683 mg - Santé cérébrale
-                      </li>
-                    </ul>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-l-4 border-l-green-500">
-                  <CardContent className="p-6">
-                    <h3 className="font-semibold text-green-800 mb-3">
-                      🫒 Huile d'olive extra vierge espagnole
-                    </h3>
-                    <p className="text-gray-700 text-sm mb-2">
-                      Variété Picual, récoltée précocement pour une teneur
-                      maximale en polyphénols.
-                    </p>
-                    <ul className="text-sm text-gray-600 space-y-1">
-                      <li>
-                        • <strong>Polyphénols :</strong> +750 mg/kg
-                      </li>
-                      <li>
-                        • <strong>Oméga-9 :</strong> 3069 mg
-                      </li>
-                    </ul>
-                  </CardContent>
-                </Card>
-
                 <Card className="border-l-4 border-l-yellow-500">
                   <CardContent className="p-6">
                     <h3 className="font-semibold text-yellow-800 mb-3">
@@ -939,7 +894,7 @@ export default function ZinzinoOmega3Page() {
                       size="lg"
                     >
                       <a
-                        href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop"
+                        href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center justify-center w-full"
@@ -1113,7 +1068,7 @@ export default function ZinzinoOmega3Page() {
                 <div className="flex items-center justify-center gap-8 mb-6">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-green-800">
-                      4.7/5
+                      4.1/5
                     </div>
                     <div className="text-sm text-green-600">
                       Satisfaction clients
@@ -1144,7 +1099,7 @@ export default function ZinzinoOmega3Page() {
                   className="bg-green-600 hover:bg-green-700 text-xl px-8 py-4"
                 >
                   <a
-                    href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop"
+                    href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center"

@@ -9,7 +9,6 @@ import {
   AlertTriangle,
   Heart,
   Shield,
-  Zap,
   ExternalLink,
   Clock,
   Target,
@@ -67,7 +66,6 @@ export default function Page() {
         <Card className="mb-8 border-green-200 bg-green-50">
           <CardHeader>
             <CardTitle className="text-xl text-green-800 flex items-center">
-              <Target className="h-6 w-6 mr-2" />
               🌟 Ce que vous allez découvrir :
             </CardTitle>
           </CardHeader>
@@ -130,7 +128,7 @@ export default function Page() {
                 </Link>
               </Button>
               <div className="mt-2 text-sm text-gray-600">
-                ✅ Spiruline pure • 🚚 Livraison 48h • 💰 2x plus de fer
+                ✅ Spiruline premium • 🚚 Livraison rapide • 💰 2x plus de fer
               </div>
             </div>
           </CardContent>
@@ -279,7 +277,6 @@ export default function Page() {
             <Card className="border-green-200 bg-green-50">
               <CardHeader>
                 <CardTitle className="text-green-800 flex items-center">
-                  <Heart className="h-6 w-6 mr-2" />
                   💚 Compensation Nutritionnelle
                 </CardTitle>
               </CardHeader>
@@ -302,7 +299,6 @@ export default function Page() {
             <Card className="border-blue-200 bg-blue-50">
               <CardHeader>
                 <CardTitle className="text-blue-800 flex items-center">
-                  <Shield className="h-6 w-6 mr-2" />
                   🛡️ Protection Antioxydante
                 </CardTitle>
               </CardHeader>
@@ -325,7 +321,6 @@ export default function Page() {
             <Card className="border-purple-200 bg-purple-50">
               <CardHeader>
                 <CardTitle className="text-purple-800 flex items-center">
-                  <Zap className="h-6 w-6 mr-2" />
                   🫁 Soutien Respiratoire
                 </CardTitle>
               </CardHeader>
@@ -475,22 +470,6 @@ export default function Page() {
                 </ul>
               </CardContent>
             </Card>
-
-            <Card className="border-yellow-200 bg-yellow-50">
-              <CardHeader>
-                <CardTitle className="text-yellow-800">
-                  💬 Témoignage Client
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-lg">
-                <p className="italic text-yellow-700">
-                  "Fumeur depuis 20 ans, j'ai commencé A3 Spirulina il y a 3
-                  mois. Mon médecin a remarqué une amélioration de mes analyses
-                  et je me sens moins essoufflé."
-                </p>
-                <p className="text-sm text-yellow-600 mt-2">- Pierre, 45 ans</p>
-              </CardContent>
-            </Card>
           </div>
         </section>
 
@@ -626,9 +605,9 @@ export default function Page() {
                 </Button>
 
                 <div className="text-sm text-green-700 space-y-1">
-                  <div>✅ Livraison 48h</div>
+                  <div>✅ Livraison rapide</div>
                   <div>✅ Paiement sécurisé</div>
-                  <div>✅ Satisfaction garantie</div>
+                  <div>✅ Spiruline premium</div>
                 </div>
               </CardContent>
             </Card>
@@ -993,8 +972,8 @@ export default function Page() {
                   </Button>
                 </div>
                 <div className="mt-4 text-sm text-gray-600">
-                  ✅ Livraison 48h • 💰 Paiement sécurisé • 🎯 Satisfaction
-                  garantie
+                  ✅ Livraison rapide • 💰 Paiement sécurisé • 🎯 Spiruline
+                  premium
                 </div>
               </div>
             </CardContent>

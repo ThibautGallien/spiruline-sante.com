@@ -87,7 +87,7 @@ export default function PhycosciX14Xelliss() {
               <div>
                 <div className="relative h-80 w-full rounded-2xl overflow-hidden mb-4">
                   <Image
-                    src="https://images.pexels.com/photos/4385547/pexels-photo-4385547.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    src="/PhycoSciX14-Xelliss.webp"
                     alt="Phycosci X14 Xelliss - Complément nutrition cellulaire à base de micro-algues"
                     fill
                     className="object-cover"
@@ -229,7 +229,7 @@ export default function PhycosciX14Xelliss() {
                 <CardHeader>
                   <div className="flex items-center justify-between">
                     <CardTitle className="text-xl text-green-700">
-                      Dominique
+                      Thierry
                     </CardTitle>
                     <div className="flex space-x-1">
                       {[...Array(5)].map((_, i) => (
@@ -243,11 +243,12 @@ export default function PhycosciX14Xelliss() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-700 italic">
-                    « Nous avons bien connu ce problème de leucémie et de greffe
-                    de moelle avec nos distributrices. Elles avaient eu
-                    d'excellent résultats à moyen terme avec l'eau dynamisée et
-                    la Phycosci, qui d'ailleurs aussi très bénéfique pour le
-                    foie. »
+                    « Grâce à la phycocyanine prise chaque matin, nous avons
+                    enchaîné randonnées, footing et windsurf avec une
+                    récupération impressionnante et une énergie constante.
+                    Sommeil profond, oxygénation optimale et régénération
+                    cellulaire : la phyco a révélé tout son potentiel — un vrai
+                    trésor pour notre vitalité. »
                   </p>
                 </CardContent>
               </Card>
@@ -257,7 +258,7 @@ export default function PhycosciX14Xelliss() {
                 <CardHeader>
                   <div className="flex items-center justify-between">
                     <CardTitle className="text-xl text-blue-700">
-                      Aurélie
+                      Pascale
                     </CardTitle>
                     <div className="flex space-x-1">
                       {[...Array(5)].map((_, i) => (
@@ -272,33 +273,11 @@ export default function PhycosciX14Xelliss() {
                 <CardContent>
                   <div className="space-y-4">
                     <p className="text-gray-700">
-                      « J'ai souffert d'acouphènes pendant des années. Mon ORL
-                      et mon médecin me disait que ça ne se soignait pas. Ils me
-                      disait que ça venait du stress. Ils ne m'ont donné aucun
-                      conseil ni aucune solution pour m'aider.
-                    </p>
-
-                    <p className="text-gray-700">
-                      J'en était au stade à ne plus rien supporter: aucun bruit,
-                      aucun son, ni plus personne. S'il y avait trop de bruit je
-                      mettait des bouchons d'oreilles, sauf que lorsque je les
-                      avaient, j'entendais encore plus les sifflements… c'était
-                      un cercle vicieux.
-                    </p>
-
-                    <p className="text-gray-700">
-                      J'étais désespérée…. jusqu'au jour où j'ai commencé à
-                      utiliser le concept Xelliss (eau, Phycosci AM, krill), pas
-                      du tout en pensant aux acouphènes, mais pour m'accompagner
-                      avec mes problèmes de thyroïde, au fur et à mesure, je
-                      dormais mieux, j'étais en meilleure forme, et, j'étais
-                      moins stressée…j'étais ravie d'aller mieux … Mais ce que,
-                      bizarrement je n'avait pas remarqué de suite, c'est que
-                      les acouphènes avaient disparus.
-                    </p>
-
-                    <p className="text-gray-700 font-medium">
-                      Les produits Xelliss sont remarquables en tous points. »
+                      « Après des mois de tendinite sans amélioration malgré la
+                      kiné, cette personne a testé le trio eau, phycocyanine et
+                      Gold. En seulement 3 semaines, la récupération a été quasi
+                      totale — une vraie libération après des années de
+                      douleur...»
                     </p>
                   </div>
                 </CardContent>
@@ -331,8 +310,8 @@ export default function PhycosciX14Xelliss() {
                 </p>
 
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  La bouteille de Phycosci X14 est à 62.39€ (TTC) ou bien vous
-                  pouvez en avoir une tous les mois pour 49.91€ (TTC).
+                  La bouteille de Phycosci X14 est à 62€ (TTC) ou bien vous
+                  pouvez en avoir une tous les mois pour 44€ (TTC).
                 </p>
 
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -349,7 +328,7 @@ export default function PhycosciX14Xelliss() {
               <div>
                 <div className="relative h-80 w-full rounded-2xl overflow-hidden mb-4">
                   <Image
-                    src="https://images.pexels.com/photos/5905733/pexels-photo-5905733.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    src="/PhycoSciX14.webp"
                     alt="Achat Phycosci X14 Xelliss - Conseiller en ligne pour commander"
                     fill
                     className="object-cover"
@@ -373,7 +352,7 @@ export default function PhycosciX14Xelliss() {
                 asChild
               >
                 <Link
-                  href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brand-shop/xelliss-products/"
+                  href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302771/"
                   target="_blank"
                 >
                   🛒 Commander Phycosci X14
