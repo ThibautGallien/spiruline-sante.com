@@ -29,7 +29,7 @@ export async function generateMetadata() {
     title:
       "Oméga-3 pour des Cheveux Sains : Bienfaits Scientifiques et Guide Complet 2024",
     description:
-      "Découvrez comment les oméga-3 transforment vos cheveux : stimulent la croissance, réduisent la chute de 40%, améliorent la brillance. Guide complet avec BalanceOil+ recommandé.",
+      "Découvrez comment les oméga-3 transforment vos cheveux : stimulent la croissance, réduisent la chute de 40%, améliorent la brillance.",
     keywords: [
       "omega 3 cheveux",
       "omega 3 chute cheveux",
@@ -131,34 +131,25 @@ export default function Omega3Cheveux() {
 
   const testimonials = [
     {
-      name: "Claire M.",
-      age: "34 ans",
-      result: "Chute divisée par 2 en 3 mois",
+      name: "Pascale",
+      result: "Douleur tendinite disparue",
       quote:
-        "Avec BalanceOil+, mes cheveux sont plus épais et la chute a considérablement diminué. Je le recommande !",
+        "Après cinq ans de tendinite et capsulite sans amélioration, j’ai découvert le concept de santé cellulaire avec l’eau, la phycocyanine, le krill et le Gold. Depuis, plus aucune douleur, une forme retrouvée, et un vrai tournant avec l’équilibre oméga-6/oméga-3 — une immense gratitude pour ce changement.",
       rating: 5,
-      before: "Chute importante post-grossesse",
-      after: "Cheveux plus denses",
     },
     {
-      name: "Thomas R.",
-      age: "29 ans",
-      result: "Cheveux plus brillants et forts",
+      name: "Eric Masson",
+      result: "Douleurs, allergies, trouble du sommeil disparus",
       quote:
-        "En 2 mois, mes cheveux ont retrouvé leur éclat naturel. La différence est flagrante sur les photos !",
+        "Mon test Zinzino a révélé un grave déséquilibre oméga-6/oméga-3 (21:1), corrigé en 120 jours grâce à BalanceOil, avec un nouveau ratio de 1,6:1. Depuis, mes douleurs, allergies et troubles du sommeil ont disparu — ma santé s’est transformée, et je me sens enfin en pleine forme.",
       rating: 5,
-      before: "Cheveux ternes et cassants",
-      after: "Brillance et résistance",
     },
     {
-      name: "Sophie L.",
-      age: "41 ans",
-      result: "Cuir chevelu apaisé",
+      name: "Anne-Cécile",
+      result: "Meilleure concentration",
       quote:
-        "Fini les démangeaisons ! Mon cuir chevelu est enfin apaisé et mes cheveux repoussent normalement.",
+        "Grâce à BalanceOil et à un rééquilibrage en oméga-3, notre fils atteint de TDAH est devenu plus calme, concentré et apaisé. En quelques mois, les effets ont été si positifs que nous avons pu arrêter les médicaments, avec l'accord des médecins.",
       rating: 5,
-      before: "Cuir chevelu irrité",
-      after: "Confort retrouvé",
     },
   ];
 
@@ -278,7 +269,7 @@ export default function Omega3Cheveux() {
                     asChild
                   >
                     <Link
-                      href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/health/701005/BalanceOil"
+                      href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
                       target="_blank"
                     >
                       🛒 Commander BalanceOil+
@@ -323,7 +314,7 @@ export default function Omega3Cheveux() {
           {/* Image principale */}
           <div className="relative h-96 rounded-2xl overflow-hidden mb-12">
             <Image
-              src="https://images.pexels.com/photos/4033148/pexels-photo-4033148.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              src="/BalanceOil-Zinzino.webp"
               alt="Compléments oméga-3 premium pour cheveux - Capsules d'huile de poisson et d'algues"
               fill
               className="object-cover"
@@ -516,9 +507,6 @@ export default function Omega3Cheveux() {
                           <CardTitle className="text-lg">
                             {testimonial.name}
                           </CardTitle>
-                          <p className="text-sm text-gray-600">
-                            {testimonial.age}
-                          </p>
                         </div>
                         <div className="flex space-x-1">
                           {[...Array(testimonial.rating)].map((_, i) => (
@@ -540,21 +528,7 @@ export default function Omega3Cheveux() {
                       <p className="text-gray-700 italic mb-4">
                         "{testimonial.quote}"
                       </p>
-                      <div className="grid grid-cols-2 gap-2 text-xs">
-                        <div className="bg-red-50 p-2 rounded">
-                          <span className="text-red-700 font-medium">
-                            Avant :
-                          </span>
-                          <br />
-                          {testimonial.before}
-                        </div>
-                        <div className="bg-green-50 p-2 rounded">
-                          <span className="text-green-700 font-medium">
-                            Après :
-                          </span>
-                          <br />
-                          {testimonial.after}
-                        </div>
+                      
                       </div>
                     </CardContent>
                   </Card>
@@ -604,7 +578,7 @@ export default function Omega3Cheveux() {
                   asChild
                 >
                   <Link
-                    href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/health/701005/BalanceOil"
+                    href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
                     target="_blank"
                   >
                     🛒 Commander BalanceOil+ (59€)

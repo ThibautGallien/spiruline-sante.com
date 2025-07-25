@@ -190,34 +190,25 @@ export default function Omega3BienfaitsPeau() {
 
   const testimonials = [
     {
-      name: "Claire M.",
-      age: "34 ans",
-      result: "Peau transformée en 6 semaines",
+      name: "Pascale",
+      result: "Douleur tendinite disparue",
       quote:
-        "Avec BalanceOil+, ma peau sèche est devenue douce et éclatante. Mes collègues me demandent quel est mon secret !",
+        "Après cinq ans de tendinite et capsulite sans amélioration, j’ai découvert le concept de santé cellulaire avec l’eau, la phycocyanine, le krill et le Gold. Depuis, plus aucune douleur, une forme retrouvée, et un vrai tournant avec l’équilibre oméga-6/oméga-3 — une immense gratitude pour ce changement.",
       rating: 5,
-      before: "Peau sèche, tiraillements",
-      after: "Peau douce, hydratée",
     },
     {
-      name: "Marie L.",
-      age: "45 ans",
-      result: "Rides visiblement réduites",
+      name: "Eric Masson",
+      result: "Douleurs, allergies, trouble du sommeil disparus",
       quote:
-        "Après 3 mois d'oméga-3, mes rides d'expression se sont estompées. Ma peau paraît 5 ans plus jeune !",
+        "Mon test Zinzino a révélé un grave déséquilibre oméga-6/oméga-3 (21:1), corrigé en 120 jours grâce à BalanceOil, avec un nouveau ratio de 1,6:1. Depuis, mes douleurs, allergies et troubles du sommeil ont disparu — ma santé s’est transformée, et je me sens enfin en pleine forme.",
       rating: 5,
-      before: "Rides marquées",
-      after: "Peau lissée, ferme",
     },
     {
-      name: "Sophie D.",
-      age: "28 ans",
-      result: "Fini les rougeurs !",
+      name: "Anne-Cécile",
+      result: "Meilleure concentration",
       quote:
-        "Ma peau sensible ne réagit plus aux agressions. Les oméga-3 ont révolutionné ma routine beauté.",
+        "Grâce à BalanceOil et à un rééquilibrage en oméga-3, notre fils atteint de TDAH est devenu plus calme, concentré et apaisé. En quelques mois, les effets ont été si positifs que nous avons pu arrêter les médicaments, avec l'accord des médecins.",
       rating: 5,
-      before: "Peau sensible, rouge",
-      after: "Teint uniforme, apaisé",
     },
   ];
 
@@ -339,7 +330,7 @@ export default function Omega3BienfaitsPeau() {
                     asChild
                   >
                     <Link
-                      href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/health/701005/BalanceOil"
+                      href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
                       target="_blank"
                     >
                       🌊 Commander BalanceOil+
@@ -407,7 +398,7 @@ export default function Omega3BienfaitsPeau() {
             <div className="flex items-center justify-center space-x-2 text-green-700">
               <CheckCircle className="h-4 w-4" />
               <span>
-                <strong>+50 000</strong> personnes satisfaites
+                <strong>+14 000</strong> personnes satisfaites
               </span>
             </div>
             <div className="flex items-center justify-center space-x-2 text-blue-700">
@@ -429,7 +420,7 @@ export default function Omega3BienfaitsPeau() {
           {/* Image principale optimisée */}
           <div className="relative h-96 rounded-2xl overflow-hidden mb-12">
             <Image
-              src="https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              src="/BalanceOil-Zinzino.webp"
               alt="Femme avec une belle peau utilisant des produits riches en oméga-3 pour la beauté naturelle"
               fill
               className="object-cover"
@@ -717,9 +708,6 @@ export default function Omega3BienfaitsPeau() {
                           <CardTitle className="text-lg">
                             {testimonial.name}
                           </CardTitle>
-                          <p className="text-sm text-gray-600">
-                            {testimonial.age}
-                          </p>
                         </div>
                         <div className="flex space-x-1">
                           {[...Array(testimonial.rating)].map((_, i) => (
@@ -741,22 +729,6 @@ export default function Omega3BienfaitsPeau() {
                       <p className="text-gray-700 italic mb-4">
                         "{testimonial.quote}"
                       </p>
-                      <div className="grid grid-cols-2 gap-2 text-xs">
-                        <div className="bg-red-50 p-2 rounded">
-                          <span className="text-red-700 font-medium">
-                            Avant :
-                          </span>
-                          <br />
-                          {testimonial.before}
-                        </div>
-                        <div className="bg-green-50 p-2 rounded">
-                          <span className="text-green-700 font-medium">
-                            Après :
-                          </span>
-                          <br />
-                          {testimonial.after}
-                        </div>
-                      </div>
                     </CardContent>
                   </Card>
                 ))}
@@ -1092,7 +1064,7 @@ export default function Omega3BienfaitsPeau() {
                   asChild
                 >
                   <Link
-                    href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/health/701005/BalanceOil"
+                    href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
                     target="_blank"
                   >
                     🌊 Découvrir BalanceOil+ pour une Peau Éclatante
@@ -1617,7 +1589,7 @@ export default function Omega3BienfaitsPeau() {
                 asChild
               >
                 <Link
-                  href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/health/701005/BalanceOil"
+                  href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
                   target="_blank"
                 >
                   🌊 Commencer ma Transformation Beauté
@@ -1784,39 +1756,6 @@ export default function Omega3BienfaitsPeau() {
               </div>
             </div>
           </section>
-
-          {/* CTA Final Newsletter Premium */}
-          <div className="bg-gradient-to-br from-green-600 via-blue-600 to-purple-600 text-white p-8 rounded-2xl text-center">
-            <h3 className="text-2xl font-bold mb-4">
-              🎯 Transformez VRAIMENT votre peau dès aujourd'hui !
-            </h3>
-            <p className="text-green-100 mb-6 text-lg">
-              Rejoignez les <strong>50 000+ femmes</strong> qui reçoivent nos
-              protocoles beauté exclusifs, codes promo -25% et conseils
-              d'expertes directement par email
-            </p>
-            <div className="max-w-md mx-auto mb-6">
-              <NewsletterForm variant="dark" size="lg" />
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-sm">
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-green-300" />
-                <span>Protocole personnalisé</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-green-300" />
-                <span>Conseils d'expertes</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-green-300" />
-                <span>Codes promo -25%</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-green-300" />
-                <span>Résultats garantis</span>
-              </div>
-            </div>
-          </div>
         </div>
       </article>
     </>
