@@ -9,8 +9,7 @@ import {
   Instagram,
   Youtube,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { NewsletterForm } from "@/components/forms/newsletter-form";
 
 export function Footer() {
   const quickLinks = [
@@ -25,9 +24,15 @@ export function Footer() {
   ];
 
   const legalLinks = [
-    { name: "Mentions légales", href: "/legal" },
-    { name: "Confidentialité", href: "/privacy" },
-    { name: "CGV", href: "/terms" },
+    { name: "Mentions légales", href: "/mentions-legales" },
+    {
+      name: "Politique de confidentialité",
+      href: "/politique-confidentialite",
+    },
+    {
+      name: "Conditions générales de vente",
+      href: "/conditions-generales-vente",
+    },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -52,7 +57,7 @@ export function Footer() {
             </Link>
             <p className="text-gray-400 text-sm mb-4">
               Votre source d'information fiable sur la spiruline, phycocyanine
-              et oméga-3
+              et oméga-3. Conseils d'experts et produits de qualité.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
@@ -88,7 +93,7 @@ export function Footer() {
 
           {/* Legal */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Legal</h3>
+            <h3 className="text-lg font-semibold mb-4">Informations légales</h3>
             <ul className="space-y-2">
               {legalLinks.map((link) => (
                 <li key={link.name}>
@@ -101,32 +106,88 @@ export function Footer() {
                 </li>
               ))}
             </ul>
+
+            {/* Avertissement santé */}
+            <div className="mt-6 p-3 bg-yellow-900/30 border border-yellow-700/50 rounded-lg">
+              <p className="text-yellow-200 text-xs">
+                ⚠️ <strong>Avertissement :</strong> Les informations sur ce site
+                ne remplacent pas un avis médical. Consultez un professionnel de
+                santé.
+              </p>
+            </div>
           </div>
 
           {/* Newsletter */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
             <p className="text-gray-400 text-sm mb-4">
-              Recevez nos derniers conseils santé et actualités directement dans
-              votre boîte mail.
+              Recevez nos derniers conseils santé, actualités sur la spiruline
+              et offres exclusives directement dans votre boîte mail.
             </p>
-            <div className="flex space-x-2">
-              <Input
-                type="email"
-                placeholder="Votre email"
-                className="bg-gray-800 border-gray-700 text-white placeholder:text-gray-400"
-              />
-              <Button size="icon" className="bg-green-600 hover:bg-green-700">
-                <Mail className="h-4 w-4" />
-              </Button>
+            <NewsletterForm variant="dark" size="sm" />
+
+            {/* Contact rapide */}
+            <div className="mt-6 pt-6 border-t border-gray-700">
+              <h4 className="text-sm font-semibold text-gray-300 mb-3">
+                Contact rapide
+              </h4>
+              <div className="space-y-2">
+                <div className="flex items-center space-x-2 text-sm text-gray-400">
+                  <Mail className="h-4 w-4" />
+                  <span>contact@spiruline-sante.com</span>
+                </div>
+                <p className="text-xs text-gray-500">Réponse sous 24h</p>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-gray-400 text-sm">
-            © 2024 Spirulina Health. Tous droits réservés.
-          </p>
+        {/* Bottom section */}
+        <div className="border-t border-gray-800 mt-8 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="text-center md:text-left">
+              <p className="text-gray-400 text-sm">
+                © {new Date().getFullYear()} Spiruline Santé. Tous droits
+                réservés.
+              </p>
+              <p className="text-gray-500 text-xs mt-1">
+                Site d'information sur la spiruline et partenaire officiel
+                Zinzino & Xelliss
+              </p>
+            </div>
+
+            {/* Certifications / Badges */}
+            <div className="flex items-center space-x-4">
+              <div className="bg-green-800 px-3 py-1 rounded-full">
+                <span className="text-green-200 text-xs font-medium">
+                  🌿 100% Naturel
+                </span>
+              </div>
+              <div className="bg-blue-800 px-3 py-1 rounded-full">
+                <span className="text-blue-200 text-xs font-medium">
+                  🔬 Expertisé
+                </span>
+              </div>
+              <div className="bg-purple-800 px-3 py-1 rounded-full">
+                <span className="text-purple-200 text-xs font-medium">
+                  🇫🇷 Français
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Disclaimer légal */}
+          <div className="mt-6 p-4 bg-gray-800 rounded-lg">
+            <p className="text-gray-400 text-xs leading-relaxed">
+              <strong>Disclaimer :</strong> Spiruline Santé est un site
+              d'information et de conseil. Nous sommes partenaires affiliés de
+              Zinzino et Xelliss. Les produits présentés sont vendus directement
+              par ces entreprises selon leurs propres conditions. Les
+              compléments alimentaires ne remplacent pas une alimentation variée
+              et équilibrée ni un mode de vie sain. Tenir hors de portée des
+              enfants.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
