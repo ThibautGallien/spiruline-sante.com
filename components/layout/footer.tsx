@@ -1,14 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import {
-  Leaf,
-  Mail,
-  Facebook,
-  Twitter,
-  Instagram,
-  Youtube,
-} from "lucide-react";
+import { Leaf, Mail, Facebook, Instagram, Youtube } from "lucide-react";
 import { NewsletterForm } from "@/components/forms/newsletter-form";
 
 export function Footer() {
@@ -37,10 +30,21 @@ export function Footer() {
   ];
 
   const socialLinks = [
-    { name: "Facebook", icon: Facebook, href: "#" },
-    { name: "Twitter", icon: Twitter, href: "#" },
-    { name: "Instagram", icon: Instagram, href: "#" },
-    { name: "YouTube", icon: Youtube, href: "#" },
+    {
+      name: "Facebook",
+      icon: Facebook,
+      href: "https://www.facebook.com/people/Spiruline-sant%C3%A9/100088860296521/",
+    },
+    {
+      name: "Instagram",
+      icon: Instagram,
+      href: "https://www.instagram.com/spiruline_sante/",
+    },
+    {
+      name: "YouTube",
+      icon: Youtube,
+      href: "https://www.youtube.com/@Spiruline-sant%C3%A9",
+    },
   ];
 
   return (
