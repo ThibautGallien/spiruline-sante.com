@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!email || !emailRegex.test(email)) {
       return NextResponse.json(
-        { message: "Adresse email invalide" },
+        { success: false, message: "Adresse email invalide" },
         { status: 400 }
       );
     }
@@ -21,7 +21,7 @@ export async function POST(request: NextRequest) {
     if (!BREVO_API_KEY) {
       console.error("BREVO_API_KEY manquante");
       return NextResponse.json(
-        { message: "Configuration manquante" },
+        { success: false, message: "Configuration manquante" },
         { status: 500 }
       );
     }
@@ -35,6 +35,7 @@ export async function POST(request: NextRequest) {
         SUBSCRIPTION_DATE:
           attributes?.SUBSCRIPTION_DATE || new Date().toISOString(),
         INTERESTS: attributes?.INTERESTS || ["spiruline"],
+        FORM_LOCATION: attributes?.FORM_LOCATION || "unknown",
         OPT_IN: true,
         LANGUAGE: "fr",
       },
@@ -43,6 +44,8 @@ export async function POST(request: NextRequest) {
       emailBlacklisted: false,
       smsBlacklisted: false,
     };
+
+    console.log("Tentative d'inscription Brevo pour:", email);
 
     // Appel à l'API Brevo
     const brevoResponse = await fetch("https://api.brevo.com/v3/contacts", {
@@ -59,9 +62,10 @@ export async function POST(request: NextRequest) {
 
     if (brevoResponse.ok || brevoResponse.status === 204) {
       // Succès - contact créé ou mis à jour
+      console.log("Inscription Brevo réussie:", email);
       return NextResponse.json({
         success: true,
-        message: "Inscription réussie !",
+        message: "Inscription réussie ! Vérifiez votre boîte mail 📧",
         contact: {
           email,
           firstName: firstName || null,
@@ -73,9 +77,11 @@ export async function POST(request: NextRequest) {
       brevoData.code === "duplicate_parameter"
     ) {
       // Contact déjà existant - on considère ça comme un succès
+      console.log("Contact déjà existant:", email);
       return NextResponse.json({
         success: true,
-        message: "Vous êtes déjà inscrit à notre newsletter !",
+        message:
+          "Vous êtes déjà inscrit ! Le plan spiruline arrive dans votre boîte mail 🌱",
         contact: {
           email,
           firstName: firstName || null,
@@ -84,16 +90,35 @@ export async function POST(request: NextRequest) {
       });
     } else {
       // Erreur Brevo
-      console.error("Erreur Brevo:", brevoData);
+      console.error("Erreur Brevo:", {
+        status: brevoResponse.status,
+        data: brevoData,
+      });
+
+      // Messages d'erreur plus spécifiques
+      let errorMessage = "Erreur lors de l'inscription. Veuillez réessayer.";
+
+      if (brevoResponse.status === 400) {
+        errorMessage = "Données invalides. Vérifiez votre adresse email.";
+      } else if (brevoResponse.status === 401) {
+        errorMessage = "Erreur de configuration. Contactez le support.";
+      } else if (brevoResponse.status >= 500) {
+        errorMessage =
+          "Service temporairement indisponible. Réessayez dans quelques minutes.";
+      }
+
       return NextResponse.json(
-        { message: "Erreur lors de l'inscription. Veuillez réessayer." },
+        { success: false, message: errorMessage },
         { status: 400 }
       );
     }
   } catch (error) {
     console.error("Erreur API newsletter:", error);
     return NextResponse.json(
-      { message: "Erreur serveur. Veuillez réessayer plus tard." },
+      {
+        success: false,
+        message: "Erreur serveur. Veuillez réessayer plus tard.",
+      },
       { status: 500 }
     );
   }
@@ -105,6 +130,7 @@ export async function GET() {
     status: "OK",
     service: "Newsletter API",
     brevo_configured: !!BREVO_API_KEY,
+    list_configured: !!BREVO_LIST_ID,
     timestamp: new Date().toISOString(),
   });
 }

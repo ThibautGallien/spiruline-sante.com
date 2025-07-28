@@ -22,6 +22,7 @@ import {
   Dumbbell,
 } from "lucide-react";
 import { StructuredData } from "@/components/seo/structured-data";
+import { SpirulineResetSection } from "@/components/sections/spiruline-reset-section";
 import {
   generateSEOMetadata,
   generateProductSchema,
@@ -259,6 +260,9 @@ const A3SpirulinaPillsArticle = () => {
             </div>
           </CardContent>
         </Card>
+
+        {/* Section Spiruline Reset - Composant réutilisable */}
+        <SpirulineResetSection className="my-12" />
 
         {/* Introduction */}
         <div className="prose max-w-none">

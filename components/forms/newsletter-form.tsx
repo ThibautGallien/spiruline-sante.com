@@ -9,12 +9,16 @@ interface NewsletterFormProps {
   variant?: "default" | "dark";
   size?: "sm" | "md" | "lg";
   className?: string;
+  source?: string;
+  interests?: string[];
 }
 
 export function NewsletterForm({
   variant = "default",
   size = "md",
   className = "",
+  source = "general",
+  interests = ["spiruline", "phycocyanine", "omega-3", "zinzino"],
 }: NewsletterFormProps) {
   const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");
@@ -32,10 +36,16 @@ export function NewsletterForm({
       return;
     }
 
+    if (size === "lg" && !firstName) {
+      setStatus("error");
+      setMessage("Veuillez entrer votre prénom");
+      return;
+    }
+
     setStatus("loading");
 
     try {
-      // Appel à l'API Brevo
+      // Appel à l'API Brevo avec les paramètres personnalisés
       const response = await fetch("/api/newsletter", {
         method: "POST",
         headers: {
@@ -45,9 +55,9 @@ export function NewsletterForm({
           email,
           firstName: firstName || undefined,
           attributes: {
-            SOURCE: "spiruline-sante.com",
+            SOURCE: source,
             SUBSCRIPTION_DATE: new Date().toISOString(),
-            INTERESTS: ["spiruline", "phycocyanine", "omega-3", "zinzino"],
+            INTERESTS: interests,
           },
         }),
       });
@@ -60,11 +70,12 @@ export function NewsletterForm({
         setEmail("");
         setFirstName("");
 
-        // Google Analytics event
+        // Google Analytics event avec source personnalisée
         if (typeof window !== "undefined" && (window as any).gtag) {
           (window as any).gtag("event", "newsletter_signup", {
             event_category: "engagement",
-            event_label: "header_newsletter",
+            event_label: source,
+            custom_parameter_interests: interests.join(","),
           });
         }
 
@@ -101,34 +112,16 @@ export function NewsletterForm({
   return (
     <div className={`w-full max-w-md mx-auto ${className}`}>
       <form onSubmit={handleSubmit} className="space-y-3">
-        {size === "lg" && (
-          <div className="text-center mb-4">
-            <h3
-              className={`text-lg font-semibold mb-2 ${
-                variant === "dark" ? "text-white" : "text-gray-900"
-              }`}
-            >
-              📧 Restez informé !
-            </h3>
-            <p
-              className={`text-sm ${
-                variant === "dark" ? "text-white/80" : "text-gray-600"
-              }`}
-            >
-              Conseils santé, offres exclusives et actualités
-            </p>
-          </div>
-        )}
-
         <div className="flex flex-col space-y-2">
           {size === "lg" && (
             <Input
               type="text"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
-              placeholder="Prénom (optionnel)"
+              placeholder="Votre prénom"
               className={inputClasses}
               disabled={status === "loading"}
+              required
             />
           )}
 
@@ -144,7 +137,9 @@ export function NewsletterForm({
             />
             <Button
               type="submit"
-              disabled={status === "loading" || !email}
+              disabled={
+                status === "loading" || !email || (size === "lg" && !firstName)
+              }
               className={buttonClasses}
               size={size === "sm" ? "sm" : "default"}
             >
