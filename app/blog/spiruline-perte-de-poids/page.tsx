@@ -1,7 +1,6 @@
 import { generateSEOMetadata } from "@/lib/seo";
 import { StructuredData } from "@/components/seo/structured-data";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -22,6 +21,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { SpirulineResetSection } from "@/components/sections/spiruline-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -92,11 +92,11 @@ export default function SpirulinePertePoids() {
     dateModified: "2024-01-15",
     author: {
       "@type": "Person",
-      name: "Équipe Spirulina Health",
+      name: "Thibaut",
     },
     publisher: {
       "@type": "Organization",
-      name: "Spirulina Health",
+      name: "Thibaut",
       logo: {
         "@type": "ImageObject",
         url: "https://spiruline-sante.com/images/logo.png",
@@ -126,7 +126,7 @@ export default function SpirulinePertePoids() {
           <div className="flex items-center space-x-4 text-sm text-gray-600 mb-8">
             <span>📅 Mis à jour le 15 janvier 2024</span>
             <span>⏱️ 8 min de lecture</span>
-            <span>👤 Équipe Spirulina Health</span>
+            <span>👤 Thibaut</span>
           </div>
         </header>
 
@@ -195,8 +195,7 @@ export default function SpirulinePertePoids() {
                   href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                   target="_blank"
                 >
-                  Découvrir A3 Spirulina Pills (37€ - 3 semaines)
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  Découvrir A3 Spirulina Pills
                 </Link>
               </Button>
             </div>
@@ -215,7 +214,8 @@ export default function SpirulinePertePoids() {
             soutenir vos objectifs minceur.
           </p>
         </div>
-
+        {/* Section Spiruline Reset - Composant réutilisable */}
+        <SpirulineResetSection className="my-12" />
         {/* Comment ça marche */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">
@@ -502,24 +502,6 @@ export default function SpirulinePertePoids() {
           </div>
         </section>
 
-        {/* Newsletter CTA */}
-        <section className="mb-16">
-          <Card className="bg-gradient-to-r from-green-600 to-blue-600 text-white">
-            <CardContent className="p-8 text-center">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                🎁 Recevez nos conseils minceur spiruline
-              </h3>
-              <p className="text-lg text-green-100 mb-6">
-                Guides exclusifs, astuces d'experts et offres réservées aux
-                abonnés
-              </p>
-              <div className="max-w-md mx-auto">
-                <NewsletterForm variant="dark" size="lg" />
-              </div>
-            </CardContent>
-          </Card>
-        </section>
-
         {/* Formes de spiruline */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">
@@ -531,7 +513,7 @@ export default function SpirulinePertePoids() {
               <CardHeader>
                 <CardTitle className="flex items-center text-xl">
                   <Star className="h-6 w-6 mr-2 text-green-600" />
-                  Comprimés ⭐ Recommandé
+                  Comprimés Recommandé
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-lg">
@@ -968,8 +950,7 @@ export default function SpirulinePertePoids() {
                     href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                     target="_blank"
                   >
-                    🛒 Commencer votre cure dès maintenant
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                    Commencer votre cure
                   </Link>
                 </Button>
               </div>

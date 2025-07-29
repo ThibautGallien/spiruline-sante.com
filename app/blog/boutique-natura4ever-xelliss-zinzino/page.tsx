@@ -1,5 +1,4 @@
 import { generateSEOMetadata } from "@/lib/seo";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -8,7 +7,6 @@ import {
   AlertTriangle,
   ShoppingCart,
   Star,
-  ArrowRight,
   ExternalLink,
   Zap,
   Shield,
@@ -18,6 +16,7 @@ import {
   Clock,
 } from "lucide-react";
 import Link from "next/link";
+import { SpirulineResetSection } from "@/components/sections/spiruline-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -247,7 +246,6 @@ export default function BoutiqueNatura4EverPage() {
                 target="_blank"
               >
                 🛒 Accéder à la Boutique Zinzino
-                <ExternalLink className="ml-2 h-5 w-5" />
               </Link>
             </Button>
           </div>
@@ -309,7 +307,8 @@ export default function BoutiqueNatura4EverPage() {
                 ))}
               </div>
             </section>
-
+            {/* Section Spiruline Reset - Composant réutilisable */}
+            <SpirulineResetSection className="my-12" />
             {/* Comparaison produits */}
             <section className="mb-12" id="produits">
               <h2 className="text-3xl font-bold text-gray-900 mb-8">
@@ -555,34 +554,6 @@ export default function BoutiqueNatura4EverPage() {
                 </table>
               </div>
             </section>
-
-            {/* CTA Newsletter */}
-            <div className="bg-gradient-to-r from-green-600 to-blue-600 text-white p-8 rounded-2xl mb-12 text-center">
-              <h2 className="text-2xl font-bold mb-4">
-                📧 Restez Informé des Nouveautés Zinzino-Xelliss
-              </h2>
-              <p className="text-green-100 text-lg mb-6">
-                Recevez en exclusivité les dernières offres, tests gratuits et
-                conseils personnalisés
-              </p>
-              <div className="max-w-md mx-auto mb-4">
-                <NewsletterForm variant="dark" size="lg" />
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-                <div className="flex items-center justify-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-300" />
-                  <span>Codes promo exclusifs -20%</span>
-                </div>
-                <div className="flex items-center justify-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-300" />
-                  <span>Tests sanguins gratuits</span>
-                </div>
-                <div className="flex items-center justify-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-300" />
-                  <span>Conseils nutrition personnalisés</span>
-                </div>
-              </div>
-            </div>
 
             {/* Avantages Zinzino vs Anciens */}
             <section className="mb-12">
@@ -901,8 +872,7 @@ export default function BoutiqueNatura4EverPage() {
                     href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brand-shop/xelliss-products/302780/"
                     target="_blank"
                   >
-                    🛒 Commander A3 Spirulina (26€)
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                    Commander A3 Spirulina (26€)
                   </Link>
                 </Button>
                 <Button
@@ -914,7 +884,7 @@ export default function BoutiqueNatura4EverPage() {
                     href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
                     target="_blank"
                   >
-                    🌊 Découvrir BalanceOil+ (42€)
+                    Découvrir BalanceOil+ (42€)
                     <ExternalLink className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>

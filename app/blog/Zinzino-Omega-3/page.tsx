@@ -22,11 +22,10 @@ import {
   Eye,
   Droplets,
   Clock,
-  Award,
   Info,
 } from "lucide-react";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import Image from "next/image";
+import { Omega3ResetSection } from "@/components/sections/omega3-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -214,7 +213,6 @@ export default function ZinzinoOmega3Page() {
               votre ratio oméga-6:3 en 120 jours seulement.
             </p>
           </div>
-
           {/* Points clés */}
           <Card className="border-l-4 border-l-green-500">
             <CardHeader>
@@ -286,7 +284,6 @@ export default function ZinzinoOmega3Page() {
               </div>
             </CardContent>
           </Card>
-
           {/* Introduction */}
           <div className="prose max-w-none">
             <p className="text-lg text-gray-700 leading-relaxed">
@@ -306,23 +303,8 @@ export default function ZinzinoOmega3Page() {
               distingue sur le marché saturé des oméga-3.
             </p>
           </div>
-
-          {/* Newsletter */}
-          <Card className="bg-gradient-to-r from-blue-50 to-green-50 border-blue-200">
-            <CardContent className="p-6">
-              <div className="text-center mb-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  📧 Obtenez nos conseils d'expert gratuits
-                </h3>
-                <p className="text-gray-600">
-                  Recevez notre livre gratuit "Vitamine D et Omega-3 : les
-                  alliés incontournables de votre santé"
-                </p>
-              </div>
-              <NewsletterForm size="lg" />
-            </CardContent>
-          </Card>
-
+          {/* Section Oméga-3 Reset - Composant réutilisable */}
+          <Omega3ResetSection className="my-12" />
           {/* Qu'est-ce que BalanceOil+ */}
           <section className="space-y-6">
             <h2 className="text-3xl font-bold text-gray-900">
@@ -395,7 +377,6 @@ export default function ZinzinoOmega3Page() {
               </CardContent>
             </Card>
           </section>
-
           {/* Avez-vous besoin d'Omega-3 ? */}
           <section className="space-y-6">
             <h2 className="text-3xl font-bold text-gray-900">
@@ -444,7 +425,6 @@ export default function ZinzinoOmega3Page() {
               </CardContent>
             </Card>
           </section>
-
           {/* Pourquoi l'équilibre Omega-6:3 est-il si important ? */}
           <section className="space-y-6">
             <h2 className="text-3xl font-bold text-gray-900">
@@ -517,7 +497,6 @@ export default function ZinzinoOmega3Page() {
               </Card>
             </div>
           </section>
-
           {/* Les bienfaits de BalanceOil+ */}
           <section className="space-y-6">
             <h2 className="text-3xl font-bold text-gray-900">
@@ -569,7 +548,6 @@ export default function ZinzinoOmega3Page() {
               </CardContent>
             </Card>
           </section>
-
           {/* Les ingrédients de BalanceOil+ */}
           <section className="space-y-6">
             <h2 className="text-3xl font-bold text-gray-900">
@@ -642,7 +620,6 @@ export default function ZinzinoOmega3Page() {
               </div>
             </div>
           </section>
-
           {/* Comment utiliser BalanceOil+ efficacement */}
           <section className="space-y-6">
             <h2 className="text-3xl font-bold text-gray-900">
@@ -753,7 +730,6 @@ export default function ZinzinoOmega3Page() {
               </Card>
             </div>
           </section>
-
           {/* Témoignages utilisateurs */}
           <section className="space-y-6">
             <h2 className="text-3xl font-bold text-gray-900">
@@ -825,7 +801,6 @@ export default function ZinzinoOmega3Page() {
               </CardContent>
             </Card>
           </section>
-
           {/* Où acheter BalanceOil+ */}
           <section className="space-y-6">
             <h2 className="text-3xl font-bold text-gray-900">
@@ -925,7 +900,6 @@ export default function ZinzinoOmega3Page() {
               </CardContent>
             </Card>
           </section>
-
           {/* Précautions et contre-indications */}
           <section className="space-y-6">
             <h2 className="text-3xl font-bold text-gray-900">
@@ -980,7 +954,6 @@ export default function ZinzinoOmega3Page() {
               </CardContent>
             </Card>
           </section>
-
           {/* FAQ */}
           <section className="space-y-6">
             <h2 className="text-3xl font-bold text-gray-900">
@@ -1000,7 +973,6 @@ export default function ZinzinoOmega3Page() {
               ))}
             </Accordion>
           </section>
-
           {/* Conclusion */}
           <section className="space-y-6">
             <h2 className="text-3xl font-bold text-gray-900">
@@ -1104,9 +1076,7 @@ export default function ZinzinoOmega3Page() {
                     rel="noopener noreferrer"
                     className="flex items-center"
                   >
-                    <Award className="mr-2 h-6 w-6" />
-                    Commencer ma transformation santé aujourd'hui
-                    <ArrowRight className="ml-2 h-6 w-6" />
+                    Commencer ma transformation
                   </a>
                 </Button>
 
@@ -1116,7 +1086,6 @@ export default function ZinzinoOmega3Page() {
               </CardContent>
             </Card>
           </section>
-
           {/* Sources */}
           <section className="space-y-4">
             <h3 className="text-xl font-semibold text-gray-900">Sources</h3>

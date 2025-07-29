@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import {
   CheckCircle,
   AlertTriangle,
@@ -12,9 +11,9 @@ import {
   ExternalLink,
   Clock,
   Target,
-  ArrowRight,
 } from "lucide-react";
 import Link from "next/link";
+import { SpirulineResetSection } from "@/components/sections/spiruline-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -123,8 +122,7 @@ export default function Page() {
                   href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                   target="_blank"
                 >
-                  🛒 Découvrir A3 Spirulina Xelliss (37€ - 80 comprimés)
-                  <ExternalLink className="h-5 w-5 ml-2" />
+                  Découvrir A3 Spirulina Xelliss
                 </Link>
               </Button>
               <div className="mt-2 text-sm text-gray-600">
@@ -155,7 +153,8 @@ export default function Page() {
               </p>
             </CardContent>
           </Card>
-
+          {/* Section Spiruline Reset - Composant réutilisable */}
+          <SpirulineResetSection className="my-12" />
           <h3 className="text-2xl font-semibold text-gray-900 mb-4">
             L'Origine de la Confusion
           </h3>
@@ -614,24 +613,6 @@ export default function Page() {
           </div>
         </section>
 
-        {/* Newsletter */}
-        <section className="mb-12">
-          <Card className="border-blue-200 bg-blue-50">
-            <CardContent className="pt-6">
-              <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold text-blue-900 mb-2">
-                  📧 Recevez nos conseils santé gratuits
-                </h3>
-                <p className="text-lg text-blue-700">
-                  Guides exclusifs, offres spéciales et actualités santé
-                  directement dans votre boîte mail
-                </p>
-              </div>
-              <NewsletterForm variant="default" size="lg" />
-            </CardContent>
-          </Card>
-        </section>
-
         {/* Vérité sur l'arrêt */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
@@ -843,8 +824,7 @@ export default function Page() {
                 href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                 target="_blank"
               >
-                🛒 Commencer avec A3 Spirulina (37€)
-                <ArrowRight className="h-5 w-5 ml-2" />
+                Commander la spiurline Xelliss
               </Link>
             </Button>
           </div>

@@ -9,7 +9,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import {
   CheckCircle,
   AlertTriangle,
@@ -23,6 +22,7 @@ import {
   Heart,
 } from "lucide-react";
 import Link from "next/link";
+import { SpirulineResetSection } from "@/components/sections/spiruline-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -190,7 +190,7 @@ export default function SpirulineSportPage() {
                   href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                   target="_blank"
                 >
-                  🛒 Découvrir A3 Spirulina Xelliss (37€ - 80 comprimés)
+                  Découvrir A3 Spirulina Xelliss
                 </Link>
               </Button>
               <div className="flex items-center justify-center space-x-4 mt-3 text-sm text-green-700">
@@ -227,7 +227,8 @@ export default function SpirulineSportPage() {
             meilleures pratiques d'utilisation.
           </p>
         </section>
-
+        {/* Section Spiruline Reset - Composant réutilisable */}
+        <SpirulineResetSection className="my-12" />
         {/* Comment ça marche */}
         <section className="mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
@@ -416,21 +417,6 @@ export default function SpirulineSportPage() {
                 </ul>
               </CardContent>
             </Card>
-          </div>
-        </section>
-
-        {/* Newsletter CTA */}
-        <section className="my-12 py-8 bg-gradient-to-r from-blue-600 to-green-600 text-white rounded-lg">
-          <div className="text-center mb-6">
-            <h3 className="text-2xl font-bold mb-2">
-              📧 Recevez nos guides sport gratuits !
-            </h3>
-            <p className="text-blue-100">
-              Conseils nutrition, programmes d'entraînement et offres exclusives
-            </p>
-          </div>
-          <div className="max-w-md mx-auto">
-            <NewsletterForm variant="dark" size="lg" />
           </div>
         </section>
 
@@ -673,7 +659,7 @@ export default function SpirulineSportPage() {
                   href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                   target="_blank"
                 >
-                  🛒 Commander A3 Spirulina Xelliss maintenant
+                  Commander A3 Spirulina Xelliss
                 </Link>
               </Button>
 
@@ -926,7 +912,7 @@ export default function SpirulineSportPage() {
                   href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                   target="_blank"
                 >
-                  🛒 Optimiser mes performances avec A3 Spirulina (37€)
+                  Optimiser mes performances
                 </Link>
               </Button>
 

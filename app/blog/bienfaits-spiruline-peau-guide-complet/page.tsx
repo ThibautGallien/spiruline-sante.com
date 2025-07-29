@@ -1,9 +1,9 @@
 import { generateSEOMetadata } from "@/lib/seo";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, AlertTriangle, ShoppingCart } from "lucide-react";
 import Link from "next/link";
+import { SpirulineResetSection } from "@/components/sections/spiruline-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -152,7 +152,8 @@ export default function Page() {
               teint éclatant, la spiruline agit de l'intérieur pour nourrir et
               régénérer votre peau naturellement.
             </p>
-
+            {/* Section Spiruline Reset - Composant réutilisable */}
+            <SpirulineResetSection className="my-12" />
             {/* Qu'est-ce que la spiruline et comment ça marche */}
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Comment la spiruline agit-elle sur votre peau ?
@@ -645,20 +646,6 @@ export default function Page() {
               </div>
             </div>
 
-            {/* Newsletter CTA */}
-            <div className="bg-gradient-to-r from-green-600 to-blue-600 text-white p-8 rounded-lg mb-8">
-              <h2 className="text-2xl font-bold mb-4 text-center">
-                🌟 Restez Informé des Dernières Nouveautés
-              </h2>
-              <p className="text-center mb-6">
-                Recevez nos conseils beauté et nos guides exclusifs directement
-                dans votre boîte mail
-              </p>
-              <div className="max-w-md mx-auto">
-                <NewsletterForm variant="dark" size="lg" />
-              </div>
-            </div>
-
             {/* FAQ */}
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Questions fréquentes
@@ -832,7 +819,7 @@ export default function Page() {
                     target="_blank"
                   >
                     <ShoppingCart className="mr-2 h-5 w-5" />
-                    Essayer A3 Spirulina (39€ - 3 semaines)
+                    Essayer A3 Spirulina
                   </Link>
                 </Button>
                 <p className="text-sm text-gray-600 mt-2">

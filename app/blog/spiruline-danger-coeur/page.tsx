@@ -18,7 +18,6 @@ import {
   Microscope,
   Shield,
   Droplets,
-  ArrowRight,
   Clock,
   User,
   Calendar,
@@ -26,6 +25,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { SpirulineResetSection } from "@/components/sections/spiruline-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -195,8 +195,7 @@ export default function SpirulineDangerCoeurPage() {
                         href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                         target="_blank"
                       >
-                        🛒 Découvrir une spiruline de qualité premium
-                        <ArrowRight className="ml-2 h-5 w-5" />
+                        Découvrir la spiruline
                       </Link>
                     </Button>
                   </div>
@@ -231,7 +230,8 @@ export default function SpirulineDangerCoeurPage() {
                   réponse claire et nuancée.
                 </p>
               </div>
-
+              {/* Section Spiruline Reset - Composant réutilisable */}
+              <SpirulineResetSection className="my-12" />
               {/* Section : Spiruline et Santé Cardiaque */}
               <section className="mb-8">
                 <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
@@ -272,8 +272,7 @@ export default function SpirulineDangerCoeurPage() {
                       href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                       target="_blank"
                     >
-                      🛒 Découvrir une spiruline de qualité premium
-                      <ArrowRight className="ml-2 h-5 w-5" />
+                      Découvrir la spiruline
                     </Link>
                   </Button>
                 </div>
@@ -460,8 +459,7 @@ export default function SpirulineDangerCoeurPage() {
                       href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                       target="_blank"
                     >
-                      🛒 Découvrir une spiruline de qualité premium
-                      <ArrowRight className="ml-2 h-5 w-5" />
+                      Découvrir la spiruline
                     </Link>
                   </Button>
                 </div>
@@ -662,8 +660,7 @@ export default function SpirulineDangerCoeurPage() {
                       href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                       target="_blank"
                     >
-                      🛒 Découvrir une spiruline de qualité premium
-                      <ArrowRight className="ml-2 h-5 w-5" />
+                      Découvrir la spiruline
                     </Link>
                   </Button>
                 </div>

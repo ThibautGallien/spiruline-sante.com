@@ -1,15 +1,8 @@
 import { generateSEOMetadata } from "@/lib/seo";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import {
   CheckCircle,
   AlertTriangle,
@@ -19,13 +12,13 @@ import {
   Zap,
   TrendingUp,
   Users,
-  ArrowRight,
   Target,
   Award,
   DollarSign,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { SpirulineResetSection } from "@/components/sections/spiruline-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -165,7 +158,8 @@ export default function XellissReviewPage() {
             Larré.
           </p>
         </div>
-
+        {/* Section Spiruline Reset - Composant réutilisable */}
+        <SpirulineResetSection className="my-12" />
         <h3 className="text-2xl font-semibold text-gray-900 mb-4">
           Historique de Xelliss (ex Natura4Ever)
         </h3>
@@ -275,24 +269,6 @@ export default function XellissReviewPage() {
           </CardContent>
         </Card>
       </section>
-
-      {/* Newsletter CTA */}
-      <Card className="mb-12 bg-gradient-to-r from-green-600 to-blue-600 text-white">
-        <CardHeader className="text-center">
-          <CardTitle className="text-2xl mb-4 flex items-center justify-center gap-2">
-            📧 OBTENEZ VOTRE COPIE GRATUITE
-          </CardTitle>
-          <CardDescription className="text-green-100 text-lg">
-            Téléchargez notre guide complet "Spiruline : l'or vert de la santé"
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <NewsletterForm variant="dark" size="lg" />
-          <p className="text-center text-green-100 text-sm mt-4">
-            ✅ Guide PDF offert • ✅ Conseils d'experts • ✅ Offres exclusives
-          </p>
-        </CardContent>
-      </Card>
 
       {/* Section bienfaits spiruline */}
       <section className="mb-12">
@@ -789,7 +765,6 @@ export default function XellissReviewPage() {
             >
               <Link href="/blog/phycosci-x14-xelliss">
                 📖 En savoir plus sur PhycoSci X14
-                <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
 

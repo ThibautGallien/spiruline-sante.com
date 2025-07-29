@@ -4,7 +4,6 @@ import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import {
   CheckCircle,
   ArrowRight,
@@ -15,6 +14,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { SpirulineResetSection } from "@/components/sections/spiruline-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -179,27 +179,6 @@ export default function XGoldXellissAvis() {
                 </Button>
               </div>
             </div>
-
-            <div className="bg-gradient-to-r from-orange-50 to-amber-50 p-6 rounded-xl border border-orange-200">
-              <div className="text-center">
-                <div className="flex items-center justify-center mb-3">
-                  <span className="text-2xl mr-2">📧</span>
-                  <h3 className="text-xl font-bold text-gray-800">
-                    GUIDE GRATUIT
-                  </h3>
-                </div>
-                <p className="text-gray-700 mb-4">
-                  <strong>Recevez notre guide complet</strong>
-                  <br />
-                  <span className="text-orange-600">
-                    Conseils • Posologie • Témoignages
-                  </span>
-                </p>
-                <div className="max-w-sm mx-auto">
-                  <NewsletterForm variant="default" size="md" />
-                </div>
-              </div>
-            </div>
           </div>
         </header>
 
@@ -294,7 +273,8 @@ export default function XGoldXellissAvis() {
               </div>
             </div>
           </section>
-
+          {/* Section Spiruline Reset - Composant réutilisable */}
+          <SpirulineResetSection className="my-12" />
           {/* Avantages et bienfaits Section */}
           <section className="mb-12" id="avantages-bienfaits">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
@@ -459,20 +439,6 @@ export default function XGoldXellissAvis() {
             </div>
           </section>
 
-          {/* Newsletter CTA */}
-          <div className="bg-gradient-to-r from-green-600 to-blue-600 text-white p-8 rounded-2xl mb-12 text-center">
-            <h3 className="text-2xl font-bold mb-2">
-              🎁 Recevez notre guide complet sur les compléments naturels
-            </h3>
-            <p className="text-green-100 text-lg mb-4">
-              Conseils d'experts, posologies optimales et sélection des
-              meilleurs produits
-            </p>
-            <div className="max-w-md mx-auto">
-              <NewsletterForm variant="dark" size="lg" />
-            </div>
-          </div>
-
           {/* Où acheter Section */}
           <section className="mb-12" id="ou-acheter">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
@@ -585,14 +551,6 @@ export default function XGoldXellissAvis() {
                   🛒 Commander X Gold
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-gray-900 text-lg px-8 py-4"
-                asChild
-              >
-                <Link href="#newsletter">📧 Guide Gratuit</Link>
               </Button>
             </div>
           </div>

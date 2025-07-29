@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import {
   CheckCircle,
-  Gift,
   Droplets,
   Shield,
   Zap,
@@ -14,10 +13,9 @@ import {
   Star,
   AlertTriangle,
   ExternalLink,
-  ArrowRight,
 } from "lucide-react";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import Link from "next/link";
+import { PhycocyanineResetSection } from "@/components/sections/phycocyanine-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -148,7 +146,7 @@ export default function PhycocyaninePage() {
           <CardHeader>
             <CardTitle className="flex items-center text-2xl text-green-800">
               <Star className="h-6 w-6 mr-2" />
-              🌟 Ce que vous allez découvrir :
+              Ce que vous allez découvrir :
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -183,33 +181,15 @@ export default function PhycocyaninePage() {
                     href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302771/"
                     target="_blank"
                   >
-                    🛒 Découvrir PhycoSci X14 (62€)
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                    Découvrir PhycoSci X14
                   </Link>
                 </Button>
               </div>
             </div>
           </CardContent>
         </Card>
-
-        {/* Newsletter CTA Proéminent */}
-        <Card className="mb-8 bg-gradient-to-r from-orange-500 to-yellow-500 text-white">
-          <CardContent className="p-8 text-center">
-            <div className="flex items-center justify-center mb-4">
-              <Gift className="h-8 w-8 mr-3" />
-              <h2 className="text-2xl font-bold">🎁 Guide Gratuit Spiruline</h2>
-            </div>
-            <p className="text-lg mb-6 text-orange-100">
-              Téléchargez notre guide complet "Spiruline : l'or vert de la
-              santé" et découvrez tous les secrets de cette microalgue
-              exceptionnelle !
-            </p>
-            <div className="max-w-md mx-auto">
-              <NewsletterForm variant="dark" size="lg" />
-            </div>
-          </CardContent>
-        </Card>
-
+        {/* Section Phycocyanine Reset - Composant réutilisable */}
+        <PhycocyanineResetSection className="my-12" />
         {/* Contenu principal */}
         <div className="prose prose-lg max-w-none">
           <h2 className="text-3xl font-bold text-gray-900 mb-6 border-b-4 border-green-600 pb-2">
@@ -955,8 +935,7 @@ export default function PhycocyaninePage() {
                   href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302771/"
                   target="_blank"
                 >
-                  🛒 Commander PhycoSci X14 (62€)
-                  <ExternalLink className="ml-2 h-5 w-5" />
+                  Commander PhycoSci X14
                 </Link>
               </Button>
 

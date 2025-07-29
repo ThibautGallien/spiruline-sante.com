@@ -7,14 +7,12 @@ import {
   Star,
   Clock,
   AlertTriangle,
-  Leaf,
   Heart,
-  ShoppingBag,
-  ArrowRight,
   Info,
 } from "lucide-react";
 import { generateSEOMetadata } from "@/lib/seo";
 import { StructuredData } from "@/components/seo/structured-data";
+import { SpirulineResetSection } from "@/components/sections/spiruline-reset-section";
 
 // Métadonnées SEO
 export const metadata: Metadata = generateSEOMetadata({
@@ -320,8 +318,7 @@ const SpirulineArticle = () => {
             <div className="mt-6 p-4 bg-white rounded-lg">
               <a href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/">
                 <Button className="w-full bg-green-600 hover:bg-green-700 text-lg py-3">
-                  🛒 Découvrir A3 Spirulina Pills - 37€
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  Découvrir A3 Spirulina Pills
                 </Button>
               </a>
               <p className="text-sm text-gray-600 text-center mt-2">
@@ -376,7 +373,8 @@ const SpirulineArticle = () => {
             </CardContent>
           </Card>
         </section>
-
+        {/* Section Spiruline Reset - Composant réutilisable */}
+        <SpirulineResetSection className="my-12" />
         {/* Histoire de la spiruline */}
         <section>
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
@@ -678,10 +676,8 @@ const SpirulineArticle = () => {
                 </div>
               </div>
               <a href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/">
-                <Button className="bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-4">
-                  <ShoppingBag className="mr-2 h-5 w-5" />
-                  Commander A3 Spirulina Pills - 37€
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                <Button className="bg-green-600 hover:bg-green-700 text-white text-lg px-5 py-4">
+                  Commander A3 Spirulina Pills
                 </Button>
               </a>
               <p className="text-sm text-gray-600 mt-4">
@@ -828,10 +824,8 @@ const SpirulineArticle = () => {
         {/* CTA Final */}
         <div className="text-center py-12">
           <a href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/">
-            <Button className="bg-green-600 hover:bg-green-700 text-white text-xl px-12 py-6">
-              <Leaf className="mr-3 h-6 w-6" />
+            <Button className="bg-green-600 hover:bg-green-700 text-white text-xl px-1 py-6">
               Commencer avec A3 Spirulina Pills
-              <ArrowRight className="ml-3 h-6 w-6" />
             </Button>
           </a>
           <p className="text-gray-600 mt-4">

@@ -24,6 +24,7 @@ import {
 } from "@/components/ui/accordion";
 import { generateSEOMetadata } from "@/lib/seo";
 import { StructuredData } from "@/components/seo/structured-data";
+import { SpirulineResetSection } from "@/components/sections/spiruline-reset-section";
 
 // Métadonnées SEO
 export const metadata: Metadata = generateSEOMetadata({
@@ -370,8 +371,7 @@ const SpirulineCompositionArticle = () => {
                   href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                   target="_blank"
                 >
-                  🛒 Découvrir A3 Spirulina Pills (37€)
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  Découvrir A3 Spirulina Pills
                 </a>
               </Button>
             </div>
@@ -441,7 +441,8 @@ const SpirulineCompositionArticle = () => {
             </div>
           </CardContent>
         </Card>
-
+        {/* Section Spiruline Reset - Composant réutilisable */}
+        <SpirulineResetSection className="my-12" />
         {/* Section protéines et acides aminés */}
         <div className="space-y-6">
           <h2 className="text-3xl font-bold text-gray-900">
@@ -1206,8 +1207,7 @@ const SpirulineCompositionArticle = () => {
                 href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                 target="_blank"
               >
-                🛒 Découvrir A3 Spirulina Pills (37€)
-                <ArrowRight className="ml-3 h-6 w-6" />
+                Découvrir A3 Spirulina Pills
               </a>
             </Button>
 

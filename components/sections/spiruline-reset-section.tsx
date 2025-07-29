@@ -59,12 +59,12 @@ export function SpirulineResetSection({
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Image à gauche */}
-          <div className="relative">
+          {/* Image à gauche - CACHÉE SUR MOBILE */}
+          <div className="relative hidden lg:block">
             <div className="relative h-[680px] w-full rounded-2xl overflow-hidden shadow-2xl">
               {/* Image de spiruline */}
               <img
-                src="/LP_omega-3.png"
+                src="/LP_spiruline.png"
                 alt="Spiruline Reset - Programme 7 jours"
                 className="w-full h-full object-cover"
               />
@@ -74,13 +74,13 @@ export function SpirulineResetSection({
             </div>
           </div>
 
-          {/* Contenu à droite */}
-          <div>
+          {/* Contenu à droite - PLEINE LARGEUR SUR MOBILE */}
+          <div className="lg:col-span-1">
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-green-200 shadow-lg">
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 <strong>Fatiguée, lessivée, au bout du rouleau ?</strong>
                 <br />
-                Offre-toi un reset simple et naturel grâce à la spiruline :
+                Offrez-vous un reset simple et naturel grâce à la spiruline :
                 <span className="text-green-600 font-semibold">
                   {" "}
                   la microalgue la plus puissante de la planète.
@@ -130,7 +130,7 @@ export function SpirulineResetSection({
                   className="w-full bg-green-600 hover:bg-green-700 text-white font-bold text-lg py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                   onClick={handleCtaClick}
                 >
-                  Oui, je veux le plan spiruline 7 jours
+                  Recevoir mon plan de 7 jours
                   <ArrowRight className="ml-3 h-6 w-6" />
                 </Button>
               )}

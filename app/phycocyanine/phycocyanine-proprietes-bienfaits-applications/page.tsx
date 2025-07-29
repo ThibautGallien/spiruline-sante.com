@@ -1,5 +1,4 @@
 import { generateSEOMetadata } from "@/lib/seo";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -12,6 +11,7 @@ import {
   FlaskConical,
 } from "lucide-react";
 import Link from "next/link";
+import { PhycocyanineResetSection } from "@/components/sections/phycocyanine-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -218,7 +218,8 @@ export default function Page() {
                 </CardContent>
               </Card>
             </div>
-
+            {/* Section Phycocyanine Reset - Composant réutilisable */}
+            <PhycocyanineResetSection className="my-12" />
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">
               Pourquoi la phycocyanine se démarque-t-elle ?
             </h3>
@@ -265,34 +266,6 @@ export default function Page() {
                     défenses naturelles tout en régulant les réactions
                     auto-immunes excessives
                   </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Newsletter CTA */}
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg mb-8">
-              <h2 className="text-2xl font-bold mb-4 text-center">
-                📧 Restez Informé des Dernières Recherches
-              </h2>
-              <p className="text-center mb-6">
-                Recevez notre guide gratuit sur la phycocyanine et nos conseils
-                d'experts directement dans votre boîte mail
-              </p>
-              <div className="max-w-md mx-auto">
-                <NewsletterForm variant="dark" size="lg" />
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm mt-6">
-                <div className="flex items-center justify-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-blue-300" />
-                  <span>Guide phycocyanine offert</span>
-                </div>
-                <div className="flex items-center justify-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-blue-300" />
-                  <span>Études scientifiques récentes</span>
-                </div>
-                <div className="flex items-center justify-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-blue-300" />
-                  <span>Conseils d'utilisation</span>
                 </div>
               </div>
             </div>
@@ -894,14 +867,13 @@ export default function Page() {
                 <Button
                   asChild
                   size="lg"
-                  className="bg-yellow-500 text-black hover:bg-yellow-400 font-semibold text-lg py-4 px-8 h-auto"
+                  className="bg-yellow-500 text-black hover:bg-yellow-400 font-semibold text-lg py-4 px-5 h-auto"
                 >
                   <Link
                     href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302771/"
                     target="_blank"
                   >
-                    🛒 Commencer Ma Transformation
-                    <ShoppingCart className="ml-3 h-5 w-5" />
+                    Commencer Ma Transformation
                   </Link>
                 </Button>
               </div>

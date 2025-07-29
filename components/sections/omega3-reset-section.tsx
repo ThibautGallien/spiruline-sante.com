@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { NewsletterForm } from "@/components/forms/newsletter-form";
-import { ArrowRight, CheckCircle, Mail, Brain, Heart } from "lucide-react";
+import { ArrowRight, CheckCircle, Mail } from "lucide-react";
 
 interface Omega3ResetSectionProps {
   className?: string;
@@ -54,15 +54,14 @@ export function Omega3ResetSection({
             <br />
             <span className="text-indigo-600">Votre Santé</span>
             <br />
-            <span className="text-blue-600">😴</span>
           </h1>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Image à gauche */}
-          <div className="relative">
+          {/* Image à gauche - CACHÉE SUR MOBILE */}
+          <div className="relative hidden lg:block">
             <div className="relative h-[680px] w-full rounded-2xl overflow-hidden shadow-2xl">
-              {/* Image oméga-3 - remplacez par votre image appropriée */}
+              {/* Image oméga-3 */}
               <img
                 src="/LP_omega-3.png"
                 alt="Oméga-3 Reset - Programme 7 jours"
@@ -79,14 +78,11 @@ export function Omega3ResetSection({
             </div>
           </div>
 
-          {/* Contenu à droite */}
-          <div>
+          {/* Contenu à droite - PLEINE LARGEUR SUR MOBILE */}
+          <div className="lg:col-span-1">
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-purple-200 shadow-lg">
               <div className="flex items-start space-x-3 mb-6">
-                <div className="flex space-x-2">
-                  <Brain className="h-8 w-8 text-purple-600" />
-                  <Heart className="h-8 w-8 text-indigo-600" />
-                </div>
+                <div className="flex space-x-2"></div>
                 <div>
                   <p className="text-lg text-gray-700 leading-relaxed">
                     <strong>
@@ -102,9 +98,8 @@ export function Omega3ResetSection({
 
               <div className="bg-gradient-to-r from-purple-50 to-blue-50 p-6 rounded-xl mb-6 border border-purple-100">
                 <div className="flex items-center mb-4">
-                  <Mail className="h-6 w-6 text-purple-600 mr-3" />
                   <h3 className="text-xl font-bold text-gray-900">
-                    💌 7 Jours pour tout comprendre et agir enfin efficacement
+                    7 Jours pour tout comprendre et agir enfin efficacement
                   </h3>
                 </div>
 
@@ -120,7 +115,22 @@ export function Omega3ResetSection({
                 </div>
 
                 <div className="mt-6 p-4 bg-purple-100/50 rounded-lg">
-                  <div className="flex items-center justify-between text-sm text-purple-800">
+                  {/* Version mobile : stack vertical */}
+                  <div className="flex flex-col space-y-3 text-sm text-purple-800 sm:hidden">
+                    <div className="flex items-center justify-center space-x-2">
+                      <Mail className="h-4 w-4" />
+                      <span className="font-medium">7 jours, 7 mails</span>
+                    </div>
+                    <div className="flex items-center justify-center space-x-2">
+                      <span className="font-medium">100% vulgarisée</span>
+                    </div>
+                    <div className="flex items-center justify-center space-x-2">
+                      <span className="font-medium">0 pression</span>
+                    </div>
+                  </div>
+
+                  {/* Version desktop : horizontal */}
+                  <div className="hidden sm:flex items-center justify-between text-sm text-purple-800">
                     <div className="flex items-center space-x-4">
                       <div className="flex items-center space-x-2">
                         <Mail className="h-4 w-4" />
@@ -134,6 +144,7 @@ export function Omega3ResetSection({
                       <span className="font-medium">0 pression</span>
                     </div>
                   </div>
+
                   <div className="mt-2 text-center">
                     <p className="text-sm text-purple-700 font-medium">
                       🔒 Pas de promesse miracle. Juste des infos utiles,
@@ -168,7 +179,7 @@ export function Omega3ResetSection({
                   className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold text-lg py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                   onClick={handleCtaClick}
                 >
-                  🟣 Je veux comprendre (et utiliser) les oméga-3
+                  Comprendre les oméga-3
                   <ArrowRight className="ml-3 h-6 w-6" />
                 </Button>
               )}

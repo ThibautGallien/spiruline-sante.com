@@ -28,6 +28,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { SpirulineResetSection } from "@/components/sections/spiruline-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -576,38 +577,8 @@ export default function SpirulineCheveux() {
               </Card>
             </div>
           </section>
-
-          {/* Newsletter CTA Optimisée */}
-          <div
-            id="newsletter"
-            className="bg-gradient-to-r from-green-600 to-blue-600 text-white p-8 rounded-2xl mb-12 text-center"
-          >
-            <h3 className="text-2xl font-bold mb-2">
-              🎁 OFFRE EXCLUSIVE : Guide Complet + Protocole Personnalisé
-            </h3>
-            <p className="text-green-100 text-lg mb-4">
-              Recevez GRATUITEMENT notre guide de 47 pages + un protocole
-              personnalisé selon votre type de cheveux
-            </p>
-            <div className="max-w-md mx-auto mb-4">
-              <NewsletterForm variant="dark" size="lg" />
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-green-300" />
-                <span>Guide PDF 47 pages offert</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-green-300" />
-                <span>Protocole personnalisé gratuit</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-green-300" />
-                <span>Codes promo exclusifs -25%</span>
-              </div>
-            </div>
-          </div>
-
+          {/* Section Spiruline Reset - Composant réutilisable */}
+          <SpirulineResetSection className="my-12" />
           {/* Bienfaits Section Optimisée */}
           <section className="mb-12" id="bienfaits">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
@@ -967,7 +938,7 @@ export default function SpirulineCheveux() {
                     href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                     target="_blank"
                   >
-                    🛒 Découvrir la Spiruline Xelliss Premium
+                    Découvrir la Spiruline Xelliss
                   </Link>
                 </Button>
               </div>
@@ -1434,37 +1405,6 @@ export default function SpirulineCheveux() {
                   </ol>
                 </div>
               </div>
-            </div>
-
-            <div className="text-center">
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                En combinant les{" "}
-                <strong>
-                  bienfaits scientifiquement prouvés de la spiruline
-                </strong>{" "}
-                avec une approche holistique, vous donnez à vos cheveux toutes
-                les chances de retrouver leur{" "}
-                <span className="text-green-600 font-semibold">force</span>,
-                leur{" "}
-                <span className="text-blue-600 font-semibold">brillance</span>{" "}
-                et leur{" "}
-                <span className="text-purple-600 font-semibold">
-                  vitalité naturelle
-                </span>
-                . Des milliers de personnes ont déjà franchi le pas - pourquoi
-                pas vous ?
-              </p>
-
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white font-semibold text-lg px-12 py-4"
-                asChild
-              >
-                <Link href="#newsletter">
-                  🎁 Recevoir mon Guide Gratuit
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
             </div>
           </section>
 

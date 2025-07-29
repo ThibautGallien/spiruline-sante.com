@@ -4,10 +4,10 @@ import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import { Star, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { PhycocyanineResetSection } from "@/components/sections/phycocyanine-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -129,7 +129,8 @@ export default function PhycosciX14Xelliss() {
               </div>
             </div>
           </section>
-
+          {/* Section Phycocyanine Reset - Composant réutilisable */}
+          <PhycocyanineResetSection className="my-12" />
           {/* Avantages et Bienfaits Section */}
           <section className="mb-12" id="avantages-bienfaits">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
@@ -189,33 +190,6 @@ export default function PhycosciX14Xelliss() {
               ou de demander l'avis d'un professionnel de santé.
             </p>
           </section>
-
-          {/* Newsletter Section Spiruline */}
-          <div className="bg-gradient-to-r from-green-600 to-blue-600 text-white p-8 rounded-2xl mb-12 text-center">
-            <div className="flex items-center justify-center mb-4">
-              <span className="text-3xl mr-3">📘</span>
-              <h3 className="text-2xl font-bold">
-                OBTENEZ VOTRE COPIE GRATUITE
-              </h3>
-            </div>
-            <p className="text-lg mb-2">
-              Téléchargez notre livre GRATUIT « Spiruline : l'or vert de la
-              santé. »
-            </p>
-            <p className="text-green-100 mb-6">
-              Obtenez toutes les informations pour comprendre les bienfaits de
-              cette microalgue et l'intégrer efficacement dans votre vie
-              quotidienne.
-            </p>
-            <p className="text-green-100 mb-6">
-              Que vous souhaitiez booster votre énergie, renforcer votre système
-              immunitaire ou améliorer votre bien-être global, ce livre vous
-              donne les clés pour exploiter tout le potentiel de la spiruline.
-            </p>
-            <div className="max-w-md mx-auto">
-              <NewsletterForm variant="dark" size="lg" />
-            </div>
-          </div>
 
           {/* Témoignages Section */}
           <section className="mb-12" id="temoignages">

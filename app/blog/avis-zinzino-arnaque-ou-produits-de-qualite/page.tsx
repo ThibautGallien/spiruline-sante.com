@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { Omega3ResetSection } from "@/components/sections/omega3-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -207,7 +208,7 @@ export default function ZinzinoReviewPage() {
             la santé intestinale et la gestion du poids.
           </p>
         </div>
-
+        <Omega3ResetSection className="my-12" />
         <h3 className="text-2xl font-semibold text-gray-900 mb-4">
           Historique de Zinzino
         </h3>
@@ -826,7 +827,7 @@ export default function ZinzinoReviewPage() {
                 href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop"
                 target="_blank"
               >
-                🛒 Découvrir les produits Zinzino
+                Découvrir les produits Zinzino
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>

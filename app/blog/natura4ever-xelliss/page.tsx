@@ -1,5 +1,4 @@
 import { generateSEOMetadata } from "@/lib/seo";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -13,6 +12,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { SpirulineResetSection } from "@/components/sections/spiruline-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -141,7 +141,8 @@ export default function Page() {
                 d'exception et un service client encore amélioré.
               </p>
             </div>
-
+            {/* Section Spiruline Reset - Composant réutilisable */}
+            <SpirulineResetSection className="my-12" />
             {/* Changement de marque */}
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               De Natura4Ever à Xelliss : Une Évolution Stratégique Réussie
@@ -711,20 +712,6 @@ export default function Page() {
                   </div>
                   <p className="text-gray-700">recommandent Xelliss</p>
                 </div>
-              </div>
-            </div>
-
-            {/* Newsletter CTA */}
-            <div className="bg-gradient-to-r from-green-600 to-blue-600 text-white p-8 rounded-lg mb-8">
-              <h2 className="text-2xl font-bold mb-4 text-center">
-                🎁 Guide Exclusif : Maximiser les Bienfaits de la Spiruline
-              </h2>
-              <p className="text-center mb-6">
-                Recevez nos secrets d'experts pour optimiser votre bien-être
-                avec les superaliments Xelliss
-              </p>
-              <div className="max-w-md mx-auto">
-                <NewsletterForm variant="dark" size="lg" />
               </div>
             </div>
 

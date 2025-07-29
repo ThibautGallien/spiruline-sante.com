@@ -1,18 +1,16 @@
 import { generateSEOMetadata } from "@/lib/seo";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   CheckCircle,
   AlertTriangle,
-  ShoppingBag,
   Heart,
   Star,
-  ArrowRight,
   Lightbulb,
 } from "lucide-react";
 import Link from "next/link";
+import { SpirulineResetSection } from "@/components/sections/spiruline-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -138,9 +136,7 @@ export default function Page() {
                     href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                     target="_blank"
                   >
-                    <ShoppingBag className="h-4 w-4 mr-2" />
-                    Découvrir A3 Spirulina Xelliss (37€ - 80 comprimés)
-                    <ArrowRight className="h-4 w-4 ml-2" />
+                    Découvrir A3 Spirulina Xelliss
                   </Link>
                 </Button>
               </div>
@@ -172,7 +168,8 @@ export default function Page() {
             </p>
           </div>
         </section>
-
+        {/* Section Spiruline Reset - Composant réutilisable */}
+        <SpirulineResetSection className="my-12" />
         {/* Qu'est-ce que la spiruline */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
@@ -258,24 +255,6 @@ export default function Page() {
             </Card>
           </div>
         </section>
-
-        {/* Newsletter CTA au milieu */}
-        <Card className="bg-gradient-to-r from-green-600 to-blue-600 text-white mb-12">
-          <CardContent className="pt-8 pb-8">
-            <div className="text-center">
-              <h3 className="text-2xl font-bold mb-4">
-                🎁 Recevez Nos Conseils Spiruline Gratuits !
-              </h3>
-              <p className="text-green-100 mb-6">
-                Guides exclusifs, dosages optimaux et sélection des meilleures
-                spirulines
-              </p>
-              <div className="max-w-md mx-auto">
-                <NewsletterForm variant="dark" size="lg" />
-              </div>
-            </div>
-          </CardContent>
-        </Card>
 
         {/* Pourquoi la spiruline peut causer des gaz */}
         <section className="mb-12">
@@ -481,8 +460,7 @@ export default function Page() {
                     href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                     target="_blank"
                   >
-                    🌿 Essayer A3 Spirulina Xelliss Sans Risque
-                    <ArrowRight className="h-4 w-4 ml-2" />
+                    Essayer A3 Spirulina Xelliss
                   </Link>
                 </Button>
               </CardContent>

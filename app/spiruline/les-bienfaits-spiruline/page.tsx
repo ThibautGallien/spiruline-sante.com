@@ -3,7 +3,6 @@
 import { generateSEOMetadata } from "@/lib/seo";
 import { StructuredData } from "@/components/seo/structured-data";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -21,9 +20,9 @@ import {
   Zap,
   Leaf,
   AlertTriangle,
-  Gift,
 } from "lucide-react";
 import Link from "next/link";
+import { SpirulineResetSection } from "@/components/sections/spiruline-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -153,8 +152,7 @@ export default function SpirulineBienfaitsPage() {
                 href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                 target="_blank"
               >
-                🛒 Découvrir A3 Spirulina Pills (37€ - 3 semaines)
-                <ArrowRight className="ml-2 h-5 w-5" />
+                Découvrir A3 Spirulina Pills
               </Link>
             </Button>
           </div>
@@ -182,7 +180,8 @@ export default function SpirulineBienfaitsPage() {
             comment l'utiliser efficacement pour des résultats optimaux.
           </p>
         </div>
-
+        {/* Section Spiruline Reset - Composant réutilisable */}
+        <SpirulineResetSection className="my-12" />
         {/* Section 1: Découverte de la Spiruline */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
@@ -250,36 +249,6 @@ export default function SpirulineBienfaitsPage() {
               contrôles qualité rigoureux.
             </p>
           </div>
-        </section>
-
-        {/* Newsletter CTA */}
-        <section className="mb-12">
-          <Card className="bg-gradient-to-r from-green-600 to-blue-600 text-white border-none">
-            <CardHeader className="text-center">
-              <div className="flex justify-center mb-4">
-                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
-                  <Gift className="h-8 w-8 text-white" />
-                </div>
-              </div>
-              <CardTitle className="text-2xl font-bold">
-                🎁 OBTENEZ VOTRE COPIE GRATUITE
-              </CardTitle>
-              <CardDescription className="text-green-100 text-lg">
-                Téléchargez notre guide complet "Spiruline : l'or vert de la
-                santé"
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="text-center">
-              <p className="text-white/90 mb-6">
-                Obtenez toutes les informations pour comprendre les bienfaits de
-                cette microalgue et l'intégrer efficacement dans votre vie
-                quotidienne.
-              </p>
-              <div className="max-w-md mx-auto">
-                <NewsletterForm variant="dark" size="lg" />
-              </div>
-            </CardContent>
-          </Card>
         </section>
 
         {/* Section 3: Profil nutritionnel */}
@@ -1119,8 +1088,7 @@ export default function SpirulineBienfaitsPage() {
                   href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                   target="_blank"
                 >
-                  🌟 Commencer ma cure de spiruline
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  Commencer ma cure de spiruline
                 </Link>
               </Button>
             </div>

@@ -1,9 +1,9 @@
 import { generateSEOMetadata } from "@/lib/seo";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, ShoppingCart, Clock, Users, Zap } from "lucide-react";
 import Link from "next/link";
+import { SpirulineResetSection } from "@/components/sections/spiruline-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -159,7 +159,8 @@ export default function Page() {
                 grâce à sa forme naturelle et aux cofacteurs qui l'accompagnent.
               </p>
             </div>
-
+            {/* Section Spiruline Reset - Composant réutilisable */}
+            <SpirulineResetSection className="my-12" />
             {/* Qu'est-ce que la spiruline */}
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Pourquoi la spiruline est-elle si riche en fer ?
@@ -548,20 +549,6 @@ export default function Page() {
                 <p className="text-sm text-gray-600">
                   🩸 Riche en fer • 🚚 Livraison rapide • 💳 Paiement sécurisé
                 </p>
-              </div>
-            </div>
-
-            {/* Newsletter CTA */}
-            <div className="bg-gradient-to-r from-red-600 to-orange-600 text-white p-8 rounded-lg mb-8">
-              <h2 className="text-2xl font-bold mb-4 text-center">
-                🌟 Recevez Nos Conseils Anti-Fatigue
-              </h2>
-              <p className="text-center mb-6">
-                Découvrez d'autres solutions naturelles pour booster votre
-                énergie
-              </p>
-              <div className="max-w-md mx-auto">
-                <NewsletterForm variant="dark" size="lg" />
               </div>
             </div>
 

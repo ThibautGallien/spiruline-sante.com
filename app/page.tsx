@@ -9,7 +9,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import { ArrowRight, Star, CheckCircle, Heart } from "lucide-react";
 import {
   Carousel,
@@ -20,6 +19,7 @@ import {
 } from "@/components/ui/carousel";
 import Link from "next/link";
 import Image from "next/image";
+import { SpirulineResetSection } from "@/components/sections/spiruline-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -252,44 +252,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Newsletter CTA Prominente */}
-      <section className="py-16 bg-gradient-to-r from-green-600 to-blue-600 text-white">
-        <div className="container px-4 md:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="flex items-center justify-center mb-6">
-              <div className="flex items-center space-x-3">
-                <div>
-                  <h2 className="text-3xl md:text-4xl font-bold">
-                    🎁 Recevez Votre Guide Gratuit !
-                  </h2>
-                  <p className="text-green-100 text-lg">
-                    + Conseils exclusifs et offres réservées aux abonnés
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="max-w-md mx-auto mb-6">
-              <NewsletterForm variant="dark" size="lg" />
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-green-300" />
-                <span>Guide PDF spiruline offert</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-green-300" />
-                <span>Offres exclusives -20%</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-green-300" />
-                <span>Conseils d'experts</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Section Spiruline Reset - Composant réutilisable */}
+      <SpirulineResetSection className="my-12" />
 
       {/* Produits Xelliss et Zinzino */}
       <section className="py-20 bg-white">

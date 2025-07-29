@@ -1,7 +1,6 @@
 import { generateSEOMetadata } from "@/lib/seo";
 import { StructuredData } from "@/components/seo/structured-data";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -20,6 +19,7 @@ import {
   Target,
 } from "lucide-react";
 import Link from "next/link";
+import { SpirulineResetSection } from "@/components/sections/spiruline-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -325,7 +325,8 @@ export default function SpirulnePosologiePage() {
             adaptée à chaque personne.
           </p>
         </section>
-
+        {/* Section Spiruline Reset - Composant réutilisable */}
+        <SpirulineResetSection className="my-12" />
         {/* Comment utiliser la spiruline */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
@@ -613,42 +614,6 @@ export default function SpirulnePosologiePage() {
                   Associer avec de la vitamine C (orange, citron) pour optimiser
                   l'absorption du fer
                 </span>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
-
-        {/* Newsletter Section */}
-        <section className="mb-12">
-          <Card className="bg-gradient-to-r from-green-600 to-blue-600 text-white">
-            <CardContent className="py-8 text-center">
-              <div className="flex items-center justify-center mb-4">
-                <Gift className="h-8 w-8 mr-3" />
-                <h3 className="text-2xl font-bold">
-                  🎁 Recevez notre guide gratuit !
-                </h3>
-              </div>
-              <p className="text-lg mb-6">
-                + Conseils exclusifs et offres réservées aux abonnés
-              </p>
-
-              <div className="max-w-md mx-auto mb-6">
-                <NewsletterForm variant="dark" size="lg" />
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-                <div className="flex items-center justify-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-300" />
-                  <span>Guide PDF spiruline offert</span>
-                </div>
-                <div className="flex items-center justify-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-300" />
-                  <span>Offres exclusives -20%</span>
-                </div>
-                <div className="flex items-center justify-center space-x-2">
-                  <CheckCircle className="h-4 w-4 text-green-300" />
-                  <span>Conseils d'experts</span>
-                </div>
               </div>
             </CardContent>
           </Card>

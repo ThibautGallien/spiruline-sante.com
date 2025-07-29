@@ -8,7 +8,6 @@ import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import {
   Heart,
   Sparkles,
@@ -24,6 +23,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { Omega3ResetSection } from "@/components/sections/omega3-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -466,7 +466,8 @@ export default function Omega3BienfaitsPeau() {
                 de votre peau.
               </p>
             </div>
-
+            {/* Section Oméga-3 Reset - Composant réutilisable */}
+            <Omega3ResetSection className="my-12" />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <Card className="border-l-4 border-green-500">
                 <CardContent className="p-6">
@@ -528,37 +529,6 @@ export default function Omega3BienfaitsPeau() {
               </Card>
             </div>
           </section>
-
-          {/* Newsletter CTA Optimisée */}
-          <div
-            id="newsletter"
-            className="bg-gradient-to-r from-green-600 to-blue-600 text-white p-8 rounded-2xl mb-12 text-center"
-          >
-            <h3 className="text-2xl font-bold mb-2">
-              🎁 OFFRE EXCLUSIVE : Protocole Beauté Oméga-3 Personnalisé
-            </h3>
-            <p className="text-green-100 text-lg mb-4">
-              Recevez GRATUITEMENT votre protocole personnalisé selon votre type
-              de peau + guide des meilleures sources d'oméga-3
-            </p>
-            <div className="max-w-md mx-auto mb-4">
-              <NewsletterForm variant="dark" size="lg" />
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-green-300" />
-                <span>Protocole personnalisé gratuit</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-green-300" />
-                <span>Guide des meilleures sources</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-green-300" />
-                <span>Codes promo exclusifs -25%</span>
-              </div>
-            </div>
-          </div>
 
           {/* Types d'Oméga-3 Section */}
           <section className="mb-12" id="types-omega3">
@@ -1060,15 +1030,22 @@ export default function Omega3BienfaitsPeau() {
                 </div>
                 <Button
                   size="lg"
-                  className="bg-yellow-500 text-black hover:bg-yellow-400 font-semibold text-lg px-8 py-4"
+                  className="bg-yellow-500 text-black hover:bg-yellow-400 font-semibold text-sm sm:text-lg px-4 sm:px-8 py-4 w-full sm:w-auto"
                   asChild
                 >
                   <Link
                     href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
                     target="_blank"
                   >
-                    🌊 Découvrir BalanceOil+ pour une Peau Éclatante
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                    {/* Texte court pour mobile */}
+                    <span className="block sm:hidden">
+                      ✨ Découvrir BalanceOil+
+                    </span>
+
+                    {/* Texte complet pour desktop */}
+                    <span className="hidden sm:block">
+                      Découvrir BalanceOil+ pour une Peau Éclatante
+                    </span>
                   </Link>
                 </Button>
               </div>
@@ -1585,15 +1562,20 @@ export default function Omega3BienfaitsPeau() {
 
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white font-semibold text-lg px-12 py-4"
+                className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white font-semibold text-sm sm:text-lg px-4 sm:px-12 py-4 w-full sm:w-auto"
                 asChild
               >
                 <Link
                   href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
                   target="_blank"
                 >
-                  🌊 Commencer ma Transformation Beauté
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  {/* Texte court pour mobile */}
+                  <span className="block sm:hidden">💫 Ma Transformation</span>
+
+                  {/* Texte complet pour desktop */}
+                  <span className="hidden sm:block">
+                    Commencer ma Transformation Beauté
+                  </span>
                 </Link>
               </Button>
             </div>

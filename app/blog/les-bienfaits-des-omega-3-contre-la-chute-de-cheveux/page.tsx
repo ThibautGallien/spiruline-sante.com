@@ -28,6 +28,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { Omega3ResetSection } from "@/components/sections/omega3-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -498,38 +499,8 @@ export default function OmegaTroisCheveux() {
               </Card>
             </div>
           </section>
-
-          {/* Newsletter CTA */}
-          <div
-            id="newsletter"
-            className="bg-gradient-to-r from-green-600 to-blue-600 text-white p-8 rounded-2xl mb-12 text-center"
-          >
-            <h3 className="text-2xl font-bold mb-2">
-              🎁 OFFRE EXCLUSIVE : Test Personnel + Guide Complet
-            </h3>
-            <p className="text-green-100 text-lg mb-4">
-              Découvrez GRATUITEMENT votre niveau d'oméga-3 et recevez un
-              protocole personnalisé pour vos cheveux
-            </p>
-            <div className="max-w-md mx-auto mb-4">
-              <NewsletterForm variant="dark" size="lg" />
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-green-300" />
-                <span>Test sanguin gratuit</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-green-300" />
-                <span>Protocole personnalisé</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-green-300" />
-                <span>Suivi expert gratuit</span>
-              </div>
-            </div>
-          </div>
-
+          {/* Section Oméga-3 Reset - Composant réutilisable */}
+          <Omega3ResetSection className="my-12" />
           {/* Causes de la chute */}
           <section className="mb-12" id="causes-chute">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
@@ -1020,18 +991,26 @@ export default function OmegaTroisCheveux() {
                       <strong>Moyen français :</strong> 15:1 (trop élevé)
                     </p>
                   </div>
-                  <Button
-                    size="sm"
-                    className="bg-blue-600 hover:bg-blue-700 w-full"
-                    asChild
-                  >
-                    <Link
-                      href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
-                      target="_blank"
-                    >
-                      🧪 Équilibrer mon ratio oméga-6/oméga-3 maintenant
-                    </Link>
-                  </Button>
+<Button
+  size="sm"
+  className="bg-blue-600 hover:bg-blue-700 w-full text-xs sm:text-sm px-2 sm:px-4"
+  asChild
+>
+  <Link
+    href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
+    target="_blank"
+  >
+    {/* Texte court pour mobile */}
+    <span className="block sm:hidden">
+      🧪 Équilibrer mon ratio
+    </span>
+    
+    {/* Texte complet pour desktop */}
+    <span className="hidden sm:block">
+      🧪 Équilibrer mon ratio oméga-6/oméga-3 maintenant
+    </span>
+  </Link>
+</Button>
                 </CardContent>
               </Card>
 
@@ -1301,8 +1280,7 @@ export default function OmegaTroisCheveux() {
                     href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
                     target="_blank"
                   >
-                    🛒 Commander BalanceOil+ (59€ - 1 mois)
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                    Commander BalanceOil+
                   </Link>
                 </Button>
                 
@@ -1684,8 +1662,7 @@ export default function OmegaTroisCheveux() {
                 asChild
               >
                 <Link href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/" target="_blank">
-                  🚀 Commencer ma Transformation (59€)
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  Commencer ma Transformation
                 </Link>
               </Button>
             </div>

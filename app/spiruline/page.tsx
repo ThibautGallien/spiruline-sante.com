@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import {
   CheckCircle,
   AlertTriangle,
@@ -27,6 +26,7 @@ import {
   generateFAQSchema,
   generateSEOMetadata,
 } from "@/lib/seo";
+import { SpirulineResetSection } from "@/components/sections/spiruline-reset-section";
 
 // Génération des métadonnées SEO
 export const metadata = generateSEOMetadata({
@@ -243,8 +243,7 @@ export default function SpirulnePage() {
                     href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                     target="_blank"
                   >
-                    🛒 Voir le Produit Recommandé (37€)
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                    Voir le Produit Recommandé
                   </Link>
                 </Button>
               </div>
@@ -303,22 +302,8 @@ export default function SpirulnePage() {
               ))}
             </div>
           </section>
-
-          {/* Newsletter Form */}
-          <Card className="mb-12 bg-gradient-to-r from-blue-50 to-green-50 border-blue-200">
-            <CardContent className="p-8 text-center">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                📧 Recevez Notre Guide Gratuit !
-              </h2>
-              <p className="text-gray-600 mb-6">
-                + Conseils exclusifs d'experts et actualités santé
-              </p>
-              <div className="max-w-md mx-auto">
-                <NewsletterForm size="lg" />
-              </div>
-            </CardContent>
-          </Card>
-
+          {/* Section Spiruline Reset - Composant réutilisable */}
+          <SpirulineResetSection className="my-12" />
           {/* Bienfaits de la spiruline */}
           <section className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
@@ -623,7 +608,7 @@ export default function SpirulnePage() {
                       href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                       target="_blank"
                     >
-                      🛒 Commander A3 Spirulina Pills - 37€
+                      Commander
                       <ArrowRight className="ml-2 h-6 w-6" />
                     </Link>
                   </Button>
@@ -823,14 +808,13 @@ export default function SpirulnePage() {
                   <Button
                     asChild
                     size="lg"
-                    className="bg-green-600 hover:bg-green-700 text-lg px-8 py-3"
+                    className="bg-green-600 hover:bg-green-700 text-lg px-4 py-3"
                   >
                     <Link
                       href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                       target="_blank"
                     >
-                      ✅ Commencer ma cure de spiruline - 37€
-                      <ArrowRight className="ml-2 h-5 w-5" />
+                      Commencer ma cure de spiruline
                     </Link>
                   </Button>
                 </div>
@@ -940,8 +924,7 @@ export default function SpirulnePage() {
                 href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302780/"
                 target="_blank"
               >
-                🛒 Commander A3 Spirulina Pills
-                <ArrowRight className="ml-2 h-5 w-5" />
+                Commander A3 Spirulina Pills
               </Link>
             </Button>
           </div>

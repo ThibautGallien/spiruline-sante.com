@@ -1,5 +1,4 @@
 import { generateSEOMetadata } from "@/lib/seo";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -11,6 +10,7 @@ import {
   Mail,
 } from "lucide-react";
 import Link from "next/link";
+import { SpirulineResetSection } from "@/components/sections/spiruline-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -157,7 +157,8 @@ export default function Page() {
               traditionnel, axée sur le développement client plutôt que sur le
               recrutement intensif.
             </p>
-
+            {/* Section Spiruline Reset - Composant réutilisable */}
+            <SpirulineResetSection className="my-12" />
             {/* Qu'est-ce que Xelliss */}
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Qu'est-ce que Xelliss exactement ?
@@ -552,11 +553,18 @@ export default function Page() {
                   <Button
                     asChild
                     size="lg"
-                    className="bg-blue-600 hover:bg-blue-700 text-white"
+                    className="bg-blue-600 hover:bg-blue-700 text-white w-full sm:w-auto px-4 sm:px-8 text-sm sm:text-lg"
                   >
                     <Link href="mailto:contact@spiruline-sante.com">
                       <Mail className="mr-2 h-5 w-5" />
-                      Développons ensemble votre stratégie
+
+                      {/* Texte court pour mobile */}
+                      <span className="sm:hidden">Nous contacter</span>
+
+                      {/* Texte complet pour desktop */}
+                      <span className="hidden sm:inline">
+                        Développons ensemble votre stratégie
+                      </span>
                     </Link>
                   </Button>
                 </div>
@@ -840,20 +848,6 @@ export default function Page() {
                   </p>
                 </CardContent>
               </Card>
-            </div>
-
-            {/* Newsletter CTA */}
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg mb-8">
-              <h2 className="text-2xl font-bold mb-4 text-center">
-                📧 Stratégies Business Santé Naturelle
-              </h2>
-              <p className="text-center mb-6">
-                Recevez nos analyses et conseils pratiques pour développer votre
-                activité dans le secteur bien-être
-              </p>
-              <div className="max-w-md mx-auto">
-                <NewsletterForm variant="dark" size="lg" />
-              </div>
             </div>
 
             {/* Conclusion */}

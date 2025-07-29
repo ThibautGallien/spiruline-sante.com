@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { SpirulineResetSection } from "@/components/sections/spiruline-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -243,7 +244,8 @@ export default function XellissCarafePage() {
           </div>
         </Card>
       </section>
-
+      {/* Section Spiruline Reset - Composant réutilisable */}
+      <SpirulineResetSection className="my-12" />
       {/* Avantages et bienfaits */}
       <section className="mb-12">
         <h3 className="text-2xl font-bold text-gray-900 mb-6">

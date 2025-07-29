@@ -2,9 +2,10 @@ import { generateSEOMetadata } from "@/lib/seo";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ShoppingCart, ArrowRight, Star as StarIcon } from "lucide-react";
+import { ArrowRight, Star as StarIcon } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { SpirulineResetSection } from "@/components/sections/spiruline-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -94,7 +95,8 @@ export default function XellissProduits() {
                 puissants qui répondent aux besoins modernes.
               </p>
             </div>
-
+            {/* Section Spiruline Reset - Composant réutilisable */}
+            <SpirulineResetSection className="my-12" />
             <div>
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">
                 Une qualité garantie grâce aux photobioréacteurs
@@ -675,8 +677,7 @@ export default function XellissProduits() {
                   href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brand-shop/xelliss-products/"
                   target="_blank"
                 >
-                  <ShoppingCart className="mr-2 h-5 w-5" />
-                  Acheter vos produits Xelliss maintenant
+                  Visiter la boutique Xelliss
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
@@ -752,8 +753,7 @@ export default function XellissProduits() {
                   href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brand-shop/xelliss-products/"
                   target="_blank"
                 >
-                  <ShoppingCart className="mr-2 h-5 w-5" />
-                  Commandez vos produits Xelliss
+                  Visiter la boutique Xelliss
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>

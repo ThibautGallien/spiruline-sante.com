@@ -29,7 +29,6 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   CheckCircle,
-  ArrowRight,
   Calculator,
   Heart,
   Shield,
@@ -46,9 +45,9 @@ import {
   MapPin,
   ExternalLink,
 } from "lucide-react";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import Link from "next/link";
+import { PhycocyanineResetSection } from "@/components/sections/phycocyanine-reset-section";
 
 interface DosageResult {
   phycocyanine: number;
@@ -213,7 +212,7 @@ export default function Page() {
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2 text-xl">
                   <Star className="h-6 w-6 text-blue-600" />
-                  <span>🌟 Ce que vous allez découvrir :</span>
+                  <span>Ce que vous allez découvrir :</span>
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
@@ -252,8 +251,7 @@ export default function Page() {
                       href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302771/"
                       target="_blank"
                     >
-                      🛒 Découvrir PhycoSci X14 (62€)
-                      <ArrowRight className="ml-2 h-5 w-5" />
+                      Découvrir PhycoSci X14
                     </Link>
                   </Button>
                 </div>
@@ -290,7 +288,6 @@ export default function Page() {
         <section id="simulateur" className="container py-12 bg-blue-50">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-8 flex items-center">
-              <Calculator className="h-8 w-8 text-blue-600 mr-3" />
               🧮 Simulateur de Dosage Personnalisé
             </h2>
 
@@ -473,7 +470,8 @@ export default function Page() {
             </Card>
           </div>
         </section>
-
+        {/* Section Phycocyanine Reset - Composant réutilisable */}
+        <PhycocyanineResetSection className="my-12" />
         {/* Pertinence historique */}
         <section className="container py-12 bg-gray-50">
           <div className="max-w-4xl mx-auto">
@@ -966,43 +964,6 @@ export default function Page() {
                 particulières.
               </AlertDescription>
             </Alert>
-          </div>
-        </section>
-
-        {/* Newsletter CTA */}
-        <section
-          id="newsletter"
-          className="container py-16 bg-gradient-to-r from-blue-600 to-green-600"
-        >
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="text-white mb-8">
-              <Gift className="h-12 w-12 mx-auto mb-4" />
-              <h2 className="text-3xl font-bold mb-4">
-                🎁 Recevez votre Guide Gratuit de la Phycocyanine !
-              </h2>
-              <p className="text-xl text-blue-100 mb-6">
-                + Dosages personnalisés et protocoles exclusifs d'experts
-              </p>
-            </div>
-
-            <div className="max-w-md mx-auto mb-6">
-              <NewsletterForm variant="dark" size="lg" />
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-blue-100">
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-green-300" />
-                <span>Guide PDF phycocyanine offert</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-green-300" />
-                <span>Protocoles d'experts exclusifs</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-green-300" />
-                <span>Offres privilégiées -20%</span>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -1511,17 +1472,6 @@ export default function Page() {
                 >
                   <Gift className="mr-2 h-5 w-5" />
                   Commander PhycoSci X14 (62€)
-                </Link>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-blue-600"
-              >
-                <Link href="#newsletter">
-                  <Mail className="mr-2 h-5 w-5" />
-                  Guide gratuit PDF
                 </Link>
               </Button>
             </div>

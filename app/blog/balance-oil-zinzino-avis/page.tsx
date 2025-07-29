@@ -10,7 +10,6 @@ import { Button } from "@/components/ui/button";
 import { NewsletterForm } from "@/components/forms/newsletter-form";
 import {
   CheckCircle,
-  ArrowRight,
   Heart,
   Brain,
   Shield,
@@ -19,6 +18,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { Omega3ResetSection } from "@/components/sections/omega3-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -164,41 +164,26 @@ export default function BalanceOilZinzinoAvis() {
               ))}
             </div>
 
-            <div className="text-center">
-              <Button 
-                size="lg" 
-                className="bg-orange-600 hover:bg-orange-700 text-lg font-semibold py-3 px-8"
-                asChild
-              >
-                <Link href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/" target="_blank">
-                  ➡️ Commandez votre bouteille dès maintenant et ressentez la différence !
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-            </div>
+<div className="text-center">
+  <Button 
+    size="lg" 
+    className="bg-orange-600 hover:bg-orange-700 text-lg font-semibold py-3 px-4 sm:px-8 w-full sm:w-auto"
+    asChild
+  >
+    <Link href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/" target="_blank">
+      {/* Texte court pour mobile */}
+      <span className="block sm:hidden">
+        🛒 Commander maintenant
+      </span>
+      
+      {/* Texte complet pour desktop */}
+      <span className="hidden sm:block">
+        ➡️ Commandez votre bouteille dès maintenant et ressentez la différence !
+      </span>
+    </Link>
+  </Button>
+</div>
           </section>
-
-          {/* Newsletter Section */}
-          <div className="bg-gradient-to-r from-blue-600 to-orange-600 text-white p-8 rounded-2xl mb-12 text-center">
-            <div className="flex items-center justify-center mb-4">
-              <span className="text-3xl mr-3">📘</span>
-              <h3 className="text-2xl font-bold">
-                OBTENEZ VOTRE COPIE GRATUITE
-              </h3>
-            </div>
-            <p className="text-lg mb-2">
-              Téléchargez notre livre GRATUIT « Vitamine D et omega-3 : les alliés incontournables de votre santé ».
-            </p>
-            <p className="text-blue-100 mb-6">
-              Obtenez toutes les informations pour comprendre les bienfaits de la vitamine D et des omega-3 pour l'intégrer facilement dans votre vie quotidienne.
-            </p>
-            <p className="text-blue-100 mb-6">
-              Que vous souhaitiez booster votre énergie, renforcer votre système immunitaire ou améliorer votre bien-être global, ce livre vous vous donne les clés exploiter tout le potentiel de la vitamine D et des omega-3.
-            </p>
-            <div className="max-w-md mx-auto">
-              <NewsletterForm variant="dark" size="lg" />
-            </div>
-          </div>
 
           {/* Qu'est-ce que BalanceOil+ Section */}
           <section className="mb-12" id="quest-ce-que-balanceoil">
@@ -214,7 +199,8 @@ export default function BalanceOilZinzinoAvis() {
               Sa formulation scientifique repose sur l'association d'Oméga-3 (EPA et DHA), de polyphénols naturels issus d'huile d'olive et de vitamine D3, pour un impact optimal sur la santé cérébrale, cardiovasculaire et immunitaire.
             </p>
           </section>
-
+          {/* Section Oméga-3 Reset - Composant réutilisable */}
+          <Omega3ResetSection className="my-12" />
           {/* Pourquoi choisir BalanceOil+ Section */}
           <section className="mb-12" id="pourquoi-choisir">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
@@ -382,18 +368,27 @@ export default function BalanceOilZinzinoAvis() {
               Chaque bouteille contient 30 doses, vous garantissant un apport optimal en Oméga-3, vitamine D3 et polyphénols.
             </p>
 
-            <div className="text-center">
-              <Button 
-                size="lg" 
-                className="bg-orange-600 hover:bg-orange-700 text-lg font-semibold py-3 px-8"
-                asChild
-              >
-                <Link href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/" target="_blank">
-                  ➡️ Cliquez ici pour passer votre commande et équilibrer votre santé dès aujourd'hui !
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-            </div>
+           <div className="text-center">
+  <Button 
+    size="lg" 
+    className="bg-orange-600 hover:bg-orange-700 text-lg font-semibold py-3 px-4 sm:px-8 w-full sm:w-auto"
+    asChild
+  >
+    <Link href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/" target="_blank">
+      {/* Texte court pour mobile */}
+      <span className="block sm:hidden">
+        🛒 Commander maintenant
+
+      </span>
+      
+      {/* Texte complet pour desktop */}
+      <span className="hidden sm:block">
+        ➡️ Commandez votre bouteille dès maintenant et ressentez la différence !
+
+      </span>
+    </Link>
+  </Button>
+</div>
           </section>
 
           {/* CTA Final */}
@@ -404,16 +399,25 @@ export default function BalanceOilZinzinoAvis() {
             <p className="text-blue-100 mb-6 text-lg">
               Rejoignez les milliers de personnes qui ont découvert les bienfaits mesurables de BalanceOil+ pour leur équilibre oméga et leur vitalité
             </p>
-            <Button
-              size="lg"
-              className="bg-white text-orange-600 hover:bg-gray-100 font-semibold text-lg px-8 py-4"
-              asChild
-            >
-              <Link href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/" target="_blank">
-                🛒 Commander BalanceOil+ maintenant
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
+<Button
+  size="lg"
+  className="bg-white text-orange-600 hover:bg-gray-100 font-semibold text-sm sm:text-lg px-4 sm:px-8 py-4 w-full sm:w-auto"
+  asChild
+>
+  <Link href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/" target="_blank">
+    {/* Texte court pour mobile */}
+    <span className="block sm:hidden">
+      🛒 Commander BalanceOil+
+    
+    </span>
+    
+    {/* Texte complet pour desktop */}
+    <span className="hidden sm:block">
+      🛒 Commander BalanceOil+ maintenant
+
+    </span>
+  </Link>
+</Button>
           </div>
         </div>
       </article>

@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import {
   CheckCircle,
   Star,
@@ -21,9 +20,9 @@ import {
   Leaf,
   Clock,
   Users,
-  ArrowRight,
 } from "lucide-react";
 import Link from "next/link";
+import { PhycocyanineResetSection } from "@/components/sections/phycocyanine-reset-section";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -103,8 +102,7 @@ export default function PhycocyanineStressPage() {
                 href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302771/"
                 target="_blank"
               >
-                🛒 Découvrir PhycoSci X14 (44€ - 250ml)
-                <ArrowRight className="ml-2 h-5 w-5" />
+                Découvrir PhycoSci X14
               </Link>
             </Button>
           </div>
@@ -152,7 +150,8 @@ export default function PhycocyanineStressPage() {
           comprendre pleinement.
         </p>
       </div>
-
+      {/* Section Phycocyanine Reset - Composant réutilisable */}
+      <PhycocyanineResetSection className="my-12" />
       {/* Section 1: Qu'est-ce que la phycocyanine */}
       <section className="mb-12">
         <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
@@ -317,25 +316,6 @@ export default function PhycocyanineStressPage() {
           </CardContent>
         </Card>
       </section>
-
-      {/* Newsletter CTA */}
-      <Card className="mb-12 bg-gradient-to-r from-green-600 to-blue-600 text-white">
-        <CardHeader className="text-center">
-          <CardTitle className="text-2xl mb-4 flex items-center justify-center gap-2">
-            📧 OBTENEZ VOTRE COPIE GRATUITE
-          </CardTitle>
-          <CardDescription className="text-green-100 text-lg">
-            Téléchargez notre guide complet "Spiruline : l'or vert de la santé"
-            + recevez nos conseils exclusifs anti-stress
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <NewsletterForm variant="dark" size="lg" />
-          <p className="text-center text-green-100 text-sm mt-4">
-            ✅ Guide PDF offert • ✅ Conseils d'experts • ✅ Offres exclusives
-          </p>
-        </CardContent>
-      </Card>
 
       {/* Section 3: Origines de la phycocyanine */}
       <section className="mb-12">
@@ -1484,8 +1464,7 @@ export default function PhycocyanineStressPage() {
                         href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302771/"
                         target="_blank"
                       >
-                        🛒 Commander PhycoSci X14 (44€)
-                        <ArrowRight className="ml-2 h-5 w-5" />
+                        Commander PhycoSci X14
                       </Link>
                     </Button>
 
@@ -1705,8 +1684,7 @@ export default function PhycocyanineStressPage() {
                 href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/brands-shop/xelliss-product/302771/"
                 target="_blank"
               >
-                🛒 Commander PhycoSci X14 maintenant
-                <ArrowRight className="ml-2 h-5 w-5" />
+                Commander PhycoSci X14
               </Link>
             </Button>
 
@@ -1717,7 +1695,7 @@ export default function PhycocyanineStressPage() {
               className="bg-white text-green-600 hover:bg-gray-100 font-semibold text-lg px-8 py-4"
             >
               <Link href="/phycocyanine">
-                📚 En savoir plus sur la phycocyanine
+                En savoir plus sur la phycocyanine
               </Link>
             </Button>
           </div>

@@ -59,10 +59,10 @@ export function PhycocyanineResetSection({
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Image à gauche */}
-          <div className="relative">
+          {/* Image à gauche - CACHÉE SUR MOBILE */}
+          <div className="relative hidden lg:block">
             <div className="relative h-[680px] w-full rounded-2xl overflow-hidden shadow-2xl">
-              {/* Image de phycocyanine - vous pouvez remplacer par votre image */}
+              {/* Image de phycocyanine */}
               <img
                 src="/LP_phycocyanine.png"
                 alt="Phycocyanine Reset - Programme 7 jours"
@@ -74,14 +74,31 @@ export function PhycocyanineResetSection({
             </div>
           </div>
 
-          {/* Contenu à droite */}
-          <div>
+          {/* Contenu à droite - PLEINE LARGEUR SUR MOBILE */}
+          <div className="lg:col-span-1">
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-blue-200 shadow-lg">
+              <div className="flex items-start space-x-3 mb-6">
+                <div className="flex space-x-2">
+                  <Shield className="h-8 w-8 text-blue-600" />
+                </div>
+                <div>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    <strong>
+                      Vous ne connaissez pas encore la phycocyanine ?
+                    </strong>
+                  </p>
+                  <p className="text-gray-600 mt-2">
+                    Ce pigment bleu rare (issu de la spiruline) est utilisé dans
+                    des cliniques… mais reste inconnu du grand public.{" "}
+                    <strong>Jusqu'à maintenant.</strong>
+                  </p>
+                </div>
+              </div>
+
               <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-xl mb-6 border border-blue-100">
                 <div className="flex items-center mb-4">
-                  <Mail className="h-6 w-6 text-blue-600 mr-3" />
                   <h3 className="text-xl font-bold text-gray-900">
-                    💌 7 Jours pour découvrir la phycocyanine
+                    7 Jours pour découvrir la phycocyanine
                   </h3>
                 </div>
 
@@ -142,7 +159,7 @@ export function PhycocyanineResetSection({
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                   onClick={handleCtaClick}
                 >
-                  Découvrir la phycocyanine !
+                  Comprendre la phycocyanine
                   <ArrowRight className="ml-3 h-6 w-6" />
                 </Button>
               )}
