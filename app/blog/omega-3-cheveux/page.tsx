@@ -9,6 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { NewsletterForm } from "@/components/forms/newsletter-form";
+import { Omega3ResetSection } from "@/components/sections/omega3-reset-section";
 import {
   Heart,
   Sparkles,
@@ -134,14 +135,14 @@ export default function Omega3Cheveux() {
       name: "Pascale",
       result: "Douleur tendinite disparue",
       quote:
-        "Après cinq ans de tendinite et capsulite sans amélioration, j’ai découvert le concept de santé cellulaire avec l’eau, la phycocyanine, le krill et le Gold. Depuis, plus aucune douleur, une forme retrouvée, et un vrai tournant avec l’équilibre oméga-6/oméga-3 — une immense gratitude pour ce changement.",
+        "Après cinq ans de tendinite et capsulite sans amélioration, j'ai découvert le concept de santé cellulaire avec l'eau, la phycocyanine, le krill et le Gold. Depuis, plus aucune douleur, une forme retrouvée, et un vrai tournant avec l'équilibre oméga-6/oméga-3 — une immense gratitude pour ce changement.",
       rating: 5,
     },
     {
       name: "Eric Masson",
       result: "Douleurs, allergies, trouble du sommeil disparus",
       quote:
-        "Mon test Zinzino a révélé un grave déséquilibre oméga-6/oméga-3 (21:1), corrigé en 120 jours grâce à BalanceOil, avec un nouveau ratio de 1,6:1. Depuis, mes douleurs, allergies et troubles du sommeil ont disparu — ma santé s’est transformée, et je me sens enfin en pleine forme.",
+        "Mon test Zinzino a révélé un grave déséquilibre oméga-6/oméga-3 (21:1), corrigé en 120 jours grâce à BalanceOil, avec un nouveau ratio de 1,6:1. Depuis, mes douleurs, allergies et troubles du sommeil ont disparu — ma santé s'est transformée, et je me sens enfin en pleine forme.",
       rating: 5,
     },
     {
@@ -422,36 +423,8 @@ export default function Omega3Cheveux() {
             </div>
           </section>
 
-          {/* Newsletter CTA */}
-          <div
-            id="newsletter"
-            className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-8 rounded-2xl mb-12 text-center"
-          >
-            <h3 className="text-2xl font-bold mb-2">
-              🎁 GUIDE GRATUIT : Protocole Oméga-3 pour Cheveux Parfaits
-            </h3>
-            <p className="text-blue-100 text-lg mb-4">
-              Recevez notre guide complet de 35 pages + protocole personnalisé
-              selon votre type de cheveux
-            </p>
-            <div className="max-w-md mx-auto mb-4">
-              <NewsletterForm variant="dark" size="lg" />
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-blue-300" />
-                <span>Guide PDF 35 pages gratuit</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-blue-300" />
-                <span>Protocole personnalisé inclus</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-blue-300" />
-                <span>Codes promo exclusifs -20%</span>
-              </div>
-            </div>
-          </div>
+          {/* Section Oméga-3 Reset - Composant réutilisable */}
+          <Omega3ResetSection className="my-12" />
 
           {/* Bienfaits détaillés */}
           <section className="mb-12" id="bienfaits">
@@ -1076,7 +1049,12 @@ export default function Omega3Cheveux() {
               personnalisés directement par email
             </p>
             <div className="max-w-md mx-auto mb-6">
-              <NewsletterForm variant="dark" size="lg" />
+              <NewsletterForm
+                variant="dark"
+                size="lg"
+                source="omega3-cheveux-final-cta"
+                interests={["omega3", "cheveux", "beauté", "transformation"]}
+              />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-sm">
               <div className="flex items-center justify-center space-x-2">
