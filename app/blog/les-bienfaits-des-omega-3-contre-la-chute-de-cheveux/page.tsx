@@ -20,11 +20,7 @@ import {
   ArrowRight,
   AlertTriangle,
   Beaker,
-  Leaf,
-  TrendingUp,
-  Users,
   Eye,
-  MousePointer,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -54,7 +50,8 @@ export async function generateMetadata() {
 
 export default function OmegaTroisCheveux() {
   const articleSchema = generateArticleSchema({
-    title: "Oméga-3 contre la chute de cheveux : Bienfaits Prouvés et Solutions Efficaces",
+    title:
+      "Oméga-3 contre la chute de cheveux : Bienfaits Prouvés et Solutions Efficaces",
     excerpt:
       "Guide scientifique complet sur l'utilisation des oméga-3 pour prévenir la chute de cheveux et stimuler la croissance capillaire, avec dosages optimaux et produits recommandés.",
     datePublished: "2024-12-15",
@@ -65,7 +62,8 @@ export default function OmegaTroisCheveux() {
 
   const faqSchema = generateFAQSchema([
     {
-      question: "Les oméga-3 sont-ils vraiment efficaces contre la chute de cheveux ?",
+      question:
+        "Les oméga-3 sont-ils vraiment efficaces contre la chute de cheveux ?",
       answer:
         "Oui, plusieurs études cliniques montrent que les oméga-3 EPA et DHA peuvent réduire la chute de cheveux jusqu'à 60% grâce à leurs propriétés anti-inflammatoires et leur action sur la circulation sanguine du cuir chevelu.",
     },
@@ -75,7 +73,8 @@ export default function OmegaTroisCheveux() {
         "Pour la santé capillaire, il est recommandé de prendre 1000-2000mg d'EPA+DHA par jour, répartis en 2 prises avec les repas pour une absorption optimale.",
     },
     {
-      question: "Combien de temps pour voir les résultats des oméga-3 sur les cheveux ?",
+      question:
+        "Combien de temps pour voir les résultats des oméga-3 sur les cheveux ?",
       answer:
         "Les premiers effets peuvent être observés après 6-8 semaines de supplémentation régulière, avec des résultats optimaux après 3-4 mois de cure continue.",
     },
@@ -308,8 +307,8 @@ export default function OmegaTroisCheveux() {
               oméga-3 peuvent réduire la chute de cheveux jusqu'à 60%
             </strong>{" "}
             et stimuler naturellement la croissance capillaire. Guide complet
-            avec dosages optimaux, aliments recommandés et meilleurs
-            compléments pour retrouver des cheveux forts et brillants.
+            avec dosages optimaux, aliments recommandés et meilleurs compléments
+            pour retrouver des cheveux forts et brillants.
           </p>
 
           {/* Points clés */}
@@ -344,10 +343,8 @@ export default function OmegaTroisCheveux() {
 
               <p>
                 • Les oméga-3 agissent en{" "}
-                <strong>
-                  prolongeant la phase de croissance des cheveux
-                </strong>
-                , en renforçant la structure capillaire et en réduisant
+                <strong>prolongeant la phase de croissance des cheveux</strong>,
+                en renforçant la structure capillaire et en réduisant
                 l'inflammation qui cause la miniaturisation des follicules.
               </p>
 
@@ -449,12 +446,24 @@ export default function OmegaTroisCheveux() {
           {/* Introduction */}
           <section className="mb-12" id="introduction">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Comprendre les oméga-3 : qu'est-ce que c'est et pourquoi sont-ils essentiels ?
+              Comprendre les oméga-3 : qu'est-ce que c'est et pourquoi sont-ils
+              essentiels ?
             </h2>
-            
+
             <div className="bg-gradient-to-r from-blue-50 to-green-50 p-6 rounded-xl mb-6">
               <p className="text-lg text-gray-700 leading-relaxed">
-                Les <strong>oméga-3</strong> sont des acides gras essentiels que notre organisme ne peut pas produire. Ils comprennent principalement l'<span className="text-blue-600 font-semibold">EPA (acide eicosapentaénoïque)</span> et le <span className="text-green-600 font-semibold">DHA (acide docosahexaénoïque)</span>, cruciaux pour la santé capillaire car ils s'intègrent dans les membranes cellulaires des follicules pileux.
+                Les <strong>oméga-3</strong> sont des acides gras essentiels que
+                notre organisme ne peut pas produire. Ils comprennent
+                principalement l'
+                <span className="text-blue-600 font-semibold">
+                  EPA (acide eicosapentaénoïque)
+                </span>{" "}
+                et le{" "}
+                <span className="text-green-600 font-semibold">
+                  DHA (acide docosahexaénoïque)
+                </span>
+                , cruciaux pour la santé capillaire car ils s'intègrent dans les
+                membranes cellulaires des follicules pileux.
               </p>
             </div>
 
@@ -504,7 +513,8 @@ export default function OmegaTroisCheveux() {
           {/* Causes de la chute */}
           <section className="mb-12" id="causes-chute">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
-              Les principales causes de la chute de cheveux que les oméga-3 peuvent traiter
+              Les principales causes de la chute de cheveux que les oméga-3
+              peuvent traiter
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -574,7 +584,8 @@ export default function OmegaTroisCheveux() {
           {/* Aliments riches en oméga-3 */}
           <section className="mb-12" id="aliments">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
-              Les meilleurs aliments riches en oméga-3 pour la croissance des cheveux
+              Les meilleurs aliments riches en oméga-3 pour la croissance des
+              cheveux
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -598,7 +609,9 @@ export default function OmegaTroisCheveux() {
                     <div className="text-2xl font-bold text-green-600 mb-2">
                       {food.omega3}
                     </div>
-                    <p className="text-sm text-gray-600 mb-1">d'oméga-3 pour 100g</p>
+                    <p className="text-sm text-gray-600 mb-1">
+                      d'oméga-3 pour 100g
+                    </p>
                     <p className="text-xs text-blue-600 font-medium">
                       Consommation : {food.frequency}
                     </p>
@@ -653,7 +666,8 @@ export default function OmegaTroisCheveux() {
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="h-4 w-4 text-blue-600" />
                     <span>
-                      <strong>Éviter</strong> : chauffage excessif (>180°C)
+                      <strong>Éviter</strong> : chauffage excessif (supérieur à
+                      180°C)
                     </span>
                   </li>
                 </ul>
@@ -664,7 +678,8 @@ export default function OmegaTroisCheveux() {
           {/* Compléments d'oméga-3 */}
           <section className="mb-12" id="complements">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
-              Les meilleurs compléments d'oméga-3 pour prévenir la chute de cheveux
+              Les meilleurs compléments d'oméga-3 pour prévenir la chute de
+              cheveux
             </h2>
 
             <div className="space-y-6">
@@ -717,8 +732,12 @@ export default function OmegaTroisCheveux() {
                         </p>
                       </div>
                       <div>
-                        <h4 className="font-semibold mb-2">Pourquoi choisir :</h4>
-                        <p className="text-sm text-gray-700">{supplement.why}</p>
+                        <h4 className="font-semibold mb-2">
+                          Pourquoi choisir :
+                        </h4>
+                        <p className="text-sm text-gray-700">
+                          {supplement.why}
+                        </p>
                       </div>
                     </div>
 
@@ -773,7 +792,7 @@ export default function OmegaTroisCheveux() {
                 <div>
                   <h4 className="font-semibold mb-2">Critères essentiels :</h4>
                   <ul className="space-y-1">
-                    <li>• Concentration EPA+DHA > 1000mg</li>
+                    <li>• Concentration EPA+DHA supérieur à 1000mg</li>
                     <li>• Forme triglycéride (meilleure absorption)</li>
                     <li>• Certification pureté (sans métaux lourds)</li>
                     <li>• Fraîcheur garantie (indice TOTOX &lt; 10)</li>
@@ -809,7 +828,9 @@ export default function OmegaTroisCheveux() {
                   <div className="text-3xl font-bold text-green-600 mb-2">
                     1000mg
                   </div>
-                  <p className="text-sm text-gray-600 mb-2">EPA + DHA par jour</p>
+                  <p className="text-sm text-gray-600 mb-2">
+                    EPA + DHA par jour
+                  </p>
                   <p className="text-xs text-green-600 font-medium">
                     Maintien santé capillaire
                   </p>
@@ -826,7 +847,9 @@ export default function OmegaTroisCheveux() {
                   <div className="text-3xl font-bold text-blue-600 mb-2">
                     2000mg
                   </div>
-                  <p className="text-sm text-gray-600 mb-2">EPA + DHA par jour</p>
+                  <p className="text-sm text-gray-600 mb-2">
+                    EPA + DHA par jour
+                  </p>
                   <p className="text-xs text-blue-600 font-medium">
                     Chute importante
                   </p>
@@ -843,7 +866,9 @@ export default function OmegaTroisCheveux() {
                   <div className="text-3xl font-bold text-purple-600 mb-2">
                     3000mg
                   </div>
-                  <p className="text-sm text-gray-600 mb-2">EPA + DHA par jour</p>
+                  <p className="text-sm text-gray-600 mb-2">
+                    EPA + DHA par jour
+                  </p>
                   <p className="text-xs text-purple-600 font-medium">
                     3 mois maximum
                   </p>
@@ -977,7 +1002,9 @@ export default function OmegaTroisCheveux() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card className="border-l-4 border-blue-500">
                 <CardHeader>
-                  <CardTitle className="text-lg">📊 Test sanguin professionnel</CardTitle>
+                  <CardTitle className="text-lg">
+                    📊 Test sanguin professionnel
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-gray-700 mb-4">
@@ -991,32 +1018,34 @@ export default function OmegaTroisCheveux() {
                       <strong>Moyen français :</strong> 15:1 (trop élevé)
                     </p>
                   </div>
-<Button
-  size="sm"
-  className="bg-blue-600 hover:bg-blue-700 w-full text-xs sm:text-sm px-2 sm:px-4"
-  asChild
->
-  <Link
-    href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
-    target="_blank"
-  >
-    {/* Texte court pour mobile */}
-    <span className="block sm:hidden">
-      🧪 Équilibrer mon ratio
-    </span>
-    
-    {/* Texte complet pour desktop */}
-    <span className="hidden sm:block">
-      🧪 Équilibrer mon ratio oméga-6/oméga-3 maintenant
-    </span>
-  </Link>
-</Button>
+                  <Button
+                    size="sm"
+                    className="bg-blue-600 hover:bg-blue-700 w-full text-xs sm:text-sm px-2 sm:px-4"
+                    asChild
+                  >
+                    <Link
+                      href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
+                      target="_blank"
+                    >
+                      {/* Texte court pour mobile */}
+                      <span className="block sm:hidden">
+                        🧪 Équilibrer mon ratio
+                      </span>
+
+                      {/* Texte complet pour desktop */}
+                      <span className="hidden sm:block">
+                        🧪 Équilibrer mon ratio oméga-6/oméga-3 maintenant
+                      </span>
+                    </Link>
+                  </Button>
                 </CardContent>
               </Card>
 
               <Card className="border-l-4 border-green-500">
                 <CardHeader>
-                  <CardTitle className="text-lg">✋ Auto-évaluation rapide</CardTitle>
+                  <CardTitle className="text-lg">
+                    ✋ Auto-évaluation rapide
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-gray-700 mb-4">
@@ -1110,10 +1139,7 @@ export default function OmegaTroisCheveux() {
                 Rejoignez notre communauté de plus de 15 000 personnes qui ont
                 transformé leurs cheveux grâce aux oméga-3.
               </p>
-              <Button
-                className="bg-green-600 hover:bg-green-700"
-                asChild
-              >
+              <Button className="bg-green-600 hover:bg-green-700" asChild>
                 <Link href="#newsletter">
                   💬 Rejoindre la Communauté
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -1132,7 +1158,9 @@ export default function OmegaTroisCheveux() {
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <Heart className="h-8 w-8 text-red-500 mb-2" />
-                  <CardTitle className="text-lg">Santé cardiovasculaire</CardTitle>
+                  <CardTitle className="text-lg">
+                    Santé cardiovasculaire
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="text-sm space-y-1">
@@ -1207,7 +1235,9 @@ export default function OmegaTroisCheveux() {
               <Card className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <Zap className="h-8 w-8 text-orange-500 mb-2" />
-                  <CardTitle className="text-lg">Performance sportive</CardTitle>
+                  <CardTitle className="text-lg">
+                    Performance sportive
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="text-sm space-y-1">
@@ -1236,7 +1266,7 @@ export default function OmegaTroisCheveux() {
                   complète avec test personnel, synergie d'huiles premium et
                   vitamine D pour des résultats optimaux.
                 </p>
-                
+
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6 text-center">
                   <div className="bg-white/10 p-3 rounded-lg">
                     <div className="text-2xl font-bold">1283mg</div>
@@ -1258,15 +1288,21 @@ export default function OmegaTroisCheveux() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div className="bg-white/10 p-4 rounded-lg">
-                    <h4 className="font-semibold mb-2">🧪 Inclus : Test personnel</h4>
+                    <h4 className="font-semibold mb-2">
+                      🧪 Inclus : Test personnel
+                    </h4>
                     <p className="text-sm text-gray-100">
-                      Analysez votre profil oméga-3 avant/après pour mesurer les progrès réels
+                      Analysez votre profil oméga-3 avant/après pour mesurer les
+                      progrès réels
                     </p>
                   </div>
                   <div className="bg-white/10 p-4 rounded-lg">
-                    <h4 className="font-semibold mb-2">🫒 Synergie naturelle</h4>
+                    <h4 className="font-semibold mb-2">
+                      🫒 Synergie naturelle
+                    </h4>
                     <p className="text-sm text-gray-100">
-                      Huile d'olive polyphénols + oméga-3 marins pour absorption optimale
+                      Huile d'olive polyphénols + oméga-3 marins pour absorption
+                      optimale
                     </p>
                   </div>
                 </div>
@@ -1283,9 +1319,10 @@ export default function OmegaTroisCheveux() {
                     Commander BalanceOil+
                   </Link>
                 </Button>
-                
+
                 <p className="text-sm text-gray-200">
-                  ✅ Livraison rapide • 💳 Paiement sécurisé • 📞 Support client français
+                  ✅ Livraison rapide • 💳 Paiement sécurisé • 📞 Support client
+                  français
                 </p>
               </div>
             </div>
@@ -1312,16 +1349,21 @@ export default function OmegaTroisCheveux() {
                     <li className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-orange-600 rounded-full mt-2"></div>
                       <div>
-                        <span className="font-medium">Traitement anticoagulant</span>
+                        <span className="font-medium">
+                          Traitement anticoagulant
+                        </span>
                         <p className="text-sm text-gray-600">
-                          Risque d'interaction avec warfarine, héparine, aspirine
+                          Risque d'interaction avec warfarine, héparine,
+                          aspirine
                         </p>
                       </div>
                     </li>
                     <li className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-orange-600 rounded-full mt-2"></div>
                       <div>
-                        <span className="font-medium">Chirurgie programmée</span>
+                        <span className="font-medium">
+                          Chirurgie programmée
+                        </span>
                         <p className="text-sm text-gray-600">
                           Arrêter 1 semaine avant (risque hémorragique)
                         </p>
@@ -1330,7 +1372,9 @@ export default function OmegaTroisCheveux() {
                     <li className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-orange-600 rounded-full mt-2"></div>
                       <div>
-                        <span className="font-medium">Allergie poissons/fruits de mer</span>
+                        <span className="font-medium">
+                          Allergie poissons/fruits de mer
+                        </span>
                         <p className="text-sm text-gray-600">
                           Préférer les oméga-3 d'algues ou test préalable
                         </p>
@@ -1339,7 +1383,9 @@ export default function OmegaTroisCheveux() {
                     <li className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-orange-600 rounded-full mt-2"></div>
                       <div>
-                        <span className="font-medium">Grossesse et allaitement</span>
+                        <span className="font-medium">
+                          Grossesse et allaitement
+                        </span>
                         <p className="text-sm text-gray-600">
                           Dosage adapté sous supervision médicale
                         </p>
@@ -1363,7 +1409,9 @@ export default function OmegaTroisCheveux() {
                     <li className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-green-600 rounded-full mt-2"></div>
                       <div>
-                        <span className="font-medium">Commencer progressivement</span>
+                        <span className="font-medium">
+                          Commencer progressivement
+                        </span>
                         <p className="text-sm text-gray-600">
                           500mg les premiers jours, puis augmenter
                         </p>
@@ -1372,7 +1420,9 @@ export default function OmegaTroisCheveux() {
                     <li className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-green-600 rounded-full mt-2"></div>
                       <div>
-                        <span className="font-medium">Prendre pendant les repas</span>
+                        <span className="font-medium">
+                          Prendre pendant les repas
+                        </span>
                         <p className="text-sm text-gray-600">
                           Évite reflux et améliore l'absorption
                         </p>
@@ -1381,7 +1431,9 @@ export default function OmegaTroisCheveux() {
                     <li className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-green-600 rounded-full mt-2"></div>
                       <div>
-                        <span className="font-medium">Choisir qualité premium</span>
+                        <span className="font-medium">
+                          Choisir qualité premium
+                        </span>
                         <p className="text-sm text-gray-600">
                           Évite goût de poisson et contamination
                         </p>
@@ -1390,7 +1442,9 @@ export default function OmegaTroisCheveux() {
                     <li className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-green-600 rounded-full mt-2"></div>
                       <div>
-                        <span className="font-medium">Surveiller la réaction</span>
+                        <span className="font-medium">
+                          Surveiller la réaction
+                        </span>
                         <p className="text-sm text-gray-600">
                           Arrêter si troubles persistants
                         </p>
@@ -1408,7 +1462,9 @@ export default function OmegaTroisCheveux() {
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
                 <div>
-                  <h4 className="font-medium mb-2 text-blue-700">Digestifs :</h4>
+                  <h4 className="font-medium mb-2 text-blue-700">
+                    Digestifs :
+                  </h4>
                   <ul className="space-y-1 text-gray-700">
                     <li>• Nausées légères</li>
                     <li>• Reflux gastrique</li>
@@ -1424,7 +1480,9 @@ export default function OmegaTroisCheveux() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-medium mb-2 text-blue-700">Solutions :</h4>
+                  <h4 className="font-medium mb-2 text-blue-700">
+                    Solutions :
+                  </h4>
                   <ul className="space-y-1 text-gray-700">
                     <li>• Réduire temporairement</li>
                     <li>• Changer de marque</li>
@@ -1445,15 +1503,25 @@ export default function OmegaTroisCheveux() {
               <Card className="border-l-4 border-green-500">
                 <CardHeader>
                   <h3 className="text-lg font-semibold text-gray-900">
-                    Les oméga-3 sont-ils vraiment efficaces contre la chute de cheveux ?
+                    Les oméga-3 sont-ils vraiment efficaces contre la chute de
+                    cheveux ?
                   </h3>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-700 mb-3">
-                    <strong>Oui, absolument !</strong> Plusieurs études cliniques démontrent que les oméga-3 EPA et DHA peuvent <span className="text-green-600 font-bold">réduire la chute de cheveux jusqu'à 60%</span> grâce à leurs propriétés anti-inflammatoires et leur action sur la circulation sanguine du cuir chevelu.
+                    <strong>Oui, absolument !</strong> Plusieurs études
+                    cliniques démontrent que les oméga-3 EPA et DHA peuvent{" "}
+                    <span className="text-green-600 font-bold">
+                      réduire la chute de cheveux jusqu'à 60%
+                    </span>{" "}
+                    grâce à leurs propriétés anti-inflammatoires et leur action
+                    sur la circulation sanguine du cuir chevelu.
                   </p>
                   <div className="bg-green-50 p-3 rounded-lg text-sm">
-                    <strong>💡 Mécanisme scientifique :</strong> Les oméga-3 s'intègrent dans les membranes des follicules pileux, réduisent l'inflammation locale et améliorent l'apport nutritionnel des cheveux.
+                    <strong>💡 Mécanisme scientifique :</strong> Les oméga-3
+                    s'intègrent dans les membranes des follicules pileux,
+                    réduisent l'inflammation locale et améliorent l'apport
+                    nutritionnel des cheveux.
                   </div>
                 </CardContent>
               </Card>
@@ -1466,7 +1534,10 @@ export default function OmegaTroisCheveux() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-700 mb-3">
-                    Pour la santé capillaire, il est recommandé de prendre <strong>1000-2000mg d'EPA+DHA par jour</strong>, répartis en 2 prises avec les repas. Commencez par 500mg pendant une semaine, puis augmentez progressivement.
+                    Pour la santé capillaire, il est recommandé de prendre{" "}
+                    <strong>1000-2000mg d'EPA+DHA par jour</strong>, répartis en
+                    2 prises avec les repas. Commencez par 500mg pendant une
+                    semaine, puis augmentez progressivement.
                   </p>
                   <div className="grid grid-cols-3 gap-2 text-center text-sm mb-3">
                     <div className="bg-blue-50 p-2 rounded">
@@ -1488,15 +1559,25 @@ export default function OmegaTroisCheveux() {
               <Card className="border-l-4 border-purple-500">
                 <CardHeader>
                   <h3 className="text-lg font-semibold text-gray-900">
-                    Combien de temps pour voir les résultats des oméga-3 sur les cheveux ?
+                    Combien de temps pour voir les résultats des oméga-3 sur les
+                    cheveux ?
                   </h3>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-700 mb-3">
-                    Les <strong>premiers effets peuvent être observés après 6-8 semaines</strong> de supplémentation régulière : réduction de la chute et amélioration de la brillance. Les <strong>résultats optimaux</strong> apparaissent après <strong>3-4 mois</strong> de cure continue.
+                    Les{" "}
+                    <strong>
+                      premiers effets peuvent être observés après 6-8 semaines
+                    </strong>{" "}
+                    de supplémentation régulière : réduction de la chute et
+                    amélioration de la brillance. Les{" "}
+                    <strong>résultats optimaux</strong> apparaissent après{" "}
+                    <strong>3-4 mois</strong> de cure continue.
                   </p>
                   <div className="bg-purple-50 p-3 rounded-lg text-sm">
-                    <strong>📅 Timeline :</strong> Semaine 1-2 (adaptation) → Semaine 6-8 (premiers effets) → Mois 3-4 (transformation complète) → Entretien à vie.
+                    <strong>📅 Timeline :</strong> Semaine 1-2 (adaptation) →
+                    Semaine 6-8 (premiers effets) → Mois 3-4 (transformation
+                    complète) → Entretien à vie.
                   </div>
                 </CardContent>
               </Card>
@@ -1509,10 +1590,18 @@ export default function OmegaTroisCheveux() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-700 mb-3">
-                    <strong>Oui, une supplémentation quotidienne en oméga-3 jusqu'à 3g par jour est considérée comme sûre</strong> pour la plupart des personnes. Cependant, consultez votre médecin si vous prenez des anticoagulants ou avez des problèmes de santé.
+                    <strong>
+                      Oui, une supplémentation quotidienne en oméga-3 jusqu'à 3g
+                      par jour est considérée comme sûre
+                    </strong>{" "}
+                    pour la plupart des personnes. Cependant, consultez votre
+                    médecin si vous prenez des anticoagulants ou avez des
+                    problèmes de santé.
                   </p>
                   <div className="bg-orange-50 p-3 rounded-lg text-sm">
-                    <strong>⚠️ Précautions :</strong> Arrêter 1 semaine avant chirurgie, commencer progressivement, choisir des produits certifiés sans métaux lourds.
+                    <strong>⚠️ Précautions :</strong> Arrêter 1 semaine avant
+                    chirurgie, commencer progressivement, choisir des produits
+                    certifiés sans métaux lourds.
                   </div>
                 </CardContent>
               </Card>
@@ -1525,13 +1614,25 @@ export default function OmegaTroisCheveux() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-700 mb-3">
-                    Les <strong>oméga-3 marins (EPA et DHA)</strong> sont les plus efficaces pour les cheveux. Le <strong>BalanceOil+ de Zinzino</strong> offre une formule optimisée avec 1283mg EPA + 683mg DHA, plus vitamine D et polyphénols d'olive pour une absorption maximale.
+                    Les <strong>oméga-3 marins (EPA et DHA)</strong> sont les
+                    plus efficaces pour les cheveux. Le{" "}
+                    <strong>BalanceOil+ de Zinzino</strong> offre une formule
+                    optimisée avec 1283mg EPA + 683mg DHA, plus vitamine D et
+                    polyphénols d'olive pour une absorption maximale.
                   </p>
                   <div className="bg-indigo-50 p-3 rounded-lg text-sm">
-                    <strong>🏆 Avantages BalanceOil+ :</strong> Test personnalisé inclus • Synergie huile d'olive • Absorption 90% • Certification qualité • 4 mois de cure.
+                    <strong>🏆 Avantages BalanceOil+ :</strong> Test
+                    personnalisé inclus • Synergie huile d'olive • Absorption
+                    90% • Certification qualité • 4 mois de cure.
                   </div>
-                  <Button className="w-full mt-3 bg-indigo-600 hover:bg-indigo-700" asChild>
-                    <Link href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/" target="_blank">
+                  <Button
+                    className="w-full mt-3 bg-indigo-600 hover:bg-indigo-700"
+                    asChild
+                  >
+                    <Link
+                      href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
+                      target="_blank"
+                    >
                       🛒 Découvrir BalanceOil+ (59€)
                     </Link>
                   </Button>
@@ -1546,11 +1647,17 @@ export default function OmegaTroisCheveux() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-700 mb-3">
-                    Les signes de carence incluent : <strong>chute de cheveux excessive</strong> (>100/jour), cheveux ternes et cassants, peau sèche persistante, ongles fragiles, inflammations fréquentes et fatigue chronique.
+                    Les signes de carence incluent :{" "}
+                    <strong>chute de cheveux excessive</strong> (supérieur à
+                    100/jour), cheveux ternes et cassants, peau sèche
+                    persistante, ongles fragiles, inflammations fréquentes et
+                    fatigue chronique.
                   </p>
                   <div className="grid grid-cols-2 gap-4 text-sm mb-3">
                     <div className="bg-red-50 p-3 rounded-lg">
-                      <h5 className="font-semibold text-red-700 mb-1">Signes physiques :</h5>
+                      <h5 className="font-semibold text-red-700 mb-1">
+                        Signes physiques :
+                      </h5>
                       <ul className="space-y-1 text-xs">
                         <li>• Chute capillaire excessive</li>
                         <li>• Cheveux ternes, secs</li>
@@ -1559,7 +1666,9 @@ export default function OmegaTroisCheveux() {
                       </ul>
                     </div>
                     <div className="bg-red-50 p-3 rounded-lg">
-                      <h5 className="font-semibold text-red-700 mb-1">Test recommandé :</h5>
+                      <h5 className="font-semibold text-red-700 mb-1">
+                        Test recommandé :
+                      </h5>
                       <ul className="space-y-1 text-xs">
                         <li>• Analyse sangue oméga-3</li>
                         <li>• Ratio oméga-6/oméga-3</li>
@@ -1576,7 +1685,8 @@ export default function OmegaTroisCheveux() {
           {/* Conclusion */}
           <section className="mb-12" id="conclusion">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Conclusion : Les oméga-3, une solution naturelle et efficace contre la chute de cheveux
+              Conclusion : Les oméga-3, une solution naturelle et efficace
+              contre la chute de cheveux
             </h2>
 
             <div className="bg-gradient-to-r from-green-50 to-blue-50 p-8 rounded-2xl mb-8">
@@ -1588,19 +1698,29 @@ export default function OmegaTroisCheveux() {
                   <ul className="space-y-2">
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-green-600" />
-                      <span>Les oméga-3 réduisent la chute jusqu'à <strong>60%</strong></span>
+                      <span>
+                        Les oméga-3 réduisent la chute jusqu'à{" "}
+                        <strong>60%</strong>
+                      </span>
                     </li>
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-green-600" />
-                      <span>Dosage optimal : <strong>1000-2000mg EPA+DHA/jour</strong></span>
+                      <span>
+                        Dosage optimal :{" "}
+                        <strong>1000-2000mg EPA+DHA/jour</strong>
+                      </span>
                     </li>
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-green-600" />
-                      <span>Premiers résultats en <strong>6-8 semaines</strong></span>
+                      <span>
+                        Premiers résultats en <strong>6-8 semaines</strong>
+                      </span>
                     </li>
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="h-4 w-4 text-green-600" />
-                      <span>Sûr pour usage quotidien <strong>long terme</strong></span>
+                      <span>
+                        Sûr pour usage quotidien <strong>long terme</strong>
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -1610,20 +1730,34 @@ export default function OmegaTroisCheveux() {
                   </h3>
                   <ol className="space-y-2">
                     <li className="flex items-start space-x-2">
-                      <span className="bg-blue-600 text-white text-xs px-2 py-1 rounded-full mt-0.5">1</span>
-                      <span>Tester votre statut oméga-3 (gratuit avec BalanceOil+)</span>
+                      <span className="bg-blue-600 text-white text-xs px-2 py-1 rounded-full mt-0.5">
+                        1
+                      </span>
+                      <span>
+                        Tester votre statut oméga-3 (gratuit avec BalanceOil+)
+                      </span>
                     </li>
                     <li className="flex items-start space-x-2">
-                      <span className="bg-blue-600 text-white text-xs px-2 py-1 rounded-full mt-0.5">2</span>
-                      <span>Choisir une formule optimisée (EPA+DHA+Vitamine D)</span>
+                      <span className="bg-blue-600 text-white text-xs px-2 py-1 rounded-full mt-0.5">
+                        2
+                      </span>
+                      <span>
+                        Choisir une formule optimisée (EPA+DHA+Vitamine D)
+                      </span>
                     </li>
                     <li className="flex items-start space-x-2">
-                      <span className="bg-blue-600 text-white text-xs px-2 py-1 rounded-full mt-0.5">3</span>
+                      <span className="bg-blue-600 text-white text-xs px-2 py-1 rounded-full mt-0.5">
+                        3
+                      </span>
                       <span>Commencer progressivement et rester régulier</span>
                     </li>
                     <li className="flex items-start space-x-2">
-                      <span className="bg-blue-600 text-white text-xs px-2 py-1 rounded-full mt-0.5">4</span>
-                      <span>Adopter une approche globale (alimentation + lifestyle)</span>
+                      <span className="bg-blue-600 text-white text-xs px-2 py-1 rounded-full mt-0.5">
+                        4
+                      </span>
+                      <span>
+                        Adopter une approche globale (alimentation + lifestyle)
+                      </span>
                     </li>
                   </ol>
                 </div>
@@ -1632,25 +1766,49 @@ export default function OmegaTroisCheveux() {
 
             <div className="text-center">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Les oméga-3 représentent une <strong>approche naturelle, scientifiquement validée et sans effets secondaires majeurs</strong> pour lutter contre la chute de cheveux. En restaurant l'équilibre lipidique de vos follicules pileux et en réduisant l'inflammation chronique, ils offrent une solution durable pour retrouver des cheveux <span className="text-green-600 font-semibold">forts</span>, <span className="text-blue-600 font-semibold">brillants</span> et <span className="text-purple-600 font-semibold">résistants</span>.
+                Les oméga-3 représentent une{" "}
+                <strong>
+                  approche naturelle, scientifiquement validée et sans effets
+                  secondaires majeurs
+                </strong>{" "}
+                pour lutter contre la chute de cheveux. En restaurant
+                l'équilibre lipidique de vos follicules pileux et en réduisant
+                l'inflammation chronique, ils offrent une solution durable pour
+                retrouver des cheveux{" "}
+                <span className="text-green-600 font-semibold">forts</span>,{" "}
+                <span className="text-blue-600 font-semibold">brillants</span>{" "}
+                et{" "}
+                <span className="text-purple-600 font-semibold">
+                  résistants
+                </span>
+                .
               </p>
 
               <div className="bg-yellow-50 p-6 rounded-xl mb-8">
-                <h3 className="text-xl font-semibold mb-4">🎯 Votre plan d'action personnalisé</h3>
+                <h3 className="text-xl font-semibold mb-4">
+                  🎯 Votre plan d'action personnalisé
+                </h3>
                 <p className="text-gray-700 mb-4">
-                  Prêt(e) à démarrer votre transformation capillaire ? Suivez notre protocole en 3 étapes basé sur plus de 15 000 réussites clients.
+                  Prêt(e) à démarrer votre transformation capillaire ? Suivez
+                  notre protocole en 3 étapes basé sur plus de 15 000 réussites
+                  clients.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
                   <div className="bg-white p-4 rounded-lg border">
                     <div className="font-bold text-green-600 mb-2">ÉTAPE 1</div>
-                    <div>Test gratuit + BalanceOil+ pour connaître votre profil exact</div>
+                    <div>
+                      Test gratuit + BalanceOil+ pour connaître votre profil
+                      exact
+                    </div>
                   </div>
                   <div className="bg-white p-4 rounded-lg border">
                     <div className="font-bold text-blue-600 mb-2">ÉTAPE 2</div>
                     <div>Protocole personnalisé 4 mois avec suivi expert</div>
                   </div>
                   <div className="bg-white p-4 rounded-lg border">
-                    <div className="font-bold text-purple-600 mb-2">ÉTAPE 3</div>
+                    <div className="font-bold text-purple-600 mb-2">
+                      ÉTAPE 3
+                    </div>
                     <div>Nouveau test + ajustement pour résultats optimaux</div>
                   </div>
                 </div>
@@ -1661,7 +1819,10 @@ export default function OmegaTroisCheveux() {
                 className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white font-semibold text-lg px-12 py-4"
                 asChild
               >
-                <Link href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/" target="_blank">
+                <Link
+                  href="https://www.zinzino.com/shop/2016309984/FR/fr-FR/products/shop/omega-supplements/300000/"
+                  target="_blank"
+                >
                   Commencer ma Transformation
                 </Link>
               </Button>
@@ -1680,7 +1841,10 @@ export default function OmegaTroisCheveux() {
                     <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
                       <Sparkles className="h-5 w-5 text-blue-600" />
                     </div>
-                    <Badge variant="secondary" className="bg-blue-100 text-blue-800">
+                    <Badge
+                      variant="secondary"
+                      className="bg-blue-100 text-blue-800"
+                    >
                       Beauté
                     </Badge>
                   </div>
@@ -1688,9 +1852,15 @@ export default function OmegaTroisCheveux() {
                     Spiruline pour les cheveux : Guide complet
                   </h3>
                   <p className="text-sm text-gray-600 mb-4">
-                    Découvrez comment la spiruline peut compléter les oméga-3 pour une santé capillaire optimale.
+                    Découvrez comment la spiruline peut compléter les oméga-3
+                    pour une santé capillaire optimale.
                   </p>
-                  <Button variant="outline" size="sm" asChild className="group-hover:border-blue-500 group-hover:text-blue-600">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    asChild
+                    className="group-hover:border-blue-500 group-hover:text-blue-600"
+                  >
                     <Link href="/blog/spiruline-cheveux">
                       Lire l'article
                       <ArrowRight className="ml-2 h-4 w-4" />
@@ -1705,7 +1875,10 @@ export default function OmegaTroisCheveux() {
                     <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3">
                       <Heart className="h-5 w-5 text-green-600" />
                     </div>
-                    <Badge variant="secondary" className="bg-green-100 text-green-800">
+                    <Badge
+                      variant="secondary"
+                      className="bg-green-100 text-green-800"
+                    >
                       Santé
                     </Badge>
                   </div>
@@ -1713,9 +1886,15 @@ export default function OmegaTroisCheveux() {
                     Oméga-3 et santé cardiovasculaire
                   </h3>
                   <p className="text-sm text-gray-600 mb-4">
-                    Les bienfaits complets des oméga-3 au-delà de la beauté des cheveux.
+                    Les bienfaits complets des oméga-3 au-delà de la beauté des
+                    cheveux.
                   </p>
-                  <Button variant="outline" size="sm" asChild className="group-hover:border-green-500 group-hover:text-green-600">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    asChild
+                    className="group-hover:border-green-500 group-hover:text-green-600"
+                  >
                     <Link href="/blog/omega-3-sante-cardiovasculaire">
                       Lire l'article
                       <ArrowRight className="ml-2 h-4 w-4" />
@@ -1730,7 +1909,10 @@ export default function OmegaTroisCheveux() {
                     <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mr-3">
                       <Beaker className="h-5 w-5 text-purple-600" />
                     </div>
-                    <Badge variant="secondary" className="bg-purple-100 text-purple-800">
+                    <Badge
+                      variant="secondary"
+                      className="bg-purple-100 text-purple-800"
+                    >
                       Test
                     </Badge>
                   </div>
@@ -1738,9 +1920,15 @@ export default function OmegaTroisCheveux() {
                     Balance Oil Zinzino : Test et avis
                   </h3>
                   <p className="text-sm text-gray-600 mb-4">
-                    Notre test approfondi du complément oméga-3 le plus recommandé.
+                    Notre test approfondi du complément oméga-3 le plus
+                    recommandé.
                   </p>
-                  <Button variant="outline" size="sm" asChild className="group-hover:border-purple-500 group-hover:text-purple-600">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    asChild
+                    className="group-hover:border-purple-500 group-hover:text-purple-600"
+                  >
                     <Link href="/blog/balance-oil-zinzino-avis">
                       Lire l'article
                       <ArrowRight className="ml-2 h-4 w-4" />
@@ -1759,16 +1947,28 @@ export default function OmegaTroisCheveux() {
             <div className="bg-gray-50 p-6 rounded-xl">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-600">
                 <div>
-                  <h4 className="font-semibold text-gray-800 mb-2">🔬 Études cliniques :</h4>
+                  <h4 className="font-semibold text-gray-800 mb-2">
+                    🔬 Études cliniques :
+                  </h4>
                   <ul className="space-y-1">
-                    <li>• Le Floc'h et al. (2015) - Effect of dietary omega-3 on hair growth</li>
-                    <li>• Ablon (2015) - A 6-month study of omega-3 supplementation</li>
-                    <li>• Patel et al. (2017) - Omega-3 fatty acids and hair loss</li>
+                    <li>
+                      • Le Floc'h et al. (2015) - Effect of dietary omega-3 on
+                      hair growth
+                    </li>
+                    <li>
+                      • Ablon (2015) - A 6-month study of omega-3
+                      supplementation
+                    </li>
+                    <li>
+                      • Patel et al. (2017) - Omega-3 fatty acids and hair loss
+                    </li>
                     <li>• Sinclair (2007) - Healthy hair: what is it?</li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800 mb-2">📚 Références médicales :</h4>
+                  <h4 className="font-semibold text-gray-800 mb-2">
+                    📚 Références médicales :
+                  </h4>
                   <ul className="space-y-1">
                     <li>• American Journal of Clinical Dermatology</li>
                     <li>• International Journal of Trichology</li>
@@ -1779,7 +1979,11 @@ export default function OmegaTroisCheveux() {
               </div>
               <div className="mt-4 pt-4 border-t border-gray-200">
                 <p className="text-xs text-gray-500">
-                  <strong>Disclaimer :</strong> Ces informations sont fournies à titre éducatif et ne remplacent pas un avis médical professionnel. Consultez votre médecin avant de commencer toute supplémentation, notamment en cas de traitement médical ou de problèmes de santé.
+                  <strong>Disclaimer :</strong> Ces informations sont fournies à
+                  titre éducatif et ne remplacent pas un avis médical
+                  professionnel. Consultez votre médecin avant de commencer
+                  toute supplémentation, notamment en cas de traitement médical
+                  ou de problèmes de santé.
                 </p>
               </div>
             </div>
@@ -1791,7 +1995,9 @@ export default function OmegaTroisCheveux() {
               🎯 Transformez vos cheveux dès aujourd'hui !
             </h3>
             <p className="text-green-100 mb-6 text-lg">
-              Rejoignez les <strong>15 000+ personnes</strong> qui ont stoppé leur chute de cheveux grâce aux oméga-3. Recevez votre protocole personnalisé gratuit !
+              Rejoignez les <strong>15 000+ personnes</strong> qui ont stoppé
+              leur chute de cheveux grâce aux oméga-3. Recevez votre protocole
+              personnalisé gratuit !
             </p>
             <div className="max-w-md mx-auto mb-6">
               <NewsletterForm variant="dark" size="lg" />

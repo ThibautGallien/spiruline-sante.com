@@ -172,7 +172,7 @@ export default function BlogPage() {
       default:
         "https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=800",
     };
-    return imageMap[imageType] || imageMap.default;
+    return imageMap[imageType as keyof typeof imageMap] || imageMap.default;
   };
 
   // Composant pour les articles sans image (fallback)
