@@ -19,6 +19,8 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { Omega3ResetSection } from "@/components/sections/omega3-reset-section";
+// 🔥 AJOUT DU MAILLAGE AUTO + ANALYTICS
+import { DynamicInternalLinks } from "@/components/seo/dynamic-internal-links";
 
 export async function generateMetadata() {
   return generateSEOMetadata({
@@ -38,10 +40,36 @@ export async function generateMetadata() {
 }
 
 export default function ZinzinoReviewPage() {
+  // 🔥 ANALYTICS - Track cette page comme landing page
+  // useLandingAnalytics(); // Décommente si c'est une landing page
+
   const breadcrumbItems = [
     { label: "Blog", href: "/blog" },
     { label: "Avis Zinzino : Arnaque ou Produits de Qualité ?" },
   ];
+
+  // 🔥 CONTENU POUR LE MAILLAGE AUTO - Tous les mots-clés importants
+  const articleContent = `
+    Zinzino avis complet : Cette entreprise suédoise propose des compléments alimentaires 
+    et des produits de bien-être depuis 2005. Leurs produits phares incluent Balance Oil 
+    riche en oméga-3, Xtend+ pour l'immunité, et ZinoBiotic+ pour la santé intestinale.
+    
+    Dans cet avis sur Zinzino, nous analysons la qualité de leurs produits, leur modèle MLM,
+    et les retours clients pour déterminer si c'est une arnaque ou une opportunité légitime.
+    
+    Les produits Zinzino comme Balance Oil contiennent des oméga-3 de haute qualité 
+    et de la vitamine D. Leur test BalanceTest permet de mesurer votre équilibre 
+    en acides gras. Le plan de rémunération Zinzino offre des opportunités aux distributeurs.
+    
+    Zinzino n'est pas une arnaque - c'est une entreprise établie membre de SELDIA.
+    Cependant, comme tout MLM, le succès dépend de votre engagement et efforts.
+    
+    Les alternatives incluent les produits Xelliss comme PhycoSci X14 pour la phycocyanine,
+    ou d'autres marques d'oméga-3 et compléments alimentaires naturels.
+    
+    Balance Oil Zinzino, oméga-3, phycocyanine, spiruline et autres super-aliments 
+    peuvent tous contribuer à une meilleure santé et bien-être général.
+  `;
 
   const healthBenefits = [
     "Équilibre des acides gras",
@@ -805,6 +833,15 @@ export default function ZinzinoReviewPage() {
           ))}
         </div>
       </section>
+
+      {/* 🔥 MAILLAGE INTERNE AUTOMATIQUE - À placer AVANT le CTA final */}
+      <DynamicInternalLinks
+        content={articleContent}
+        currentPath="/blog/avis-zinzino-arnaque-ou-produits-de-qualite"
+        maxLinks={4}
+        showPerformanceMetrics={true}
+        className="my-12"
+      />
 
       {/* CTA final */}
       <Card className="border-green-300 bg-gradient-to-r from-green-600 to-blue-600 text-white">
