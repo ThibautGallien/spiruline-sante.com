@@ -1,9 +1,15 @@
+// components/sections/spiruline-reset-section.tsx
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { NewsletterForm } from "@/components/forms/newsletter-form";
 import { ArrowRight, CheckCircle, Mail } from "lucide-react";
+import { useLandingAnalytics } from "@/hooks/use-landing-analytics";
+import {
+  trackButtonClick,
+  trackNewsletterFormView,
+} from "@/lib/analytics-advanced";
 
 interface SpirulineResetSectionProps {
   className?: string;
@@ -28,13 +34,29 @@ export function SpirulineResetSection({
 }: SpirulineResetSectionProps) {
   const [showNewsletterForm, setShowNewsletterForm] = useState(showNewsletter);
 
+  // Analytics pour landing page
+  useLandingAnalytics();
+
   const handleCtaClick = () => {
+    // Track button click
+    trackButtonClick(
+      "Recevoir mon plan de 7 jours",
+      "spiruline_reset_main_cta"
+    );
+
     if (onCtaClick) {
       onCtaClick();
     } else {
       setShowNewsletterForm(true);
     }
   };
+
+  // Track form view when it becomes visible
+  useEffect(() => {
+    if (showNewsletterForm) {
+      trackNewsletterFormView("spiruline-reset-section");
+    }
+  }, [showNewsletterForm]);
 
   return (
     <section

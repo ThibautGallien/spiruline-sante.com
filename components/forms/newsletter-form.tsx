@@ -1,9 +1,12 @@
+// components/forms/newsletter-form.tsx (Version avec Analytics)
 "use client";
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Mail, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
+import { trackNewsletterSignup } from "@/lib/analytics-advanced";
+import { useFormAnalytics } from "@/hooks/use-landing-analytics";
 
 interface NewsletterFormProps {
   variant?: "default" | "dark";
@@ -26,6 +29,9 @@ export function NewsletterForm({
     "idle" | "loading" | "success" | "error"
   >("idle");
   const [message, setMessage] = useState("");
+
+  // Track form view
+  useFormAnalytics(source);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -58,6 +64,7 @@ export function NewsletterForm({
             SOURCE: source,
             SUBSCRIPTION_DATE: new Date().toISOString(),
             INTERESTS: interests,
+            FORM_LOCATION: window.location.pathname,
           },
         }),
       });
@@ -70,12 +77,16 @@ export function NewsletterForm({
         setEmail("");
         setFirstName("");
 
-        // Google Analytics event avec source personnalisée
+        // Analytics: Track successful signup
+        trackNewsletterSignup(source, interests);
+
+        // Google Analytics event si disponible
         if (typeof window !== "undefined" && (window as any).gtag) {
-          (window as any).gtag("event", "newsletter_signup", {
-            event_category: "engagement",
+          (window as any).gtag("event", "newsletter_signup_success", {
+            event_category: "conversions",
             event_label: source,
             custom_parameter_interests: interests.join(","),
+            value: 1,
           });
         }
 
@@ -90,6 +101,16 @@ export function NewsletterForm({
     } catch (error) {
       setStatus("error");
       setMessage("Une erreur est survenue. Veuillez réessayer.");
+
+      // Analytics: Track failed signup
+      if (typeof window !== "undefined" && (window as any).gtag) {
+        (window as any).gtag("event", "newsletter_signup_failed", {
+          event_category: "errors",
+          event_label: source,
+          custom_parameter_error:
+            error instanceof Error ? error.message : "Unknown error",
+        });
+      }
 
       // Reset error after 3 seconds
       setTimeout(() => {
